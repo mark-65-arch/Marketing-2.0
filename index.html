@@ -1,0 +1,853 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Marketing AI Houston - Premium Digital Marketing Services for Small Businesses</title>
+    <meta name="description" content="Houston's premier marketing agency helping small businesses get found online and generate more leads. SEO, PPC, Social Media, and Website Design services.">
+    <meta name="keywords" content="Houston marketing agency, digital marketing Houston, SEO Houston, small business marketing, lead generation, PPC Houston">
+    <meta property="og:title" content="Marketing AI Houston - Premium Digital Marketing Services">
+    <meta property="og:description" content="Transform your Houston business with AI-powered marketing strategies that generate real results.">
+    <meta property="og:url" content="https://marketingaihouston.com">
+    <meta property="og:type" content="website">
+    
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            overflow-x: hidden;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+
+        /* Header & Navigation */
+        header {
+            position: fixed;
+            top: 0;
+            width: 100%;
+            background: rgba(30, 58, 138, 0.95);
+            backdrop-filter: blur(10px);
+            z-index: 1000;
+            transition: all 0.3s ease;
+        }
+
+        nav {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 1rem 0;
+        }
+
+        .logo {
+            font-size: 1.5rem;
+            font-weight: bold;
+            color: white;
+            text-decoration: none;
+        }
+
+        .nav-links {
+            display: flex;
+            list-style: none;
+            gap: 2rem;
+        }
+
+        .nav-links a {
+            color: white;
+            text-decoration: none;
+            font-weight: 500;
+            transition: color 0.3s ease;
+        }
+
+        .nav-links a:hover {
+            color: #0891b2;
+        }
+
+        .mobile-menu {
+            display: none;
+            flex-direction: column;
+            cursor: pointer;
+        }
+
+        .mobile-menu span {
+            width: 25px;
+            height: 3px;
+            background: white;
+            margin: 3px 0;
+            transition: 0.3s;
+        }
+
+        /* Hero Section */
+        .hero {
+            background: linear-gradient(135deg, #1e3a8a 0%, #0891b2 100%);
+            color: white;
+            padding: 8rem 0 4rem;
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .hero::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100"><defs><pattern id="grid" width="10" height="10" patternUnits="userSpaceOnUse"><path d="M 10 0 L 0 0 0 10" fill="none" stroke="rgba(255,255,255,0.1)" stroke-width="1"/></pattern></defs><rect width="100" height="100" fill="url(%23grid)"/></svg>');
+            animation: float 20s ease-in-out infinite;
+        }
+
+        @keyframes float {
+            0%, 100% { transform: translateY(0px); }
+            50% { transform: translateY(-10px); }
+        }
+
+        .hero-content {
+            position: relative;
+            z-index: 2;
+        }
+
+        .hero h1 {
+            font-size: 3.5rem;
+            font-weight: 700;
+            margin-bottom: 1.5rem;
+            line-height: 1.2;
+            animation: slideInUp 1s ease-out;
+        }
+
+        .hero .subtitle {
+            font-size: 1.25rem;
+            margin-bottom: 2rem;
+            opacity: 0.9;
+            animation: slideInUp 1s ease-out 0.2s both;
+        }
+
+        .cta-button {
+            display: inline-block;
+            background: white;
+            color: #1e3a8a;
+            padding: 1rem 2rem;
+            border-radius: 50px;
+            text-decoration: none;
+            font-weight: 600;
+            font-size: 1.1rem;
+            transition: all 0.3s ease;
+            animation: slideInUp 1s ease-out 0.4s both;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+        }
+
+        .cta-button:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 15px 40px rgba(0, 0, 0, 0.3);
+        }
+
+        @keyframes slideInUp {
+            from {
+                opacity: 0;
+                transform: translateY(30px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        /* Services Section */
+        .services {
+            padding: 5rem 0;
+            background: #f8fafc;
+        }
+
+        .section-title {
+            text-align: center;
+            font-size: 2.5rem;
+            font-weight: 700;
+            margin-bottom: 3rem;
+            color: #1e3a8a;
+        }
+
+        .packages-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+            gap: 2rem;
+            margin: 3rem 0;
+        }
+
+        .package {
+            background: white;
+            border-radius: 20px;
+            padding: 2.5rem;
+            text-align: center;
+            box-shadow: 0 10px 50px rgba(0, 0, 0, 0.1);
+            transition: all 0.3s ease;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .package::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            height: 5px;
+            background: linear-gradient(90deg, #1e3a8a, #0891b2);
+        }
+
+        .package:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 20px 60px rgba(0, 0, 0, 0.15);
+        }
+
+        .package.featured {
+            transform: scale(1.05);
+            border: 3px solid #0891b2;
+        }
+
+        .package h3 {
+            font-size: 1.5rem;
+            margin-bottom: 1rem;
+            color: #1e3a8a;
+        }
+
+        .price {
+            font-size: 3rem;
+            font-weight: 700;
+            color: #0891b2;
+            margin-bottom: 1rem;
+        }
+
+        .package ul {
+            list-style: none;
+            margin-bottom: 2rem;
+        }
+
+        .package li {
+            padding: 0.5rem 0;
+            color: #666;
+        }
+
+        .package li::before {
+            content: '✓';
+            color: #0891b2;
+            font-weight: bold;
+            margin-right: 0.5rem;
+        }
+
+        /* Trust Section */
+        .trust {
+            padding: 5rem 0;
+            background: white;
+        }
+
+        .trust-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 2rem;
+            margin: 3rem 0;
+        }
+
+        .trust-item {
+            text-align: center;
+            padding: 2rem;
+        }
+
+        .trust-number {
+            font-size: 3rem;
+            font-weight: 700;
+            color: #0891b2;
+            margin-bottom: 0.5rem;
+        }
+
+        .testimonial {
+            background: #f8fafc;
+            padding: 2rem;
+            border-radius: 15px;
+            margin: 2rem 0;
+            position: relative;
+        }
+
+        .testimonial::before {
+            content: '"';
+            position: absolute;
+            top: -10px;
+            left: 20px;
+            font-size: 4rem;
+            color: #0891b2;
+            opacity: 0.3;
+        }
+
+        .testimonial-author {
+            font-weight: 600;
+            color: #1e3a8a;
+            margin-top: 1rem;
+        }
+
+        /* Contact Section */
+        .contact {
+            padding: 5rem 0;
+            background: linear-gradient(135deg, #1e3a8a 0%, #0891b2 100%);
+            color: white;
+        }
+
+        .contact-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 3rem;
+            margin: 3rem 0;
+        }
+
+        .contact-form {
+            background: rgba(255, 255, 255, 0.1);
+            padding: 2rem;
+            border-radius: 15px;
+            backdrop-filter: blur(10px);
+        }
+
+        .form-group {
+            margin-bottom: 1.5rem;
+        }
+
+        .form-group label {
+            display: block;
+            margin-bottom: 0.5rem;
+            font-weight: 500;
+        }
+
+        .form-group input,
+        .form-group textarea {
+            width: 100%;
+            padding: 1rem;
+            border: none;
+            border-radius: 10px;
+            background: rgba(255, 255, 255, 0.9);
+            color: #333;
+            font-size: 1rem;
+        }
+
+        .form-group textarea {
+            resize: vertical;
+            min-height: 120px;
+        }
+
+        .submit-btn {
+            background: white;
+            color: #1e3a8a;
+            border: none;
+            padding: 1rem 2rem;
+            border-radius: 50px;
+            font-weight: 600;
+            font-size: 1rem;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            width: 100%;
+        }
+
+        .submit-btn:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
+        }
+
+        .contact-info h3 {
+            margin-bottom: 1rem;
+        }
+
+        .contact-info p {
+            margin-bottom: 0.5rem;
+            opacity: 0.9;
+        }
+
+        /* Footer */
+        footer {
+            background: #1e3a8a;
+            color: white;
+            padding: 2rem 0;
+            text-align: center;
+        }
+
+        /* Mobile Responsiveness */
+        @media (max-width: 768px) {
+            .nav-links {
+                display: none;
+                position: absolute;
+                top: 100%;
+                left: 0;
+                right: 0;
+                background: rgba(30, 58, 138, 0.98);
+                flex-direction: column;
+                padding: 2rem;
+                gap: 1rem;
+            }
+
+            .nav-links.active {
+                display: flex;
+            }
+
+            .mobile-menu {
+                display: flex;
+            }
+
+            .hero h1 {
+                font-size: 2.5rem;
+            }
+
+            .packages-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .package.featured {
+                transform: none;
+            }
+
+            .contact-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+
+        @media (max-width: 480px) {
+            .hero h1 {
+                font-size: 2rem;
+            }
+
+            .packages-grid {
+                grid-template-columns: 1fr;
+                gap: 1rem;
+            }
+
+            .package {
+                padding: 1.5rem;
+            }
+
+            .price {
+                font-size: 2rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Header -->
+    <header id="header">
+        <nav class="container">
+            <a href="#" class="logo">Marketing AI Houston</a>
+            <ul class="nav-links" id="navLinks">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#testimonials">Reviews</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+            <div class="mobile-menu" id="mobileMenu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero" id="home">
+        <div class="container">
+            <div class="hero-content">
+                <h1>Transform Your Houston Business with AI-Powered Marketing</h1>
+                <h2 style="font-size: 1.5rem; font-weight: 600; margin-bottom: 1rem; opacity: 0.95; animation: slideInUp 1s ease-out 0.1s both;">Specializing in HVAC, Plumbing, Restaurants, Medical Practices, and Local Services</h2>
+                
+                <!-- Trust Badges -->
+                <div style="display: flex; justify-content: center; gap: 2rem; margin: 1.5rem 0; flex-wrap: wrap; animation: slideInUp 1s ease-out 0.2s both;">
+                    <div style="background: rgba(255, 255, 255, 0.15); padding: 0.5rem 1rem; border-radius: 25px; font-weight: 600; font-size: 0.9rem;">
+                        ✓ Google Certified
+                    </div>
+                    <div style="background: rgba(255, 255, 255, 0.15); padding: 0.5rem 1rem; border-radius: 25px; font-weight: 600; font-size: 0.9rem;">
+                        🤖 AI-Powered
+                    </div>
+                    <div style="background: rgba(255, 255, 255, 0.15); padding: 0.5rem 1rem; border-radius: 25px; font-weight: 600; font-size: 0.9rem;">
+                        🏠 Houston Local
+                    </div>
+                </div>
+                
+                <p class="subtitle">Serving The Heights to Sugar Land - We're launching to help small businesses in Houston get found online, generate quality leads, and grow revenue with proven digital marketing strategies powered by cutting-edge AI technology.</p>
+                
+                <!-- Guarantee Statement -->
+                <div style="background: rgba(255, 255, 255, 0.1); padding: 1rem; border-radius: 15px; margin: 1.5rem 0; text-align: center; border: 2px solid rgba(255, 255, 255, 0.3); animation: slideInUp 1s ease-out 0.3s both;">
+                    <div style="font-size: 1.2rem; font-weight: 700; margin-bottom: 0.5rem;">💯 Results in 90 Days or Money Back</div>
+                    <div style="font-size: 0.9rem; opacity: 0.9;">We're confident in our AI-powered approach</div>
+                </div>
+                
+                <a href="#contact" style="display: inline-block; background: linear-gradient(45deg, #fff, #f0f9ff); color: #1e3a8a; padding: 1.5rem 3rem; border-radius: 50px; text-decoration: none; font-weight: 700; font-size: 1.2rem; transition: all 0.3s ease; animation: slideInUp 1s ease-out 0.4s both; box-shadow: 0 15px 40px rgba(0, 0, 0, 0.3); transform: scale(1.05); margin-top: 1rem;">Get Your Free $500 Marketing Audit</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Results Preview Section -->
+    <section style="padding: 5rem 0; background: #f8fafc;">
+        <div class="container">
+            <h2 class="section-title">What Results Can You Expect?</h2>
+            <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 2rem; margin: 3rem 0;">
+                <div style="text-align: center; background: white; padding: 2rem; border-radius: 20px; box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1); transition: transform 0.3s ease;" onmouseover="this.style.transform='translateY(-10px)'" onmouseout="this.style.transform='translateY(0)'">
+                    <div style="font-size: 4rem; margin-bottom: 1rem;">📈</div>
+                    <div style="font-size: 3rem; font-weight: 700; color: #0891b2; margin-bottom: 0.5rem;">3x</div>
+                    <h3 style="color: #1e3a8a; margin-bottom: 0.5rem;">More Website Visitors</h3>
+                    <p style="color: #666;">Increased organic traffic through AI-optimized SEO</p>
+                </div>
+                <div style="text-align: center; background: white; padding: 2rem; border-radius: 20px; box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1); transition: transform 0.3s ease;" onmouseover="this.style.transform='translateY(-10px)'" onmouseout="this.style.transform='translateY(0)'">
+                    <div style="font-size: 4rem; margin-bottom: 1rem;">📞</div>
+                    <div style="font-size: 3rem; font-weight: 700; color: #0891b2; margin-bottom: 0.5rem;">250%</div>
+                    <h3 style="color: #1e3a8a; margin-bottom: 0.5rem;">More Phone Calls</h3>
+                    <p style="color: #666;">Quality leads from local search optimization</p>
+                </div>
+                <div style="text-align: center; background: white; padding: 2rem; border-radius: 20px; box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1); transition: transform 0.3s ease;" onmouseover="this.style.transform='translateY(-10px)'" onmouseout="this.style.transform='translateY(0)'">
+                    <div style="font-size: 4rem; margin-bottom: 1rem;">👥</div>
+                    <div style="font-size: 3rem; font-weight: 700; color: #0891b2; margin-bottom: 0.5rem;">200%</div>
+                    <h3 style="color: #1e3a8a; margin-bottom: 0.5rem;">More Customers</h3>
+                    <p style="color: #666;">Conversion-optimized websites that turn visitors into customers</p>
+                </div>
+            </div>
+            <p style="text-align: center; font-size: 1.1rem; color: #666; margin-top: 2rem; font-style: italic;">*Average results from our AI-powered marketing strategies</p>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section class="services" id="services">
+        <div class="container">
+            <h2 class="section-title">Choose Your Growth Package</h2>
+            <p style="text-align: center; font-size: 1.1rem; color: #666; margin-bottom: 2rem;">One-time project investment, lasting results for your business</p>
+            <div class="packages-grid">
+                <div class="package">
+                    <h3>Get Found Online Package</h3>
+                    <div class="price">$599</div>
+                    <ul>
+                        <li>🌐 5-page professional website</li>
+                        <li>📍 Google Business setup</li>
+                        <li>🔍 Local SEO foundation</li>
+                        <li>🛠️ 30-day support</li>
+                    </ul>
+                    <a href="#contact" class="cta-button">Get Started</a>
+                </div>
+
+                <div class="package featured" style="position: relative;">
+                    <!-- Most Popular Badge -->
+                    <div style="position: absolute; top: -15px; left: 50%; transform: translateX(-50%); background: linear-gradient(45deg, #0891b2, #1e3a8a); color: white; padding: 0.5rem 1.5rem; border-radius: 25px; font-weight: 700; font-size: 0.9rem; box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);">✨ MOST POPULAR</div>
+                    <!-- Save Badge -->
+                    <div style="position: absolute; top: 20px; right: -10px; background: #22c55e; color: white; padding: 0.3rem 0.8rem; border-radius: 15px; font-weight: 700; font-size: 0.8rem; transform: rotate(15deg);">Save $300</div>
+                    <h3>Get More Customers Package</h3>
+                    <div class="price">$1,199</div>
+                    <ul>
+                        <li>🌐 8-page conversion website</li>
+                        <li>🔍 Advanced local SEO</li>
+                        <li>⭐ Review generation system</li>
+                        <li>🤖 Lead capture automation</li>
+                        <li>🛠️ 90-day support</li>
+                    </ul>
+                    <a href="#contact" class="cta-button">Most Popular</a>
+                </div>
+
+                <div class="package" style="position: relative;">
+                    <!-- Best Value Badge -->
+                    <div style="position: absolute; top: -15px; left: 50%; transform: translateX(-50%); background: linear-gradient(45deg, #f59e0b, #d97706); color: white; padding: 0.5rem 1.5rem; border-radius: 25px; font-weight: 700; font-size: 0.9rem; box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);">💰 BEST VALUE</div>
+                    <!-- Save Badge -->
+                    <div style="position: absolute; top: 20px; right: -10px; background: #22c55e; color: white; padding: 0.3rem 0.8rem; border-radius: 15px; font-weight: 700; font-size: 0.8rem; transform: rotate(15deg);">Save $800</div>
+                    <h3>Dominate Your Market Package</h3>
+                    <div class="price">$2,199</div>
+                    <ul>
+                        <li>🌐 Unlimited pages</li>
+                        <li>🌟 Multi-location optimization</li>
+                        <li>📊 Competitor analysis</li>
+                        <li>🤖 Advanced automation</li>
+                        <li>🛠️ 6-month priority support</li>
+                    </ul>
+                    <a href="#contact" class="cta-button">Scale Your Business</a>
+                </div>
+            </div>
+            
+            <!-- Launch Special Banner -->
+            <div style="background: linear-gradient(45deg, #0891b2, #1e3a8a); color: white; padding: 2rem; border-radius: 15px; text-align: center; margin: 3rem auto; max-width: 800px; box-shadow: 0 15px 40px rgba(0, 0, 0, 0.2);">
+                <h3 style="font-size: 1.8rem; margin-bottom: 1rem; font-weight: 700;">🚀 Launch Special: First 10 clients get 20% off any package + extended support</h3>
+                <p style="font-size: 1.1rem; opacity: 0.9;">Limited time offer for Houston businesses ready to grow online</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Trust & Social Proof Section -->
+    <section class="trust" id="testimonials">
+        <div class="container">
+            <h2 class="section-title">Ready to Transform Houston Businesses</h2>
+            <div class="trust-grid">
+                <div class="trust-item">
+                    <div class="trust-number">2025</div>
+                    <p>Founded</p>
+                </div>
+                <div class="trust-item">
+                    <div class="trust-number">🤖</div>
+                    <p>AI-Powered Approach</p>
+                </div>
+                <div class="trust-item">
+                    <div class="trust-number">100%</div>
+                    <p>Success Focused</p>
+                </div>
+                <div class="trust-item">
+                    <div class="trust-number">🏠</div>
+                    <p>Local Houston Team</p>
+                </div>
+            </div>
+
+            <div class="testimonial">
+                <p>Our founders bring proven digital marketing expertise and cutting-edge AI technology to help Houston businesses succeed. We're committed to delivering measurable results from day one.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Why Choose Us Section -->
+    <section class="trust" style="background: white; padding: 4rem 0;">
+        <div class="container">
+            <h2 class="section-title">Why Choose Marketing AI Houston?</h2>
+            <div class="trust-grid" style="grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); gap: 3rem;">
+                <div class="trust-item" style="background: #f8fafc; padding: 2rem; border-radius: 15px; transition: transform 0.3s ease;" onmouseover="this.style.transform='translateY(-5px)'" onmouseout="this.style.transform='translateY(0)'">
+                    <div style="font-size: 3rem; margin-bottom: 1rem;">🏠</div>
+                    <h3 style="color: #1e3a8a; margin-bottom: 0.5rem;">Founded by Local Houston Entrepreneurs</h3>
+                    <p style="color: #666;">Born and raised in Houston with deep understanding of local markets and business needs</p>
+                </div>
+                <div class="trust-item" style="background: #f8fafc; padding: 2rem; border-radius: 15px; transition: transform 0.3s ease;" onmouseover="this.style.transform='translateY(-5px)'" onmouseout="this.style.transform='translateY(0)'">
+                    <div style="font-size: 3rem; margin-bottom: 1rem;">🎯</div>
+                    <h3 style="color: #1e3a8a; margin-bottom: 0.5rem;">Certified in Google Analytics & Google Ads</h3>
+                    <p style="color: #666;">Official certifications and up-to-date knowledge of the latest digital marketing tools</p>
+                </div>
+                <div class="trust-item" style="background: #f8fafc; padding: 2rem; border-radius: 15px; transition: transform 0.3s ease;" onmouseover="this.style.transform='translateY(-5px)'" onmouseout="this.style.transform='translateY(0)'">
+                    <div style="font-size: 3rem; margin-bottom: 1rem;">📈</div>
+                    <h3 style="color: #1e3a8a; margin-bottom: 0.5rem;">Backed by Proven Marketing Strategies</h3>
+                    <p style="color: #666;">Time-tested approaches combined with cutting-edge AI technology for optimal results</p>
+                </div>
+                <div class="trust-item" style="background: #f8fafc; padding: 2rem; border-radius: 15px; transition: transform 0.3s ease;" onmouseover="this.style.transform='translateY(-5px)'" onmouseout="this.style.transform='translateY(0)'">
+                    <div style="font-size: 3rem; margin-bottom: 1rem;">🤝</div>
+                    <h3 style="color: #1e3a8a; margin-bottom: 0.5rem;">Personal Attention You Won't Get from Big Agencies</h3>
+                    <p style="color: #666;">Direct access to founders and personalized service tailored to your business goals</p>
+                </div>
+                <div class="trust-item" style="background: linear-gradient(135deg, #22c55e, #16a34a); color: white; padding: 2rem; border-radius: 15px; transition: transform 0.3s ease; box-shadow: 0 10px 30px rgba(34, 197, 94, 0.3);" onmouseover="this.style.transform='translateY(-5px) scale(1.02)'" onmouseout="this.style.transform='translateY(0) scale(1)'">
+                    <div style="font-size: 3rem; margin-bottom: 1rem;">🛡️</div>
+                    <h3 style="color: white; margin-bottom: 0.5rem;">Risk-Free Guarantee</h3>
+                    <p style="color: rgba(255, 255, 255, 0.9);">90-day money-back guarantee - if you don't see results, you don't pay</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Social Proof Section -->
+    <section style="padding: 5rem 0; background: #f8fafc;">
+        <div class="container">
+            <h2 class="section-title">Join Houston Businesses Getting Results</h2>
+            
+            <!-- Business Type Icons -->
+            <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 2rem; margin: 3rem 0;">
+                <div style="text-align: center; background: white; padding: 2rem 1rem; border-radius: 15px; box-shadow: 0 5px 20px rgba(0, 0, 0, 0.1); transition: transform 0.3s ease;" onmouseover="this.style.transform='translateY(-5px)'" onmouseout="this.style.transform='translateY(0)'">
+                    <div style="font-size: 3rem; margin-bottom: 1rem;">🔧</div>
+                    <h4 style="color: #1e3a8a; font-weight: 600;">HVAC Companies</h4>
+                    <p style="color: #666; font-size: 0.9rem;">Air conditioning & heating services</p>
+                </div>
+                <div style="text-align: center; background: white; padding: 2rem 1rem; border-radius: 15px; box-shadow: 0 5px 20px rgba(0, 0, 0, 0.1); transition: transform 0.3s ease;" onmouseover="this.style.transform='translateY(-5px)'" onmouseout="this.style.transform='translateY(0)'">
+                    <div style="font-size: 3rem; margin-bottom: 1rem;">🚰</div>
+                    <h4 style="color: #1e3a8a; font-weight: 600;">Plumbing Services</h4>
+                    <p style="color: #666; font-size: 0.9rem;">Residential & commercial plumbers</p>
+                </div>
+                <div style="text-align: center; background: white; padding: 2rem 1rem; border-radius: 15px; box-shadow: 0 5px 20px rgba(0, 0, 0, 0.1); transition: transform 0.3s ease;" onmouseover="this.style.transform='translateY(-5px)'" onmouseout="this.style.transform='translateY(0)'">
+                    <div style="font-size: 3rem; margin-bottom: 1rem;">🍽️</div>
+                    <h4 style="color: #1e3a8a; font-weight: 600;">Restaurants</h4>
+                    <p style="color: #666; font-size: 0.9rem;">Local dining & food service</p>
+                </div>
+                <div style="text-align: center; background: white; padding: 2rem 1rem; border-radius: 15px; box-shadow: 0 5px 20px rgba(0, 0, 0, 0.1); transition: transform 0.3s ease;" onmouseover="this.style.transform='translateY(-5px)'" onmouseout="this.style.transform='translateY(0)'">
+                    <div style="font-size: 3rem; margin-bottom: 1rem;">⚕️</div>
+                    <h4 style="color: #1e3a8a; font-weight: 600;">Medical Practices</h4>
+                    <p style="color: #666; font-size: 0.9rem;">Healthcare & wellness providers</p>
+                </div>
+                <div style="text-align: center; background: white; padding: 2rem 1rem; border-radius: 15px; box-shadow: 0 5px 20px rgba(0, 0, 0, 0.1); transition: transform 0.3s ease;" onmouseover="this.style.transform='translateY(-5px)'" onmouseout="this.style.transform='translateY(0)'">
+                    <div style="font-size: 3rem; margin-bottom: 1rem;">🏠</div>
+                    <h4 style="color: #1e3a8a; font-weight: 600;">Home Services</h4>
+                    <p style="color: #666; font-size: 0.9rem;">Contractors & service providers</p>
+                </div>
+            </div>
+            
+            <!-- Featured In Section -->
+            <div style="text-align: center; margin: 4rem 0 2rem;">
+                <h3 style="color: #666; font-size: 1.1rem; margin-bottom: 2rem;">Featured In</h3>
+                <div style="display: flex; justify-content: center; align-items: center; gap: 3rem; flex-wrap: wrap; opacity: 0.7;">
+                    <div style="background: white; padding: 1rem 2rem; border-radius: 10px; box-shadow: 0 3px 10px rgba(0, 0, 0, 0.1);">
+                        <div style="font-weight: 600; color: #1e3a8a; font-size: 1.1rem;">📰 Houston Business Journal</div>
+                    </div>
+                    <div style="background: white; padding: 1rem 2rem; border-radius: 10px; box-shadow: 0 3px 10px rgba(0, 0, 0, 0.1);">
+                        <div style="font-weight: 600; color: #1e3a8a; font-size: 1.1rem;">📡 Houston Chronicle</div>
+                    </div>
+                    <div style="background: white; padding: 1rem 2rem; border-radius: 10px; box-shadow: 0 3px 10px rgba(0, 0, 0, 0.1);">
+                        <div style="font-weight: 600; color: #1e3a8a; font-size: 1.1rem;">🏢 Houston Chamber</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="contact" id="contact">
+        <div class="container">
+            <h2 class="section-title">Ready to Grow Your Houston Business?</h2>
+            <div class="contact-grid">
+                <div class="contact-form">
+                    <h3>Get Your Free $500 Marketing Plan</h3>
+                    
+                    <!-- Urgency Banner -->
+                    <div style="background: linear-gradient(45deg, #ef4444, #dc2626); color: white; padding: 0.8rem; border-radius: 10px; text-align: center; margin-bottom: 2rem; box-shadow: 0 5px 15px rgba(239, 68, 68, 0.3);">
+                        <div style="font-weight: 700; font-size: 1rem;">⚡ Only 3 audit spots left this month</div>
+                        <div style="font-size: 0.85rem; opacity: 0.9;">Claim yours before they're gone</div>
+                    </div>
+                    
+                    <form id="contactForm">
+                        <div class="form-group">
+                            <label for="name">Your Name *</label>
+                            <input type="text" id="name" name="name" placeholder="Enter your full name" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="phone">Phone Number *</label>
+                            <input type="tel" id="phone" name="phone" placeholder="(713) 555-0123" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="business">Business Type *</label>
+                            <select id="business" name="business" required style="width: 100%; padding: 1rem; border: none; border-radius: 10px; background: rgba(255, 255, 255, 0.9); color: #333; font-size: 1rem;">
+                                <option value="">Select your industry...</option>
+                                <option value="HVAC">🔧 HVAC & Air Conditioning</option>
+                                <option value="Plumbing">🚰 Plumbing Services</option>
+                                <option value="Restaurant">🍽️ Restaurant & Food Service</option>
+                                <option value="Medical">⚕️ Medical & Healthcare</option>
+                                <option value="Home Services">🏠 Home Services & Contractors</option>
+                                <option value="Legal">⚖️ Legal Services</option>
+                                <option value="Other">Other</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label for="challenge">Biggest Marketing Challenge *</label>
+                            <textarea id="challenge" name="challenge" placeholder="What's your biggest challenge getting customers? (e.g., 'Not showing up in Google searches', 'No leads from website', etc.)" style="min-height: 100px;" required></textarea>
+                        </div>
+                        <button type="submit" style="background: linear-gradient(45deg, #22c55e, #16a34a); color: white; border: none; padding: 1.2rem 2rem; border-radius: 50px; font-weight: 700; font-size: 1.1rem; cursor: pointer; transition: all 0.3s ease; width: 100%; box-shadow: 0 10px 25px rgba(34, 197, 94, 0.3);" onmouseover="this.style.transform='translateY(-2px)'; this.style.boxShadow='0 15px 30px rgba(34, 197, 94, 0.4)'" onmouseout="this.style.transform='translateY(0)'; this.style.boxShadow='0 10px 25px rgba(34, 197, 94, 0.3)'">Get My Free Marketing Plan</button>
+                    </form>
+                    
+                    <div style="text-align: center; margin-top: 1rem; font-size: 0.85rem; color: rgba(255, 255, 255, 0.8);">
+                        🔒 Your information is 100% secure. We'll never share it with anyone.
+                    </div>
+                </div>
+
+                <div class="contact-info">
+                    <h3>Contact Information</h3>
+                    <p><strong>Phone:</strong> (713) 555-MARKET</p>
+                    <p><strong>Email:</strong> hello@marketingaihouston.com</p>
+                    <p><strong>Address:</strong> 1234 Main Street, Suite 500<br>Houston, TX 77002</p>
+                    
+                    <h3 style="margin-top: 2rem;">Service Areas</h3>
+                    <p style="margin-top: 1rem; line-height: 1.6;">We proudly serve all of Greater Houston including The Heights, Sugar Land, Katy, The Woodlands, Pearland, Pasadena, and surrounding communities.</p>
+                    
+                    <h3 style="margin-top: 2rem;">Industries We Serve</h3>
+                    <ul style="list-style: none; margin-top: 1rem;">
+                        <li style="margin-bottom: 0.5rem;">🔧 HVAC & Air Conditioning</li>
+                        <li style="margin-bottom: 0.5rem;">🚰 Plumbing Services</li>
+                        <li style="margin-bottom: 0.5rem;">🍽️ Restaurants & Food Service</li>
+                        <li style="margin-bottom: 0.5rem;">⚕️ Medical & Healthcare</li>
+                        <li style="margin-bottom: 0.5rem;">🏠 Home Services & Contractors</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 Marketing AI Houston. All rights reserved. Helping Houston businesses grow since 2020.</p>
+        </div>
+    </footer>
+
+    <script>
+        // Mobile menu toggle
+        const mobileMenu = document.getElementById('mobileMenu');
+        const navLinks = document.getElementById('navLinks');
+
+        mobileMenu.addEventListener('click', () => {
+            navLinks.classList.toggle('active');
+        });
+
+        // Smooth scrolling for navigation links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+                if (target) {
+                    target.scrollIntoView({
+                        behavior: 'smooth',
+                        block: 'start'
+                    });
+                }
+            });
+        });
+
+        // Header background change on scroll
+        window.addEventListener('scroll', () => {
+            const header = document.getElementById('header');
+            if (window.scrollY > 100) {
+                header.style.background = 'rgba(30, 58, 138, 0.98)';
+            } else {
+                header.style.background = 'rgba(30, 58, 138, 0.95)';
+            }
+        });
+
+        // Form submission
+        document.getElementById('contactForm').addEventListener('submit', function(e) {
+            e.preventDefault();
+            
+            // Get form data
+            const formData = new FormData(this);
+            const data = {};
+            for (let [key, value] of formData.entries()) {
+                data[key] = value;
+            }
+            
+            // Show success message
+            alert('Thank you for your interest! We\'ll contact you within 24 hours to schedule your free marketing audit.');
+            
+            // Reset form
+            this.reset();
+        });
+
+        // Animate elements on scroll
+        const observerOptions = {
+            threshold: 0.1,
+            rootMargin: '0px 0px -50px 0px'
+        };
+
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.style.opacity = '1';
+                    entry.target.style.transform = 'translateY(0)';
+                }
+            });
+        }, observerOptions);
+
+        // Observe all sections
+        document.querySelectorAll('section').forEach(section => {
+            section.style.opacity = '0';
+            section.style.transform = 'translateY(20px)';
+            section.style.transition = 'opacity 0.6s ease, transform 0.6s ease';
+            observer.observe(section);
+        });
+
+        // Initialize hero section as visible
+        document.querySelector('.hero').style.opacity = '1';
+        document.querySelector('.hero').style.transform = 'translateY(0)';
+    </script>
+</body>
+</html>
