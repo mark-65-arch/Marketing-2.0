@@ -1041,6 +1041,19 @@
         }
 
         /* Mobile Responsiveness */
+        /* Trust section mobile responsiveness */
+        @media (max-width: 768px) {
+            .trust-grid {
+                grid-template-columns: 1fr !important;
+                gap: 2rem !important;
+                margin-top: 3rem !important;
+            }
+            
+            .trust-item {
+                padding: 2rem !important;
+            }
+        }
+        
         @media (max-width: 768px) {
             .nav-links {
                 display: none;
@@ -1176,6 +1189,16 @@
             }
         }
 
+        @media (max-width: 480px) {
+            .trust-grid {
+                gap: 1.5rem !important;
+            }
+            
+            .trust-item {
+                padding: 1.5rem !important;
+            }
+        }
+        
         @media (max-width: 480px) {
             .container {
                 padding: 0 15px;
@@ -1463,26 +1486,26 @@
             <h2 class="section-title">Why Houston Businesses Choose Marketing AI Houston</h2>
             <p class="section-subtitle">Your local marketing experts serving The Heights, Sugar Land, Katy, The Woodlands, and all of Greater Houston</p>
             
-            <div class="trust-grid" style="grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 3rem; margin-top: 4rem;">
-                <div class="trust-item" style="background: #f8fafc; padding: 2.5rem; border-radius: 20px; transition: transform 0.3s ease; border-left: 4px solid #f97316;" onmouseover="this.style.transform='translateY(-8px)'" onmouseout="this.style.transform='translateY(0)'">
+            <div class="trust-grid" style="display: grid; grid-template-columns: repeat(2, 1fr); gap: 2.5rem; margin-top: 4rem; max-width: 900px; margin-left: auto; margin-right: auto;">
+                <div class="trust-item" style="background: #f8fafc; padding: 2.5rem; border-radius: 20px; transition: transform 0.3s ease; border-left: 4px solid #f97316; height: 100%; display: flex; flex-direction: column;" onmouseover="this.style.transform='translateY(-8px)'" onmouseout="this.style.transform='translateY(0)'">
                     <div style="font-size: 3rem; margin-bottom: 1rem;">🏠</div>
                     <h3 style="color: #1e3a8a; margin-bottom: 1rem; font-size: 1.3rem;">Founded by Local Houston Entrepreneurs</h3>
-                    <p style="color: #666; line-height: 1.6;">Born and raised in Houston with deep understanding of local markets. We know what works in Montrose, Memorial, and the Energy Corridor because we've lived here our whole lives.</p>
+                    <p style="color: #666; line-height: 1.6; flex-grow: 1;">Born and raised in Houston with deep understanding of local markets. We know what works in Montrose, Memorial, and the Energy Corridor because we've lived here our whole lives.</p>
                 </div>
-                <div class="trust-item" style="background: #f8fafc; padding: 2.5rem; border-radius: 20px; transition: transform 0.3s ease; border-left: 4px solid #0891b2;" onmouseover="this.style.transform='translateY(-8px)'" onmouseout="this.style.transform='translateY(0)'">
+                <div class="trust-item" style="background: #f8fafc; padding: 2.5rem; border-radius: 20px; transition: transform 0.3s ease; border-left: 4px solid #0891b2; height: 100%; display: flex; flex-direction: column;" onmouseover="this.style.transform='translateY(-8px)'" onmouseout="this.style.transform='translateY(0)'">
                     <div style="font-size: 3rem; margin-bottom: 1rem;">🎯</div>
                     <h3 style="color: #1e3a8a; margin-bottom: 1rem; font-size: 1.3rem;">Digital Marketing Trained & AI-Powered</h3>
-                    <p style="color: #666; line-height: 1.6;">Google Business Profile certified with extensive digital marketing training, combined with cutting-edge AI technology. We bring 2025 marketing strategies to Houston's growing business community.</p>
+                    <p style="color: #666; line-height: 1.6; flex-grow: 1;">Google Business Profile certified with extensive digital marketing training, combined with cutting-edge AI technology. We bring 2025 marketing strategies to Houston's growing business community.</p>
                 </div>
-                <div class="trust-item" style="background: #f8fafc; padding: 2.5rem; border-radius: 20px; transition: transform 0.3s ease; border-left: 4px solid #f97316;" onmouseover="this.style.transform='translateY(-8px)'" onmouseout="this.style.transform='translateY(0)'">
+                <div class="trust-item" style="background: #f8fafc; padding: 2.5rem; border-radius: 20px; transition: transform 0.3s ease; border-left: 4px solid #f97316; height: 100%; display: flex; flex-direction: column;" onmouseover="this.style.transform='translateY(-8px)'" onmouseout="this.style.transform='translateY(0)'">
                     <div style="font-size: 3rem; margin-bottom: 1rem;">📈</div>
                     <h3 style="color: #1e3a8a; margin-bottom: 1rem; font-size: 1.3rem;">Proven Local Success</h3>
-                    <p style="color: #666; line-height: 1.6;">Fresh approach with time-tested strategies. We understand Houston's competitive market and help businesses from Pearland to The Woodlands get found online.</p>
+                    <p style="color: #666; line-height: 1.6; flex-grow: 1;">Fresh approach with time-tested strategies. We understand Houston's competitive market and help businesses from Pearland to The Woodlands get found online.</p>
                 </div>
-                <div class="trust-item" style="background: #f8fafc; padding: 2.5rem; border-radius: 20px; transition: transform 0.3s ease; border-left: 4px solid #0891b2;" onmouseover="this.style.transform='translateY(-8px)'" onmouseout="this.style.transform='translateY(0)'">
+                <div class="trust-item" style="background: #f8fafc; padding: 2.5rem; border-radius: 20px; transition: transform 0.3s ease; border-left: 4px solid #0891b2; height: 100%; display: flex; flex-direction: column;" onmouseover="this.style.transform='translateY(-8px)'" onmouseout="this.style.transform='translateY(0)'">
                     <div style="font-size: 3rem; margin-bottom: 1rem;">🤝</div>
                     <h3 style="color: #1e3a8a; margin-bottom: 1rem; font-size: 1.3rem;">Personal Service, Not Corporate</h3>
-                    <p style="color: #666; line-height: 1.6;">Direct access to founders, not account managers. Personal service tailored to your Houston business goals with transparent pricing you won't get from big agencies.</p>
+                    <p style="color: #666; line-height: 1.6; flex-grow: 1;">Direct access to founders, not account managers. Personal service tailored to your Houston business goals with transparent pricing you won't get from big agencies.</p>
                 </div>
             </div>
 
