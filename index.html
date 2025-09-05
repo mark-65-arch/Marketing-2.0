@@ -205,9 +205,14 @@
         .hero-content {
             position: relative;
             z-index: 3;
-            max-width: 900px;
-            margin: 0;
-            padding-left: 2rem;
+            max-width: 1000px;
+            margin: 0 auto;
+            display: grid;
+            grid-template-columns: 1fr;
+            gap: 2rem;
+            align-items: center;
+            text-align: center;
+            padding: 0 2rem;
         }
 
         /* Floating Decorative Elements */
@@ -250,9 +255,58 @@
             }
         }
 
-        /* Hero section content spacing */
-        .hero-content {
-            padding-top: 2rem;
+        /* Houston Local Elements */
+        .houston-element {
+            position: absolute;
+            right: 5%;
+            top: 50%;
+            transform: translateY(-50%);
+            opacity: 0.15;
+            z-index: 2;
+            width: 200px;
+            height: 150px;
+        }
+        
+        .houston-badge {
+            background: linear-gradient(135deg, rgba(8, 145, 178, 0.9), rgba(30, 58, 138, 0.8));
+            color: white;
+            padding: 0.8rem 1.5rem;
+            border-radius: 25px;
+            font-size: 0.9rem;
+            font-weight: 700;
+            box-shadow: 0 8px 25px rgba(8, 145, 178, 0.3);
+            backdrop-filter: blur(10px);
+            border: 2px solid rgba(255, 255, 255, 0.2);
+            animation: slideInRight 1.2s ease-out 1.3s both;
+            position: relative;
+            z-index: 4;
+            margin: 1rem auto 0;
+            display: inline-block;
+        }
+        
+        @keyframes slideInRight {
+            from {
+                opacity: 0;
+                transform: translateX(30px);
+            }
+            to {
+                opacity: 1;
+                transform: translateX(0);
+            }
+        }
+        
+        /* Desktop layout for Houston elements */
+        @media (min-width: 1024px) {
+            .hero-content {
+                grid-template-columns: 1fr;
+                text-align: center;
+                position: relative;
+            }
+            
+            .houston-element {
+                display: block;
+                color: rgba(255, 255, 255, 0.3);
+            }
         }
 
         /* Main Headline */
@@ -1030,6 +1084,15 @@
             .hero {
                 padding: 6rem 0;
             }
+            
+            .houston-element {
+                display: none;
+            }
+            
+            .hero-content {
+                text-align: center;
+                padding: 0 1rem;
+            }
 
             .nav-logo-img {
                 height: 38px;
@@ -1252,6 +1315,25 @@
         <div class="container">
             <div class="hero-content">
                 <div class="hero-decoration"></div>
+                
+                <!-- Houston Local Element -->
+                <div class="houston-element">
+                    <svg viewBox="0 0 200 150" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <!-- Simplified Houston Skyline -->
+                        <rect x="10" y="80" width="15" height="60" fill="currentColor" opacity="0.6"/>
+                        <rect x="30" y="70" width="20" height="70" fill="currentColor" opacity="0.7"/>
+                        <rect x="55" y="50" width="18" height="90" fill="currentColor" opacity="0.8"/>
+                        <rect x="78" y="40" width="25" height="100" fill="currentColor" opacity="0.9"/>
+                        <rect x="108" y="60" width="20" height="80" fill="currentColor" opacity="0.7"/>
+                        <rect x="133" y="75" width="15" height="65" fill="currentColor" opacity="0.6"/>
+                        <rect x="153" y="85" width="12" height="55" fill="currentColor" opacity="0.5"/>
+                        <!-- Base line -->
+                        <line x1="0" y1="140" x2="200" y2="140" stroke="currentColor" stroke-width="2" opacity="0.3"/>
+                        <!-- Texas star -->
+                        <polygon points="90,25 95,15 100,25 110,25 102,33 105,43 95,37 85,43 88,33 80,25" fill="#f97316" opacity="0.8"/>
+                    </svg>
+                </div>
+                
                 <!-- Main Headline -->
                 <h2 class="hero-headline">Get <span class="highlight">More</span> Customers for Your Houston Business</h2>
                 
@@ -1262,7 +1344,7 @@
                 <p class="hero-supporting">Built to serve local businesses</p>
                 
                 <!-- Enhanced CTA Banner -->
-                <div style="background: linear-gradient(135deg, rgba(255, 255, 255, 0.15), rgba(8, 145, 178, 0.1)); color: white; padding: 2rem; border-radius: 20px; margin: 2rem 0; max-width: 420px; box-shadow: 0 20px 50px rgba(0, 0, 0, 0.2); animation: slideInLeft 1.2s ease-out 0.9s both; position: relative; border: 2px solid rgba(255, 255, 255, 0.25); backdrop-filter: blur(15px);">
+                <div style="background: linear-gradient(135deg, rgba(255, 255, 255, 0.15), rgba(8, 145, 178, 0.1)); color: white; padding: 2rem; border-radius: 20px; margin: 2rem auto; max-width: 420px; box-shadow: 0 20px 50px rgba(0, 0, 0, 0.2); animation: slideInUp 1.2s ease-out 0.9s both; position: relative; border: 2px solid rgba(255, 255, 255, 0.25); backdrop-filter: blur(15px);">
                     <!-- Striking Price Display -->
                     <div style="text-align: center; margin-bottom: 1.5rem;">
                         <span style="font-size: 2.2rem; font-weight: 900; text-decoration: line-through; color: rgba(255, 255, 255, 0.7); margin-right: 0.8rem;">$500</span>
@@ -1282,6 +1364,11 @@
                     
                     <!-- Brand Color Pulse Ring -->
                     <div style="position: absolute; top: -8px; left: -8px; right: -8px; bottom: -8px; border: 2px solid #fbbf24; border-radius: 25px; animation: pulse-ring 2s ease-in-out infinite;"></div>
+                </div>
+                
+                <!-- Houston Local Badge -->
+                <div class="houston-badge">
+                    ⭐ Serving Greater Houston Since 2020
                 </div>
                 
                 <!-- Trust Line -->
