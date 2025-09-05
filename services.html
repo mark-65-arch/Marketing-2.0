@@ -1,0 +1,1162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Complete Digital Marketing Services - Marketing AI Houston</title>
+    <meta name="description" content="Comprehensive digital marketing services for Houston businesses. AI-powered solutions including SEO, website design, lead generation, and more.">
+    <meta name="keywords" content="Houston digital marketing services, AI marketing, SEO Houston, website design Houston, lead generation">
+    <meta property="og:title" content="Complete Digital Marketing Services - Marketing AI Houston">
+    <meta property="og:description" content="AI-powered digital marketing solutions designed specifically for Houston businesses.">
+    <meta property="og:url" content="https://marketingaihouston.com/services">
+    <meta property="og:type" content="website">
+    
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            overflow-x: hidden;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+
+        /* Header & Navigation - Same as homepage */
+        header {
+            position: fixed;
+            top: 0;
+            width: 100%;
+            background: rgba(255, 255, 255, 0.95);
+            backdrop-filter: blur(15px);
+            z-index: 1000;
+            transition: all 0.4s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+            border-bottom: 1px solid rgba(30, 58, 138, 0.1);
+            box-shadow: 0 4px 20px rgba(30, 58, 138, 0.1);
+        }
+
+        header.scrolled {
+            background: rgba(255, 255, 255, 0.98);
+            box-shadow: 0 8px 32px rgba(30, 58, 138, 0.15);
+            border-bottom: 1px solid rgba(30, 58, 138, 0.15);
+        }
+
+        nav {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 1.2rem 0;
+        }
+
+        .logo {
+            text-decoration: none;
+            transition: all 0.3s ease;
+            position: relative;
+            display: block;
+        }
+
+        .nav-logo-img {
+            height: 45px;
+            width: auto;
+            transition: all 0.3s ease;
+            filter: drop-shadow(0 2px 8px rgba(0, 0, 0, 0.2));
+        }
+
+        .logo:hover .nav-logo-img {
+            transform: scale(1.05);
+            filter: drop-shadow(0 4px 12px rgba(255, 255, 255, 0.3));
+        }
+
+        .nav-links {
+            display: flex;
+            list-style: none;
+            gap: 2.5rem;
+        }
+
+        .nav-links a {
+            color: #1e3a8a;
+            text-decoration: none;
+            font-weight: 600;
+            font-size: 1.05rem;
+            transition: all 0.3s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+            padding: 0.5rem 1rem;
+            border-radius: 8px;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .nav-links a.active {
+            color: #0891b2;
+            background: rgba(8, 145, 178, 0.15);
+        }
+
+        .nav-links a:hover {
+            color: #0891b2;
+            background: rgba(8, 145, 178, 0.15);
+            transform: translateY(-2px);
+            box-shadow: 0 4px 15px rgba(8, 145, 178, 0.2);
+        }
+
+        .mobile-menu {
+            display: none;
+            flex-direction: column;
+            cursor: pointer;
+            padding: 0.5rem;
+            border-radius: 8px;
+            transition: all 0.3s ease;
+        }
+
+        .mobile-menu span {
+            width: 28px;
+            height: 3px;
+            background: #1e3a8a;
+            margin: 4px 0;
+            transition: all 0.3s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+            border-radius: 2px;
+        }
+
+        /* Page Header */
+        .page-header {
+            background: linear-gradient(135deg, #1e3a8a 0%, #0891b2 50%, #1e3a8a 100%);
+            color: white;
+            padding: 10rem 0 6rem 0;
+            text-align: center;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .page-header::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: 
+                radial-gradient(circle at 20% 80%, rgba(8, 145, 178, 0.3) 0%, transparent 30%),
+                radial-gradient(circle at 80% 20%, rgba(30, 58, 138, 0.4) 0%, transparent 30%);
+            z-index: 1;
+        }
+
+        .page-header-content {
+            position: relative;
+            z-index: 2;
+        }
+
+        .breadcrumb {
+            font-size: 1rem;
+            margin-bottom: 1.5rem;
+            opacity: 0.8;
+        }
+
+        .breadcrumb a {
+            color: rgba(255, 255, 255, 0.8);
+            text-decoration: none;
+            transition: color 0.3s ease;
+        }
+
+        .breadcrumb a:hover {
+            color: #fbbf24;
+        }
+
+        .page-title {
+            font-size: 4rem;
+            font-weight: 900;
+            margin-bottom: 1.5rem;
+            line-height: 1.1;
+            text-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
+        }
+
+        .page-subtitle {
+            font-size: 1.5rem;
+            font-weight: 500;
+            opacity: 0.9;
+            max-width: 800px;
+            margin: 0 auto;
+        }
+
+        /* Section Styles */
+        .section {
+            padding: 6rem 0;
+        }
+
+        .section-title {
+            text-align: center;
+            font-size: 3.2rem;
+            font-weight: 900;
+            margin-bottom: 1.5rem;
+            color: #1e3a8a;
+            line-height: 1.1;
+        }
+
+        .section-subtitle {
+            text-align: center;
+            font-size: 1.3rem;
+            color: #64748b;
+            margin-bottom: 4rem;
+            font-weight: 500;
+            max-width: 800px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        /* AI Approach Section */
+        .ai-approach {
+            background: #f8fafc;
+        }
+
+        .comparison-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 3rem;
+            margin: 4rem 0;
+        }
+
+        .comparison-card {
+            background: white;
+            padding: 3rem;
+            border-radius: 20px;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
+            transition: transform 0.3s ease;
+            position: relative;
+        }
+
+        .comparison-card:hover {
+            transform: translateY(-5px);
+        }
+
+        .comparison-card.traditional {
+            border-left: 4px solid #ef4444;
+        }
+
+        .comparison-card.ai-powered {
+            border-left: 4px solid #0891b2;
+        }
+
+        .comparison-card h3 {
+            font-size: 1.8rem;
+            font-weight: 700;
+            margin-bottom: 1.5rem;
+        }
+
+        .comparison-card.traditional h3 {
+            color: #ef4444;
+        }
+
+        .comparison-card.ai-powered h3 {
+            color: #0891b2;
+        }
+
+        .comparison-list {
+            list-style: none;
+        }
+
+        .comparison-list li {
+            padding: 0.75rem 0;
+            display: flex;
+            align-items: flex-start;
+            gap: 1rem;
+        }
+
+        .comparison-list li::before {
+            content: '✗';
+            color: #ef4444;
+            font-weight: 800;
+            font-size: 1.2rem;
+        }
+
+        .ai-powered .comparison-list li::before {
+            content: '✓';
+            color: #0891b2;
+        }
+
+        /* Package Details */
+        .package-details {
+            background: white;
+        }
+
+        .packages-detailed {
+            display: flex;
+            flex-direction: column;
+            gap: 4rem;
+            margin: 4rem 0;
+        }
+
+        .package-detail {
+            background: #f8fafc;
+            border-radius: 20px;
+            padding: 3rem;
+            position: relative;
+            border: 2px solid rgba(30, 58, 138, 0.1);
+        }
+
+        .package-detail::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            height: 6px;
+            background: linear-gradient(90deg, #1e3a8a, #0891b2);
+            border-radius: 20px 20px 0 0;
+        }
+
+        .package-detail.featured {
+            border: 3px solid #0891b2;
+            background: linear-gradient(135deg, #f8fafc, #ffffff);
+        }
+
+        .package-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-start;
+            margin-bottom: 2rem;
+        }
+
+        .package-title {
+            font-size: 2.2rem;
+            font-weight: 800;
+            color: #1e3a8a;
+            margin-bottom: 0.5rem;
+        }
+
+        .package-price {
+            font-size: 2.5rem;
+            font-weight: 900;
+            color: #0891b2;
+            text-align: right;
+        }
+
+        .package-content {
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr;
+            gap: 2.5rem;
+            margin: 2rem 0;
+        }
+
+        .package-section h4 {
+            font-size: 1.3rem;
+            font-weight: 700;
+            color: #1e3a8a;
+            margin-bottom: 1rem;
+            border-bottom: 2px solid #0891b2;
+            padding-bottom: 0.5rem;
+        }
+
+        .package-section ul {
+            list-style: none;
+        }
+
+        .package-section li {
+            padding: 0.5rem 0;
+            display: flex;
+            align-items: flex-start;
+            gap: 0.75rem;
+        }
+
+        .package-section li::before {
+            content: '•';
+            color: #0891b2;
+            font-weight: 800;
+            font-size: 1.5rem;
+        }
+
+        /* Process Overview */
+        .process {
+            background: linear-gradient(135deg, #1e3a8a 0%, #0891b2 100%);
+            color: white;
+        }
+
+        .process-steps {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 2rem;
+            margin: 4rem 0;
+        }
+
+        .process-step {
+            background: rgba(255, 255, 255, 0.1);
+            padding: 2.5rem;
+            border-radius: 20px;
+            backdrop-filter: blur(10px);
+            border: 1px solid rgba(255, 255, 255, 0.2);
+            transition: transform 0.3s ease;
+        }
+
+        .process-step:hover {
+            transform: translateY(-5px);
+        }
+
+        .step-number {
+            background: linear-gradient(45deg, #f97316, #0891b2);
+            color: white;
+            width: 60px;
+            height: 60px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 1.5rem;
+            font-weight: 800;
+            margin-bottom: 1.5rem;
+        }
+
+        .step-title {
+            font-size: 1.6rem;
+            font-weight: 700;
+            margin-bottom: 1rem;
+        }
+
+        .step-description {
+            font-size: 1.1rem;
+            opacity: 0.9;
+            line-height: 1.6;
+        }
+
+        /* Industry Focus */
+        .industry-focus {
+            background: #f1f5f9;
+        }
+
+        .industry-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 2rem;
+            margin: 4rem 0;
+        }
+
+        .industry-card {
+            background: white;
+            padding: 2.5rem;
+            border-radius: 15px;
+            text-align: center;
+            box-shadow: 0 8px 25px rgba(0, 0, 0, 0.08);
+            transition: all 0.3s ease;
+            border-top: 4px solid #0891b2;
+        }
+
+        .industry-card:hover {
+            transform: translateY(-8px);
+            box-shadow: 0 15px 40px rgba(0, 0, 0, 0.15);
+        }
+
+        .industry-icon {
+            font-size: 3rem;
+            margin-bottom: 1rem;
+        }
+
+        .industry-title {
+            font-size: 1.4rem;
+            font-weight: 700;
+            color: #1e3a8a;
+            margin-bottom: 1rem;
+        }
+
+        .industry-description {
+            color: #64748b;
+            line-height: 1.6;
+        }
+
+        /* FAQ Section */
+        .faq {
+            background: white;
+        }
+
+        .faq-container {
+            max-width: 900px;
+            margin: 0 auto;
+        }
+
+        .faq-item {
+            background: #f8fafc;
+            border-radius: 15px;
+            margin-bottom: 1.5rem;
+            overflow: hidden;
+            border: 1px solid rgba(30, 58, 138, 0.1);
+        }
+
+        .faq-question {
+            background: none;
+            border: none;
+            width: 100%;
+            padding: 2rem;
+            text-align: left;
+            font-size: 1.3rem;
+            font-weight: 700;
+            color: #1e3a8a;
+            cursor: pointer;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            transition: background 0.3s ease;
+        }
+
+        .faq-question:hover {
+            background: rgba(8, 145, 178, 0.05);
+        }
+
+        .faq-answer {
+            padding: 0 2rem 2rem 2rem;
+            color: #64748b;
+            line-height: 1.6;
+            font-size: 1.1rem;
+        }
+
+        .faq-toggle {
+            font-size: 1.5rem;
+            font-weight: 300;
+            transition: transform 0.3s ease;
+        }
+
+        /* CTA Section */
+        .final-cta {
+            background: linear-gradient(135deg, #1e3a8a 0%, #0891b2 100%);
+            color: white;
+            text-align: center;
+        }
+
+        .cta-content {
+            max-width: 800px;
+            margin: 0 auto;
+        }
+
+        .cta-title {
+            font-size: 3.5rem;
+            font-weight: 900;
+            margin-bottom: 1.5rem;
+            text-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+        }
+
+        .cta-subtitle {
+            font-size: 1.4rem;
+            margin-bottom: 3rem;
+            opacity: 0.9;
+        }
+
+        .cta-buttons {
+            display: flex;
+            gap: 2rem;
+            justify-content: center;
+            flex-wrap: wrap;
+        }
+
+        .cta-button {
+            display: inline-block;
+            background: linear-gradient(45deg, #f97316, #0891b2);
+            color: white;
+            padding: 1.5rem 3rem;
+            border-radius: 50px;
+            text-decoration: none;
+            font-weight: 700;
+            font-size: 1.2rem;
+            transition: all 0.3s ease;
+            box-shadow: 0 15px 40px rgba(249, 115, 22, 0.3);
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+            border: 2px solid rgba(255, 255, 255, 0.1);
+        }
+
+        .cta-button:hover {
+            transform: translateY(-4px) scale(1.05);
+            box-shadow: 0 25px 60px rgba(249, 115, 22, 0.4);
+        }
+
+        .cta-button.secondary {
+            background: transparent;
+            border: 3px solid white;
+        }
+
+        .cta-button.secondary:hover {
+            background: white;
+            color: #1e3a8a;
+        }
+
+        .contact-info {
+            margin-top: 3rem;
+            padding-top: 2rem;
+            border-top: 1px solid rgba(255, 255, 255, 0.2);
+        }
+
+        .phone-number {
+            font-size: 2rem;
+            font-weight: 700;
+            color: #fbbf24;
+            margin-bottom: 0.5rem;
+        }
+
+        /* Mobile Responsiveness */
+        @media (max-width: 768px) {
+            .nav-links {
+                display: none;
+                position: absolute;
+                top: 100%;
+                left: 0;
+                right: 0;
+                background: rgba(255, 255, 255, 0.98);
+                border-top: 1px solid rgba(30, 58, 138, 0.1);
+                flex-direction: column;
+                padding: 2rem;
+                gap: 1rem;
+                backdrop-filter: blur(20px);
+                border-radius: 0 0 20px 20px;
+            }
+
+            .nav-links.active {
+                display: flex;
+            }
+
+            .mobile-menu {
+                display: flex;
+            }
+
+            .page-header {
+                padding: 8rem 0 4rem 0;
+            }
+
+            .page-title {
+                font-size: 2.5rem;
+            }
+
+            .comparison-grid {
+                grid-template-columns: 1fr;
+                gap: 2rem;
+            }
+
+            .package-content {
+                grid-template-columns: 1fr;
+                gap: 2rem;
+            }
+
+            .process-steps {
+                grid-template-columns: 1fr;
+                gap: 1.5rem;
+            }
+
+            .industry-grid {
+                grid-template-columns: 1fr;
+                gap: 1.5rem;
+            }
+
+            .cta-buttons {
+                flex-direction: column;
+                gap: 1rem;
+            }
+
+            .cta-title {
+                font-size: 2.5rem;
+            }
+
+            .section-title {
+                font-size: 2.2rem;
+            }
+        }
+
+        @media (max-width: 480px) {
+            .container {
+                padding: 0 15px;
+            }
+
+            .page-title {
+                font-size: 2rem;
+            }
+
+            .package-detail {
+                padding: 2rem;
+            }
+
+            .package-header {
+                flex-direction: column;
+                gap: 1rem;
+            }
+
+            .cta-button {
+                padding: 1.2rem 2rem;
+                font-size: 1rem;
+            }
+        }
+
+        /* Animation for FAQ toggle */
+        .faq-item.open .faq-toggle {
+            transform: rotate(45deg);
+        }
+
+        /* Scroll animations */
+        .fade-in {
+            opacity: 0;
+            transform: translateY(30px);
+            transition: all 0.8s ease;
+        }
+
+        .fade-in.visible {
+            opacity: 1;
+            transform: translateY(0);
+        }
+    </style>
+</head>
+<body>
+    <!-- Header -->
+    <header id="header">
+        <nav class="container">
+            <a href="index.html" class="logo">
+                <img src="logo.png" alt="Marketing AI Houston" class="nav-logo-img">
+            </a>
+            <ul class="nav-links" id="navLinks">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="services.html" class="active">Services</a></li>
+                <li><a href="index.html#about">About</a></li>
+                <li><a href="index.html#testimonials">Reviews</a></li>
+                <li><a href="index.html#contact">Contact</a></li>
+            </ul>
+            <div class="mobile-menu" id="mobileMenu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Page Header -->
+    <section class="page-header">
+        <div class="container">
+            <div class="page-header-content">
+                <div class="breadcrumb">
+                    <a href="index.html">Home</a> > Services
+                </div>
+                <h1 class="page-title">Complete Digital Marketing Services for Houston Businesses</h1>
+                <p class="page-subtitle">AI-powered solutions designed specifically for local businesses</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- AI-Powered Approach -->
+    <section class="section ai-approach">
+        <div class="container">
+            <h2 class="section-title">Why AI-Powered Marketing Works Better</h2>
+            <p class="section-subtitle">Traditional marketing agencies use outdated methods. We use artificial intelligence to deliver faster, more accurate, and cost-effective results.</p>
+            
+            <div class="comparison-grid">
+                <div class="comparison-card traditional">
+                    <h3>❌ Traditional Marketing Agencies</h3>
+                    <ul class="comparison-list">
+                        <li>Manual research takes weeks</li>
+                        <li>Guesswork-based strategies</li>
+                        <li>Slow to adapt to market changes</li>
+                        <li>High overhead costs passed to you</li>
+                        <li>Generic solutions for every business</li>
+                        <li>Limited reporting and insights</li>
+                        <li>Require long-term contracts</li>
+                    </ul>
+                </div>
+                
+                <div class="comparison-card ai-powered">
+                    <h3>✅ Our AI-Powered Approach</h3>
+                    <ul class="comparison-list">
+                        <li>AI analyzes market data in hours</li>
+                        <li>Data-driven decision making</li>
+                        <li>Real-time optimization and adjustments</li>
+                        <li>Efficient processes = lower costs</li>
+                        <li>Customized strategies for your industry</li>
+                        <li>Advanced analytics and reporting</li>
+                        <li>Flexible, project-based pricing</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Detailed Package Breakdown -->
+    <section class="section package-details">
+        <div class="container">
+            <h2 class="section-title">Our Growth Packages in Detail</h2>
+            <p class="section-subtitle">Choose the package that fits your business needs and budget</p>
+            
+            <div class="packages-detailed">
+                <!-- Package 1: Get Found Online -->
+                <div class="package-detail">
+                    <div class="package-header">
+                        <div>
+                            <h3 class="package-title">Get Found Online Package</h3>
+                            <p style="color: #64748b; font-size: 1.1rem;">Perfect for new businesses or those without an online presence</p>
+                        </div>
+                        <div class="package-price">$599</div>
+                    </div>
+                    
+                    <div class="package-content">
+                        <div class="package-section">
+                            <h4>What's Included</h4>
+                            <ul>
+                                <li>5-page professional website</li>
+                                <li>Mobile-responsive design</li>
+                                <li>Google Business Profile setup</li>
+                                <li>Basic local SEO optimization</li>
+                                <li>Contact forms and call tracking</li>
+                                <li>30-day support included</li>
+                            </ul>
+                        </div>
+                        
+                        <div class="package-section">
+                            <h4>Perfect For</h4>
+                            <ul>
+                                <li>New Houston businesses</li>
+                                <li>Service-based companies</li>
+                                <li>Businesses with no website</li>
+                                <li>Budget-conscious startups</li>
+                                <li>Local contractors</li>
+                                <li>Professional services</li>
+                            </ul>
+                        </div>
+                        
+                        <div class="package-section">
+                            <h4>Timeline & Outcomes</h4>
+                            <ul>
+                                <li><strong>Week 1:</strong> Strategy & design</li>
+                                <li><strong>Week 2-3:</strong> Development & content</li>
+                                <li><strong>Week 4:</strong> Launch & optimization</li>
+                                <li><strong>Expected:</strong> Online presence established</li>
+                                <li><strong>Goal:</strong> Appear in local searches</li>
+                                <li><strong>Benefit:</strong> Professional credibility</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Package 2: Get More Customers -->
+                <div class="package-detail featured">
+                    <div class="package-header">
+                        <div>
+                            <h3 class="package-title">Get More Customers Package</h3>
+                            <p style="color: #64748b; font-size: 1.1rem;">Most popular - ideal for businesses ready to grow their customer base</p>
+                            <div style="background: #0891b2; color: white; padding: 0.5rem 1rem; border-radius: 20px; font-size: 0.9rem; font-weight: 600; display: inline-block; margin-top: 0.5rem;">✨ Most Popular</div>
+                        </div>
+                        <div class="package-price">$1,199</div>
+                    </div>
+                    
+                    <div class="package-content">
+                        <div class="package-section">
+                            <h4>What's Included</h4>
+                            <ul>
+                                <li>8-page conversion-optimized website</li>
+                                <li>Advanced lead capture system</li>
+                                <li>Review management setup</li>
+                                <li>Social media integration</li>
+                                <li>Email marketing automation</li>
+                                <li>Advanced local SEO</li>
+                                <li>90-day support included</li>
+                            </ul>
+                        </div>
+                        
+                        <div class="package-section">
+                            <h4>Perfect For</h4>
+                            <ul>
+                                <li>Established Houston businesses</li>
+                                <li>Companies needing more leads</li>
+                                <li>Service businesses with capacity</li>
+                                <li>Businesses with 2+ years experience</li>
+                                <li>Multiple service offerings</li>
+                                <li>Ready to scale operations</li>
+                            </ul>
+                        </div>
+                        
+                        <div class="package-section">
+                            <h4>Timeline & Outcomes</h4>
+                            <ul>
+                                <li><strong>Week 1-2:</strong> Strategy & competitive analysis</li>
+                                <li><strong>Week 3-4:</strong> Website & system development</li>
+                                <li><strong>Week 5-6:</strong> Testing & optimization</li>
+                                <li><strong>Expected:</strong> 3-5x more qualified leads</li>
+                                <li><strong>Goal:</strong> Dominate local search results</li>
+                                <li><strong>Benefit:</strong> Automated lead generation</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Package 3: Dominate Your Market -->
+                <div class="package-detail">
+                    <div class="package-header">
+                        <div>
+                            <h3 class="package-title">Dominate Your Market Package</h3>
+                            <p style="color: #64748b; font-size: 1.1rem;">Enterprise-level solution for businesses ready to lead their industry</p>
+                            <div style="background: #f97316; color: white; padding: 0.5rem 1rem; border-radius: 20px; font-size: 0.9rem; font-weight: 600; display: inline-block; margin-top: 0.5rem;">💰 Best Value</div>
+                        </div>
+                        <div class="package-price">Starting at $2,199</div>
+                    </div>
+                    
+                    <div class="package-content">
+                        <div class="package-section">
+                            <h4>What's Included</h4>
+                            <ul>
+                                <li>Up to 15 pages + custom features</li>
+                                <li>Advanced automation tools</li>
+                                <li>Competitive analysis report</li>
+                                <li>Multi-location optimization</li>
+                                <li>Advanced analytics dashboard</li>
+                                <li>Custom integrations</li>
+                                <li>Priority support for 6 months</li>
+                            </ul>
+                        </div>
+                        
+                        <div class="package-section">
+                            <h4>Perfect For</h4>
+                            <ul>
+                                <li>Market-leading Houston businesses</li>
+                                <li>Multiple locations/franchises</li>
+                                <li>High-revenue companies</li>
+                                <li>Complex service offerings</li>
+                                <li>Competitive industries</li>
+                                <li>Serious about digital dominance</li>
+                            </ul>
+                        </div>
+                        
+                        <div class="package-section">
+                            <h4>Timeline & Outcomes</h4>
+                            <ul>
+                                <li><strong>Week 1-3:</strong> Comprehensive analysis</li>
+                                <li><strong>Week 4-8:</strong> Custom development</li>
+                                <li><strong>Week 9-12:</strong> Testing & launch</li>
+                                <li><strong>Expected:</strong> Market leadership position</li>
+                                <li><strong>Goal:</strong> Outrank all competitors</li>
+                                <li><strong>Benefit:</strong> Complete digital ecosystem</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <p style="font-size: 0.9rem; color: #666; font-style: italic; margin-top: 1.5rem; padding-top: 1rem; border-top: 1px solid #e2e8f0;">Additional pages available at $150 each. Custom features quoted separately.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Process Overview -->
+    <section class="section process">
+        <div class="container">
+            <h2 class="section-title" style="color: white;">Our Proven 4-Step Process</h2>
+            <p class="section-subtitle" style="color: rgba(255, 255, 255, 0.9);">From initial consultation to ongoing success, here's exactly how we transform your business</p>
+            
+            <div class="process-steps">
+                <div class="process-step">
+                    <div class="step-number">1</div>
+                    <h3 class="step-title">Free Strategy Session & Website Audit</h3>
+                    <p class="step-description">We analyze your current online presence, identify opportunities, and create a custom growth strategy. This comprehensive audit reveals exactly what's holding your business back and how to fix it.</p>
+                </div>
+                
+                <div class="process-step">
+                    <div class="step-number">2</div>
+                    <h3 class="step-title">AI-Powered Plan Development</h3>
+                    <p class="step-description">Using advanced AI tools, we research your competition, analyze market trends, and develop a data-driven marketing plan specifically designed for your Houston market and industry.</p>
+                </div>
+                
+                <div class="process-step">
+                    <div class="step-number">3</div>
+                    <h3 class="step-title">Implementation Using Advanced Tools</h3>
+                    <p class="step-description">Our team implements your custom solution using cutting-edge technology. Every element is optimized for Houston search patterns and designed to convert visitors into customers.</p>
+                </div>
+                
+                <div class="process-step">
+                    <div class="step-number">4</div>
+                    <h3 class="step-title">Monitoring, Optimization & Reporting</h3>
+                    <p class="step-description">We continuously monitor performance, make data-driven optimizations, and provide detailed reports showing your return on investment and growth metrics.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Industry Focus -->
+    <section class="section industry-focus">
+        <div class="container">
+            <h2 class="section-title">Specialized Solutions for Houston Industries</h2>
+            <p class="section-subtitle">We understand the unique challenges of Houston's key industries and create tailored strategies for each</p>
+            
+            <div class="industry-grid">
+                <div class="industry-card">
+                    <div class="industry-icon">🔧</div>
+                    <h3 class="industry-title">HVAC & Plumbing</h3>
+                    <p class="industry-description">Emergency call optimization, seasonal campaign management, and Google Ads for high-intent searches. Perfect for Houston's climate demands.</p>
+                </div>
+                
+                <div class="industry-card">
+                    <div class="industry-icon">🍽️</div>
+                    <h3 class="industry-title">Restaurants & Food Service</h3>
+                    <p class="industry-description">Online ordering integration, review management, social media marketing, and local discovery optimization for Houston's competitive food scene.</p>
+                </div>
+                
+                <div class="industry-card">
+                    <div class="industry-icon">🏥</div>
+                    <h3 class="industry-title">Medical & Healthcare</h3>
+                    <p class="industry-description">HIPAA-compliant patient portals, appointment scheduling, reputation management, and specialized medical SEO for Houston healthcare providers.</p>
+                </div>
+                
+                <div class="industry-card">
+                    <div class="industry-icon">🏠</div>
+                    <h3 class="industry-title">Real Estate & Construction</h3>
+                    <p class="industry-description">Property showcase websites, lead capture systems, market analysis tools, and local SEO for Houston's booming real estate market.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ Section -->
+    <section class="section faq">
+        <div class="container">
+            <h2 class="section-title">Frequently Asked Questions</h2>
+            <p class="section-subtitle">Get answers to the most common questions about our AI-powered marketing services</p>
+            
+            <div class="faq-container">
+                <div class="faq-item">
+                    <button class="faq-question">
+                        How long does it take to see results?
+                        <span class="faq-toggle">+</span>
+                    </button>
+                    <div class="faq-answer">
+                        Most Houston businesses start seeing improved online visibility within 2-4 weeks. For lead generation and conversion improvements, expect significant results within 30-60 days. SEO improvements typically show substantial growth within 90 days. We provide detailed weekly reports so you can track progress every step of the way.
+                    </div>
+                </div>
+                
+                <div class="faq-item">
+                    <button class="faq-question">
+                        Do you work with businesses outside Houston?
+                        <span class="faq-toggle">+</span>
+                    </button>
+                    <div class="faq-answer">
+                        While we specialize in Houston and surrounding areas (The Woodlands, Sugar Land, Katy, Pearland), we do work with Texas businesses statewide. Our deep Houston market knowledge gives us an advantage, but our AI-powered tools and strategies work effectively for businesses throughout Texas.
+                    </div>
+                </div>
+                
+                <div class="faq-item">
+                    <button class="faq-question">
+                        What if I need changes or updates after launch?
+                        <span class="faq-toggle">+</span>
+                    </button>
+                    <div class="faq-answer">
+                        All packages include support periods (30-180 days depending on package). During this time, we handle updates, fixes, and minor changes at no extra cost. After the support period, we offer flexible maintenance plans starting at $150/month, or you can request changes on a project basis.
+                    </div>
+                </div>
+                
+                <div class="faq-item">
+                    <button class="faq-question">
+                        Can I upgrade to a larger package later?
+                        <span class="faq-toggle">+</span>
+                    </button>
+                    <div class="faq-answer">
+                        Absolutely! We designed our packages to grow with your business. You can upgrade at any time and we'll credit your previous investment toward the larger package. Many clients start with "Get Found Online" and upgrade to "Get More Customers" as their business grows.
+                    </div>
+                </div>
+                
+                <div class="faq-item">
+                    <button class="faq-question">
+                        What makes AI-powered marketing different from traditional marketing?
+                        <span class="faq-toggle">+</span>
+                    </button>
+                    <div class="faq-answer">
+                        AI-powered marketing uses machine learning to analyze massive amounts of data, identify patterns, and make predictions that humans simply can't match. This means faster research, more accurate targeting, real-time optimization, and better ROI. Instead of guessing what works, AI shows us what actually works for your specific market and industry.
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Final CTA -->
+    <section class="section final-cta">
+        <div class="container">
+            <div class="cta-content">
+                <h2 class="cta-title">Ready to Transform Your Business?</h2>
+                <p class="cta-subtitle">Join the growing number of Houston businesses using AI-powered marketing to dominate their local market</p>
+                
+                <div class="cta-buttons">
+                    <a href="index.html#contact" class="cta-button">Get Your Free Strategy Session</a>
+                    <a href="tel:+1-713-555-0199" class="cta-button secondary">Call Now</a>
+                </div>
+                
+                <div class="contact-info">
+                    <div class="phone-number">(713) 555-0199</div>
+                    <p style="opacity: 0.9;">Free consultation • No long-term contracts • Houston local experts</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- JavaScript -->
+    <script>
+        // Mobile menu toggle
+        const mobileMenu = document.getElementById('mobileMenu');
+        const navLinks = document.getElementById('navLinks');
+
+        mobileMenu.addEventListener('click', () => {
+            mobileMenu.classList.toggle('active');
+            navLinks.classList.toggle('active');
+        });
+
+        // Header scroll effect
+        window.addEventListener('scroll', () => {
+            const header = document.getElementById('header');
+            if (window.scrollY > 100) {
+                header.classList.add('scrolled');
+            } else {
+                header.classList.remove('scrolled');
+            }
+        });
+
+        // FAQ toggle functionality
+        document.querySelectorAll('.faq-question').forEach(question => {
+            question.addEventListener('click', () => {
+                const faqItem = question.parentElement;
+                const isOpen = faqItem.classList.contains('open');
+                
+                // Close all other FAQ items
+                document.querySelectorAll('.faq-item').forEach(item => {
+                    item.classList.remove('open');
+                    item.querySelector('.faq-answer').style.display = 'none';
+                });
+                
+                // Toggle current FAQ item
+                if (!isOpen) {
+                    faqItem.classList.add('open');
+                    faqItem.querySelector('.faq-answer').style.display = 'block';
+                }
+            });
+        });
+
+        // Smooth scrolling for anchor links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+                if (target) {
+                    target.scrollIntoView({
+                        behavior: 'smooth',
+                        block: 'start'
+                    });
+                }
+            });
+        });
+
+        // Intersection Observer for animations
+        const observerOptions = {
+            threshold: 0.1,
+            rootMargin: '0px 0px -50px 0px'
+        };
+
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('visible');
+                }
+            });
+        }, observerOptions);
+
+        // Observe elements for animation
+        document.querySelectorAll('.package-detail, .process-step, .industry-card, .faq-item').forEach(el => {
+            el.classList.add('fade-in');
+            observer.observe(el);
+        });
+    </script>
+</body>
+</html>
