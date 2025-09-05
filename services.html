@@ -939,9 +939,65 @@
                 border-bottom: none;
             }
 
+            .packages-detailed {
+                gap: 3rem;
+                margin: 3rem 0;
+                padding: 0 1rem;
+            }
+
+            .package-detail {
+                padding: 3rem 2.5rem;
+                margin-bottom: 2rem;
+                border-radius: 20px;
+            }
+
+            .package-header {
+                margin-bottom: 2.5rem;
+                padding-bottom: 2rem;
+                gap: 1.5rem;
+            }
+
+            .package-title {
+                font-size: 1.8rem;
+                margin-bottom: 1rem;
+                line-height: 1.3;
+            }
+
+            .package-price {
+                font-size: 2rem;
+                margin-top: 1rem;
+            }
+
             .package-content {
                 grid-template-columns: 1fr;
-                gap: 2rem;
+                gap: 2.5rem;
+                margin: 2rem 0;
+            }
+
+            .package-section {
+                margin-bottom: 1.5rem;
+            }
+
+            .package-section h4 {
+                font-size: 1.2rem;
+                margin-bottom: 1.8rem;
+                padding-bottom: 1rem;
+            }
+
+            .package-section ul {
+                margin-top: 1rem;
+            }
+
+            .package-section li {
+                padding: 1rem 0;
+                gap: 1.2rem;
+                line-height: 1.7;
+                font-size: 1rem;
+            }
+
+            .package-section li::before {
+                font-size: 1.1rem;
+                margin-top: 0.2rem;
             }
 
             .process-steps {
@@ -990,14 +1046,29 @@
                 font-size: 1.1rem;
                 width: 1.4rem;
             }
+
+            .packages-detailed {
+                gap: 3.5rem;
+                padding: 0 0.8rem;
+            }
+
+            .package-detail {
+                padding: 3.2rem 2.8rem;
+            }
+
+            .package-header {
+                margin-bottom: 2.8rem;
+                padding-bottom: 2.2rem;
+            }
+
+            .package-section li {
+                padding: 0.9rem 0;
+                gap: 1.1rem;
+                font-size: 1rem;
+            }
         }
 
         @media (max-width: 768px) {
-            .package-content {
-                grid-template-columns: 1fr;
-                gap: 2rem;
-            }
-
             .process-steps {
                 grid-template-columns: 1fr;
                 gap: 2rem;
@@ -1077,13 +1148,79 @@
                 padding: 0 0.5rem;
             }
 
+            .packages-detailed {
+                gap: 2.5rem;
+                margin: 2rem 0;
+                padding: 0 0.5rem;
+            }
+
             .package-detail {
-                padding: 2rem;
+                padding: 2.5rem 2rem;
+                margin-bottom: 1.5rem;
+                border-radius: 18px;
             }
 
             .package-header {
                 flex-direction: column;
+                gap: 1.5rem;
+                margin-bottom: 2rem;
+                padding-bottom: 1.5rem;
+                text-align: center;
+            }
+
+            .package-title {
+                font-size: 1.4rem;
+                margin-bottom: 0.8rem;
+                line-height: 1.2;
+            }
+
+            .package-price {
+                font-size: 1.8rem;
+                margin-top: 0.5rem;
+            }
+
+            .package-content {
+                gap: 2rem;
+                margin: 1.5rem 0;
+            }
+
+            .package-section {
+                margin-bottom: 2rem;
+            }
+
+            .package-section h4 {
+                font-size: 1.1rem;
+                margin-bottom: 1.5rem;
+                padding-bottom: 0.8rem;
+                text-align: center;
+            }
+
+            .package-section ul {
+                margin-top: 1.2rem;
+            }
+
+            .package-section li {
+                padding: 0.9rem 0;
                 gap: 1rem;
+                line-height: 1.6;
+                font-size: 0.95rem;
+            }
+
+            .package-section li::before {
+                font-size: 1rem;
+                margin-top: 0.15rem;
+                width: 1.2rem;
+                text-align: center;
+                flex-shrink: 0;
+            }
+
+            .package-section li:first-child {
+                padding-top: 0.5rem;
+            }
+
+            .package-section li:last-child {
+                padding-bottom: 0.8rem;
+                border-bottom: none;
             }
 
             .cta-button {
