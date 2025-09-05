@@ -625,23 +625,27 @@
 
         .packages-grid {
             display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(380px, 1fr));
-            gap: 2.5rem;
+            grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+            gap: 2rem;
             margin: 4rem 0;
-            padding: 0 1rem;
+            padding: 0 0.5rem;
+            max-width: 1100px;
+            margin-left: auto;
+            margin-right: auto;
         }
 
         .package {
             background: white;
-            border-radius: 28px;
-            padding: 3.5rem 3rem;
+            border-radius: 20px;
+            padding: 2.5rem 2rem;
             text-align: center;
-            box-shadow: 0 25px 80px rgba(0, 0, 0, 0.1);
-            transition: all 0.5s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+            box-shadow: 0 20px 60px rgba(0, 0, 0, 0.08);
+            transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
             position: relative;
             overflow: visible;
             border: 2px solid rgba(30, 58, 138, 0.08);
             backdrop-filter: blur(10px);
+            height: fit-content;
         }
 
         .package::before {
@@ -1055,12 +1059,13 @@
 
             .packages-grid {
                 grid-template-columns: 1fr;
-                gap: 3rem;
+                gap: 2rem;
                 padding: 0 0.5rem;
             }
 
             .package {
                 margin-top: 1rem;
+                padding: 2rem 1.5rem;
             }
 
             .package.featured {
@@ -1213,26 +1218,26 @@
                 <p class="hero-supporting">Built to serve local businesses</p>
                 
                 <!-- Enhanced CTA Banner -->
-                <div style="background: linear-gradient(45deg, #dc2626, #b91c1c); color: white; padding: 3rem; border-radius: 25px; margin: 2rem 0; max-width: 500px; box-shadow: 0 20px 60px rgba(220, 38, 38, 0.4); animation: slideInLeft 1.2s ease-out 0.9s both; position: relative; border: 3px solid rgba(255, 255, 255, 0.2); backdrop-filter: blur(10px);">
+                <div style="background: linear-gradient(135deg, rgba(255, 255, 255, 0.15), rgba(8, 145, 178, 0.1)); color: white; padding: 2.5rem; border-radius: 20px; margin: 2rem 0; max-width: 450px; box-shadow: 0 20px 50px rgba(0, 0, 0, 0.2); animation: slideInLeft 1.2s ease-out 0.9s both; position: relative; border: 2px solid rgba(255, 255, 255, 0.25); backdrop-filter: blur(15px);">
                     <!-- Striking Price Display -->
                     <div style="text-align: center; margin-bottom: 1.5rem;">
-                        <span style="font-size: 3rem; font-weight: 900; text-decoration: line-through; color: rgba(255, 255, 255, 0.7); margin-right: 1rem;">$500</span>
-                        <span style="font-size: 4rem; font-weight: 900; color: #fbbf24; text-shadow: 0 4px 20px rgba(251, 191, 36, 0.5);">FREE</span>
+                        <span style="font-size: 2.5rem; font-weight: 900; text-decoration: line-through; color: rgba(255, 255, 255, 0.6); margin-right: 1rem;">$500</span>
+                        <span style="font-size: 3.5rem; font-weight: 900; color: #f97316; text-shadow: 0 4px 20px rgba(249, 115, 22, 0.5);">FREE</span>
                     </div>
                     
                     <!-- Main CTA Button -->
-                    <a href="#contact" style="display: block; background: linear-gradient(45deg, #f97316, #0891b2); color: white; padding: 2rem 3rem; border-radius: 60px; text-decoration: none; font-weight: 800; font-size: 1.6rem; text-align: center; box-shadow: 0 15px 40px rgba(249, 115, 22, 0.4); border: 3px solid rgba(255, 255, 255, 0.2); text-transform: uppercase; letter-spacing: 0.5px; transition: all 0.3s ease; position: relative; overflow: hidden;" onmouseover="this.style.transform='scale(1.05)'; this.style.boxShadow='0 25px 60px rgba(249, 115, 22, 0.6)'" onmouseout="this.style.transform='scale(1)'; this.style.boxShadow='0 15px 40px rgba(249, 115, 22, 0.4)'">
+                    <a href="#contact" style="display: block; background: linear-gradient(45deg, #f97316, #0891b2); color: white; padding: 1.5rem 2.5rem; border-radius: 50px; text-decoration: none; font-weight: 800; font-size: 1.4rem; text-align: center; box-shadow: 0 15px 40px rgba(249, 115, 22, 0.3); border: 3px solid rgba(255, 255, 255, 0.2); text-transform: uppercase; letter-spacing: 0.5px; transition: all 0.3s ease; position: relative; overflow: hidden;" onmouseover="this.style.transform='translateY(-3px) scale(1.02)'; this.style.boxShadow='0 25px 60px rgba(249, 115, 22, 0.5)'" onmouseout="this.style.transform='translateY(0) scale(1)'; this.style.boxShadow='0 15px 40px rgba(249, 115, 22, 0.3)'">
                         Get Your Business Growth Strategy
                     </a>
                     
                     <!-- Urgency & Value -->
                     <div style="text-align: center; margin-top: 1.5rem;">
-                        <p style="font-size: 1.2rem; font-weight: 700; color: #fbbf24; margin: 0 0 0.5rem 0; text-shadow: 0 2px 10px rgba(0, 0, 0, 0.3);">⚡ Only 5 spots left this month</p>
-                        <p style="font-size: 1rem; color: rgba(255, 255, 255, 0.9); margin: 0; font-weight: 500;">Discover exactly how to get more customers online</p>
+                        <p style="font-size: 1.1rem; font-weight: 700; color: #f97316; margin: 0 0 0.5rem 0; text-shadow: 0 2px 10px rgba(0, 0, 0, 0.3);">⚡ Only 5 spots left this month</p>
+                        <p style="font-size: 0.95rem; color: rgba(255, 255, 255, 0.9); margin: 0; font-weight: 500;">Discover exactly how to get more customers online</p>
                     </div>
                     
-                    <!-- Pulse Animation Ring -->
-                    <div style="position: absolute; top: -10px; left: -10px; right: -10px; bottom: -10px; border: 2px solid #fbbf24; border-radius: 30px; animation: pulse-ring 2s ease-in-out infinite;"></div>
+                    <!-- Brand Color Pulse Ring -->
+                    <div style="position: absolute; top: -8px; left: -8px; right: -8px; bottom: -8px; border: 2px solid #f97316; border-radius: 25px; animation: pulse-ring 2s ease-in-out infinite;"></div>
                 </div>
                 
                 <!-- Trust Line -->
@@ -1409,9 +1414,13 @@
                                 <option value="HVAC">🔧 HVAC & Air Conditioning</option>
                                 <option value="Plumbing">🚰 Plumbing Services</option>
                                 <option value="Restaurant">🍽️ Restaurant & Food Service</option>
-                                <option value="Medical">⚕️ Medical & Healthcare</option>
-                                <option value="Home Services">🏠 Home Services & Contractors</option>
+                                <option value="Medical">⚕️ Medical Practices</option>
+                                <option value="Dental">🦷 Dental Offices</option>
                                 <option value="Legal">⚖️ Legal Services</option>
+                                <option value="Auto Repair">🚗 Auto Repair</option>
+                                <option value="Beauty">💅 Beauty Salons</option>
+                                <option value="Contractors">🏠 Contractors</option>
+                                <option value="Real Estate">🏢 Real Estate</option>
                                 <option value="Other">Other</option>
                             </select>
                         </div>
@@ -1437,13 +1446,18 @@
                     <p style="margin-top: 1rem; line-height: 1.6;">We proudly serve all of Greater Houston including The Heights, Sugar Land, Katy, The Woodlands, Pearland, Pasadena, and surrounding communities.</p>
                     
                     <h3 style="margin-top: 2rem;">Industries We Serve</h3>
-                    <ul style="list-style: none; margin-top: 1rem;">
-                        <li style="margin-bottom: 0.5rem;">🔧 HVAC & Air Conditioning</li>
-                        <li style="margin-bottom: 0.5rem;">🚰 Plumbing Services</li>
-                        <li style="margin-bottom: 0.5rem;">🍽️ Restaurants & Food Service</li>
-                        <li style="margin-bottom: 0.5rem;">⚕️ Medical & Healthcare</li>
-                        <li style="margin-bottom: 0.5rem;">🏠 Home Services & Contractors</li>
-                    </ul>
+                    <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(180px, 1fr)); gap: 0.5rem; margin-top: 1rem;">
+                        <div style="padding: 0.3rem 0; font-size: 0.9rem;">🔧 HVAC & Air Conditioning</div>
+                        <div style="padding: 0.3rem 0; font-size: 0.9rem;">🚰 Plumbing Services</div>
+                        <div style="padding: 0.3rem 0; font-size: 0.9rem;">🍽️ Restaurants & Food Service</div>
+                        <div style="padding: 0.3rem 0; font-size: 0.9rem;">⚕️ Medical Practices</div>
+                        <div style="padding: 0.3rem 0; font-size: 0.9rem;">🦷 Dental Offices</div>
+                        <div style="padding: 0.3rem 0; font-size: 0.9rem;">⚖️ Legal Services</div>
+                        <div style="padding: 0.3rem 0; font-size: 0.9rem;">🚗 Auto Repair</div>
+                        <div style="padding: 0.3rem 0; font-size: 0.9rem;">💅 Beauty Salons</div>
+                        <div style="padding: 0.3rem 0; font-size: 0.9rem;">🏠 Contractors</div>
+                        <div style="padding: 0.3rem 0; font-size: 0.9rem;">🏢 Real Estate</div>
+                    </div>
                 </div>
             </div>
         </div>
