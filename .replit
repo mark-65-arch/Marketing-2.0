@@ -25,14 +25,14 @@ args = "Website Server"
 name = "Website Server"
 author = "agent"
 
-[[workflows.workflow.tasks]]
-task = "shell.exec"
-args = "python -m http.server 5000"
-waitForPort = 5000
-
 [workflows.workflow.metadata]
 outputType = "webview"
 
+[[workflows.workflow.tasks]]
+task = "shell.exec"
+args = "python -m http.server 5000 --bind 0.0.0.0"
+waitForPort = 5000
+
 [deployment]
 deploymentTarget = "autoscale"
-run = ["python", "-m", "http.server", "8000"]
+run = ["python", "-m", "http.server", "5000", "--bind", "0.0.0.0"]
