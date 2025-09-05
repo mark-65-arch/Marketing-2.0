@@ -1,4 +1,4 @@
-modules = ["web", "python-3.11"]
+modules = ["web"]
 [agent]
 expertMode = true
 
@@ -35,4 +35,4 @@ outputType = "webview"
 
 [deployment]
 deploymentTarget = "autoscale"
-run = ["python", "-m", "http.server", "5000"]
+run = ["python", "-m", "http.server", "8000"]
