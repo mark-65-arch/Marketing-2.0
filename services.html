@@ -749,30 +749,22 @@
             background: none;
             border: none;
             width: 100%;
-            padding: 2.5rem 2rem;
+            padding: 2.5rem 2rem 1rem 2rem;
             text-align: left;
             font-size: 1.3rem;
             font-weight: 700;
             color: #1e3a8a;
-            cursor: pointer;
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            transition: all 0.3s ease;
+            display: block;
             border-radius: 15px;
         }
 
-        .faq-question:hover {
-            background: rgba(8, 145, 178, 0.05);
-        }
 
         .faq-answer {
             padding: 0 2rem 2.5rem 2rem;
             color: #64748b;
             line-height: 1.7;
             font-size: 1.1rem;
-            display: none;
-            animation: fadeIn 0.3s ease;
+            display: block;
         }
 
         @keyframes fadeIn {
@@ -780,19 +772,6 @@
             to { opacity: 1; transform: translateY(0); }
         }
 
-        .faq-item.open .faq-answer {
-            display: block;
-        }
-
-        .faq-item.open .faq-toggle {
-            transform: rotate(45deg);
-        }
-
-        .faq-toggle {
-            font-size: 1.5rem;
-            font-weight: 300;
-            transition: transform 0.3s ease;
-        }
 
         /* CTA Section */
         .final-cta {
@@ -885,6 +864,53 @@
             font-weight: 700;
             color: #fbbf24;
             margin-bottom: 0.5rem;
+        }
+
+        /* Package CTA Buttons */
+        .package-cta {
+            text-align: center;
+            margin: 2.5rem 0;
+            padding: 2rem 0;
+            border-top: 1px solid rgba(30, 58, 138, 0.1);
+            border-bottom: 1px solid rgba(30, 58, 138, 0.1);
+        }
+
+        .package-cta-button {
+            display: inline-block;
+            background: linear-gradient(45deg, #1e3a8a, #0891b2);
+            color: white;
+            padding: 1.2rem 2.5rem;
+            border-radius: 30px;
+            text-decoration: none;
+            font-weight: 700;
+            font-size: 1.1rem;
+            transition: all 0.3s ease;
+            box-shadow: 0 8px 25px rgba(30, 58, 138, 0.3);
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+            border: 2px solid rgba(255, 255, 255, 0.1);
+            position: relative;
+            overflow: hidden;
+        }
+
+        .package-cta-button::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: -100%;
+            width: 100%;
+            height: 100%;
+            background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.2), transparent);
+            transition: left 0.5s ease;
+        }
+
+        .package-cta-button:hover::before {
+            left: 100%;
+        }
+
+        .package-cta-button:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 15px 40px rgba(30, 58, 138, 0.4);
         }
 
         /* Mobile Responsiveness */
@@ -1267,12 +1293,19 @@
                 padding: 1.2rem 2rem;
                 font-size: 1rem;
             }
+
+            .package-cta-button {
+                padding: 1rem 2rem;
+                font-size: 1rem;
+                letter-spacing: 0.3px;
+            }
+
+            .package-cta {
+                margin: 2rem 0;
+                padding: 1.5rem 0;
+            }
         }
 
-        /* Animation for FAQ toggle */
-        .faq-item.open .faq-toggle {
-            transform: rotate(45deg);
-        }
 
         /* Scroll animations */
         .fade-in {
@@ -1531,6 +1564,10 @@
                                 </ul>
                             </div>
                             
+                            <div class="package-cta">
+                                <a href="index.html#contact" class="package-cta-button">Start Building Your Online Presence</a>
+                            </div>
+                            
                             <div class="package-section">
                                 <h4>Timeline & Outcomes</h4>
                                 <ul>
@@ -1579,6 +1616,10 @@
                                 </ul>
                             </div>
                             
+                            <div class="package-cta">
+                                <a href="index.html#contact" class="package-cta-button">Generate More Leads Today</a>
+                            </div>
+                            
                             <div class="package-section">
                                 <h4>Timeline & Outcomes</h4>
                                 <ul>
@@ -1625,6 +1666,10 @@
                                     <li>Multiple locations</li>
                                     <li>Competitive markets</li>
                                 </ul>
+                            </div>
+                            
+                            <div class="package-cta">
+                                <a href="index.html#contact" class="package-cta-button">Dominate Your Competition</a>
                             </div>
                             
                             <div class="package-section">
@@ -1735,7 +1780,7 @@
                     <article class="faq-item">
                         <button class="faq-question">
                             How long does it take to see results?
-                            <span class="faq-toggle">+</span>
+
                         </button>
                         <div class="faq-answer">
                             Most Houston businesses may start seeing improved online visibility within 2-4 weeks, though results vary. For lead generation and conversion improvements, some clients see progress within 30-60 days. SEO improvements may show growth within 90 days. Results vary significantly based on industry competition, market conditions, and project complexity. Services designed to improve online presence.
@@ -1745,7 +1790,7 @@
                     <article class="faq-item">
                         <button class="faq-question">
                             Do you work with businesses outside Houston?
-                            <span class="faq-toggle">+</span>
+
                         </button>
                         <div class="faq-answer">
                             While we specialize in Houston and surrounding areas (The Woodlands, Sugar Land, Katy, Pearland), we do work with Texas businesses statewide. Our deep Houston market knowledge gives us an advantage, but our AI-powered tools and strategies work effectively for businesses throughout Texas.
@@ -1755,7 +1800,7 @@
                     <article class="faq-item">
                         <button class="faq-question">
                             What if I need changes or updates after launch?
-                            <span class="faq-toggle">+</span>
+
                         </button>
                         <div class="faq-answer">
                             All packages include support periods (30-180 days depending on package). During this time, we handle updates, fixes, and minor changes at no extra cost. After the support period, we offer flexible maintenance plans starting at $150/month, or you can request changes on a project basis.
@@ -1765,7 +1810,7 @@
                     <article class="faq-item">
                         <button class="faq-question">
                             Can I upgrade to a larger package later?
-                            <span class="faq-toggle">+</span>
+
                         </button>
                         <div class="faq-answer">
                             Absolutely! We designed our packages to grow with your business. You can upgrade at any time and we'll credit your previous investment toward the larger package. Many clients start with "Get Found Online" and upgrade to "Get More Customers" as their business grows.
@@ -1775,7 +1820,7 @@
                     <article class="faq-item">
                         <button class="faq-question">
                             How do you optimize for AI search engines?
-                            <span class="faq-toggle">+</span>
+
                         </button>
                         <div class="faq-answer">
                             We structure content using semantic HTML, implement structured data markup (JSON-LD), and create content that directly answers common questions in your industry. This approach is designed to improve visibility across modern search technologies including AI-powered search tools.
@@ -1785,7 +1830,7 @@
                     <article class="faq-item">
                         <button class="faq-question">
                             What's included in your AI optimization?
-                            <span class="faq-toggle">+</span>
+
                         </button>
                         <div class="faq-answer">
                             Every website includes structured data markup, natural language content optimization, FAQ sections designed to improve search visibility, and technical SEO approaches that work with both traditional and modern search technologies. We also optimize for voice search and conversational queries.
@@ -1795,7 +1840,7 @@
                     <article class="faq-item">
                         <button class="faq-question">
                             How is this different from traditional web design?
-                            <span class="faq-toggle">+</span>
+
                         </button>
                         <div class="faq-answer">
                             Traditional web design focuses on visual appeal and basic SEO. Our approach combines modern design with content structure that AI systems can understand. We write content that answers real questions, use proper markup for machine reading, and optimize for how people actually search using AI tools.
@@ -1805,7 +1850,7 @@
                     <article class="faq-item">
                         <button class="faq-question">
                             What AI search engines do you optimize for?
-                            <span class="faq-toggle">+</span>
+
                         </button>
                         <div class="faq-answer">
                             We use optimization approaches designed for various AI-powered search tools and emerging technologies. Our approach focuses on creating well-structured content designed to improve online visibility as search technology evolves.
@@ -1815,7 +1860,7 @@
                     <article class="faq-item">
                         <button class="faq-question">
                             What makes AI-powered marketing different from traditional marketing?
-                            <span class="faq-toggle">+</span>
+
                         </button>
                         <div class="faq-answer">
                             AI-powered marketing uses machine learning to help analyze data, identify patterns, and provide insights that support better decision-making. This is designed to enable faster research, more informed targeting, regular optimization, and improved ROI potential. Instead of relying solely on guesswork, AI helps us understand what may work best for your specific market and industry.
@@ -1825,7 +1870,7 @@
                     <article class="faq-item">
                         <button class="faq-question">
                             What are your payment terms?
-                            <span class="faq-toggle">+</span>
+
                         </button>
                         <div class="faq-answer">
                             We require 50% deposit to start your project, with the remaining 50% due upon completion and delivery. This ensures we can dedicate the necessary resources to your project while keeping payment simple and straightforward.
@@ -1835,7 +1880,7 @@
                     <article class="faq-item">
                         <button class="faq-question">
                             Do you require long-term contracts?
-                            <span class="faq-toggle">+</span>
+
                         </button>
                         <div class="faq-answer">
                             No, all our packages are project-based with no long-term commitments. You pay for the specific package and deliverables, then decide if you want additional services or ongoing support. We believe in earning your business through results, not contracts.
@@ -1845,7 +1890,7 @@
                     <article class="faq-item">
                         <button class="faq-question">
                             What if I can't afford the full package upfront?
-                            <span class="faq-toggle">+</span>
+
                         </button>
                         <div class="faq-answer">
                             We understand cash flow challenges for small businesses. We offer flexible payment options and can sometimes structure projects in phases to spread costs over time. Contact us to discuss options that work for your budget.
@@ -1855,7 +1900,7 @@
                     <article class="faq-item">
                         <button class="faq-question">
                             Are there any hidden fees or additional costs?
-                            <span class="faq-toggle">+</span>
+
                         </button>
                         <div class="faq-answer">
                             No hidden fees. Our packages include everything listed. Additional costs only apply for extras like additional pages ($150 each), premium integrations, or services outside the package scope (determined during consultation). We'll always get approval before any additional work.
@@ -1865,7 +1910,7 @@
                     <article class="faq-item">
                         <button class="faq-question">
                             What's the ROI I can expect from my investment?
-                            <span class="faq-toggle">+</span>
+
                         </button>
                         <div class="faq-answer">
                             Results vary significantly by industry, competition, and market conditions. Many clients may see their investment returned within 6-12 months through increased leads and customers, though individual results cannot be guaranteed. We provide detailed tracking so you can measure your actual progress. Services designed to improve online presence.
@@ -1875,7 +1920,7 @@
                     <article class="faq-item">
                         <button class="faq-question">
                             How do your prices compare to other Houston agencies?
-                            <span class="faq-toggle">+</span>
+
                         </button>
                         <div class="faq-answer">
                             Our approach is designed to deliver professional results at competitive prices. Traditional agencies often charge $3,000-$10,000+ for similar work. We focus on providing value through modern optimization techniques and responsive service.
@@ -1885,7 +1930,7 @@
                     <article class="faq-item">
                         <button class="faq-question">
                             What happens if I need to cancel my project?
-                            <span class="faq-toggle">+</span>
+
                         </button>
                         <div class="faq-answer">
                             During development: 50% refund of remaining balance. After completion: No refunds, but we'll help transition your assets. We work hard to ensure satisfaction before this becomes necessary.
@@ -1944,25 +1989,6 @@
             }
         });
 
-        // FAQ toggle functionality
-        document.querySelectorAll('.faq-question').forEach(question => {
-            question.addEventListener('click', () => {
-                const faqItem = question.parentElement;
-                const isOpen = faqItem.classList.contains('open');
-                
-                // Close all other FAQ items
-                document.querySelectorAll('.faq-item').forEach(item => {
-                    item.classList.remove('open');
-                    item.querySelector('.faq-answer').style.display = 'none';
-                });
-                
-                // Toggle current FAQ item
-                if (!isOpen) {
-                    faqItem.classList.add('open');
-                    faqItem.querySelector('.faq-answer').style.display = 'block';
-                }
-            });
-        });
 
         // Smooth scrolling for anchor links
         document.querySelectorAll('a[href^="#"]').forEach(anchor => {
