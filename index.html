@@ -36,18 +36,18 @@
             position: fixed;
             top: 0;
             width: 100%;
-            background: rgba(30, 58, 138, 0.95);
+            background: rgba(255, 255, 255, 0.95);
             backdrop-filter: blur(15px);
             z-index: 1000;
             transition: all 0.4s cubic-bezier(0.25, 0.46, 0.45, 0.94);
-            border-bottom: 1px solid rgba(255, 255, 255, 0.1);
-            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+            border-bottom: 1px solid rgba(30, 58, 138, 0.1);
+            box-shadow: 0 4px 20px rgba(30, 58, 138, 0.1);
         }
 
         header.scrolled {
-            background: rgba(30, 58, 138, 0.98);
-            box-shadow: 0 8px 32px rgba(0, 0, 0, 0.15);
-            border-bottom: 1px solid rgba(255, 255, 255, 0.15);
+            background: rgba(255, 255, 255, 0.98);
+            box-shadow: 0 8px 32px rgba(30, 58, 138, 0.15);
+            border-bottom: 1px solid rgba(30, 58, 138, 0.15);
         }
 
         nav {
@@ -83,7 +83,7 @@
         }
 
         .nav-links a {
-            color: white;
+            color: #1e3a8a;
             text-decoration: none;
             font-weight: 600;
             font-size: 1.05rem;
@@ -101,7 +101,7 @@
             left: -100%;
             width: 100%;
             height: 100%;
-            background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.1), transparent);
+            background: linear-gradient(90deg, transparent, rgba(30, 58, 138, 0.1), transparent);
             transition: left 0.5s;
         }
 
@@ -133,7 +133,7 @@
         .mobile-menu span {
             width: 28px;
             height: 3px;
-            background: white;
+            background: #1e3a8a;
             margin: 4px 0;
             transition: all 0.3s cubic-bezier(0.25, 0.46, 0.45, 0.94);
             border-radius: 2px;
@@ -225,9 +225,10 @@
             color: white;
         }
 
-        .hero-stat strong {
-            color: #f0f9ff;
-            font-weight: 800;
+        .growth-icon {
+            font-size: 1.4rem;
+            margin-right: 0.5rem;
+            vertical-align: middle;
         }
 
         /* Primary CTA */
@@ -783,7 +784,8 @@
                 top: 100%;
                 left: 0;
                 right: 0;
-                background: rgba(30, 58, 138, 0.98);
+                background: rgba(255, 255, 255, 0.98);
+                border-top: 1px solid rgba(30, 58, 138, 0.1);
                 flex-direction: column;
                 padding: 2rem;
                 gap: 1rem;
@@ -985,11 +987,11 @@
                 <p class="hero-subheadline">AI-powered marketing that actually works</p>
                 
                 <!-- Supporting Line -->
-                <p class="hero-supporting">Helping HVAC, Plumbing, Restaurants & Local Services grow</p>
+                <p class="hero-supporting">Built to serve local businesses</p>
                 
                 <!-- Key Stat -->
                 <div class="hero-stat">
-                    <p>Average client gets <strong>3x more leads</strong> in 90 days</p>
+                    <p><span class="growth-icon">📈</span> Fuel your business growth</p>
                 </div>
                 
                 <!-- Primary CTA -->
@@ -1302,9 +1304,9 @@
         window.addEventListener('scroll', () => {
             const header = document.getElementById('header');
             if (window.scrollY > 100) {
-                header.style.background = 'rgba(30, 58, 138, 0.98)';
+                header.style.background = 'rgba(255, 255, 255, 0.98)';
             } else {
-                header.style.background = 'rgba(30, 58, 138, 0.95)';
+                header.style.background = 'rgba(255, 255, 255, 0.95)';
             }
         });
 
