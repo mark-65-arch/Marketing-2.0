@@ -58,18 +58,22 @@
         }
 
         .logo {
-            font-size: 1.8rem;
-            font-weight: 800;
-            color: white;
             text-decoration: none;
-            letter-spacing: -0.5px;
             transition: all 0.3s ease;
             position: relative;
+            display: block;
         }
 
-        .logo:hover {
+        .nav-logo-img {
+            height: 45px;
+            width: auto;
+            transition: all 0.3s ease;
+            filter: drop-shadow(0 2px 8px rgba(0, 0, 0, 0.2));
+        }
+
+        .logo:hover .nav-logo-img {
             transform: scale(1.05);
-            text-shadow: 0 0 20px rgba(255, 255, 255, 0.3);
+            filter: drop-shadow(0 4px 12px rgba(255, 255, 255, 0.3));
         }
 
         .nav-links {
@@ -166,17 +170,9 @@
             margin: 0 auto;
         }
 
-        /* Company Logo */
-        .hero-logo {
-            margin-bottom: 3rem;
-            animation: slideInUp 1s ease-out;
-        }
-
-        .hero-logo-img {
-            max-width: 450px;
-            height: auto;
-            margin: 0;
-            filter: drop-shadow(0 4px 20px rgba(0, 0, 0, 0.3));
+        /* Hero section content spacing */
+        .hero-content {
+            padding-top: 2rem;
         }
 
         /* Main Headline */
@@ -807,8 +803,8 @@
                 padding: 6rem 0;
             }
 
-            .hero-logo-img {
-                max-width: 350px;
+            .nav-logo-img {
+                height: 38px;
             }
 
             .hero-headline {
@@ -876,8 +872,8 @@
                 padding: 0 15px;
             }
 
-            .hero-logo-img {
-                max-width: 280px;
+            .nav-logo-img {
+                height: 35px;
             }
 
             .hero-headline {
@@ -960,7 +956,9 @@
     <!-- Header -->
     <header id="header">
         <nav class="container">
-            <a href="#" class="logo">Marketing AI Houston</a>
+            <a href="#" class="logo">
+                <img src="logo.png" alt="Marketing AI Houston" class="nav-logo-img">
+            </a>
             <ul class="nav-links" id="navLinks">
                 <li><a href="#home">Home</a></li>
                 <li><a href="#services">Services</a></li>
@@ -980,11 +978,6 @@
     <section class="hero" id="home">
         <div class="container">
             <div class="hero-content">
-                <!-- Company Logo -->
-                <div class="hero-logo">
-                    <img src="logo.png" alt="Marketing AI Houston" class="hero-logo-img">
-                </div>
-                
                 <!-- Main Headline -->
                 <h2 class="hero-headline">Get More Customers for Your Houston Business</h2>
                 
