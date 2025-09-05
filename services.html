@@ -1020,6 +1020,68 @@
             display: inline-block;
         }
 
+        /* AI Search Optimization Section */
+        .ai-features-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2.5rem;
+            margin: 4rem 0;
+        }
+
+        .ai-feature-card {
+            background: white;
+            padding: 3rem 2.5rem;
+            border-radius: 20px;
+            text-align: center;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
+            transition: all 0.3s ease;
+            border-top: 4px solid #0891b2;
+        }
+
+        .ai-feature-card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 20px 50px rgba(0, 0, 0, 0.15);
+        }
+
+        .ai-feature-icon {
+            font-size: 3.5rem;
+            margin-bottom: 1.5rem;
+        }
+
+        .ai-feature-card h3 {
+            font-size: 1.4rem;
+            font-weight: 700;
+            color: #1e3a8a;
+            margin-bottom: 1rem;
+        }
+
+        .ai-feature-card p {
+            color: #64748b;
+            line-height: 1.6;
+            font-size: 1.1rem;
+        }
+
+        .ai-advantage-box {
+            background: linear-gradient(135deg, #1e3a8a, #0891b2);
+            color: white;
+            padding: 3rem;
+            border-radius: 20px;
+            margin-top: 3rem;
+            text-align: center;
+        }
+
+        .ai-advantage-box h3 {
+            font-size: 1.8rem;
+            margin-bottom: 1.5rem;
+            color: white;
+        }
+
+        .ai-advantage-box p {
+            font-size: 1.2rem;
+            line-height: 1.7;
+            opacity: 0.95;
+        }
+
         /* Footer Integration */
         footer {
             background: #1e3a8a;
@@ -1081,7 +1143,7 @@
                 
                 <div class="comparison-grid">
                     <article class="comparison-card traditional">
-                        <h3>Traditional Approach</h3>
+                        <h3>❌ Traditional Agencies</h3>
                         <ul class="comparison-list">
                             <li>Manual research takes weeks to complete</li>
                             <li>Strategy based on assumptions and past experience</li>
@@ -1094,7 +1156,7 @@
                     </article>
                     
                     <article class="comparison-card ai-powered">
-                        <h3>Our AI-Enhanced Method</h3>
+                        <h3>✅ Our AI-Enhanced Method</h3>
                         <ul class="comparison-list">
                             <li>AI-powered research delivers insights in days</li>
                             <li>Data-informed strategies based on market analysis</li>
@@ -1105,6 +1167,39 @@
                             <li>Flexible project-based engagements</li>
                         </ul>
                     </article>
+                </div>
+            </div>
+        </section>
+
+        <!-- AI Search Optimization USP -->
+        <section class="section ai-search-optimization">
+            <div class="container">
+                <h2 class="section-title">Built for AI Search Engines</h2>
+                <p class="section-subtitle">While others build outdated websites, we build for the AI-powered future</p>
+                
+                <div class="ai-features-grid">
+                    <div class="ai-feature-card">
+                        <div class="ai-feature-icon">🤖</div>
+                        <h3>ChatGPT Optimized</h3>
+                        <p>Every website optimized to be found and recommended by ChatGPT and other AI assistants when users search for local businesses.</p>
+                    </div>
+                    
+                    <div class="ai-feature-card">
+                        <div class="ai-feature-icon">🔍</div>
+                        <h3>Google AI Ready</h3>
+                        <p>Built to work with Google's AI Overview feature and future search technologies that understand context, not just keywords.</p>
+                    </div>
+                    
+                    <div class="ai-feature-card">
+                        <div class="ai-feature-icon">🚀</div>
+                        <h3>Future-Proof Technology</h3>
+                        <p>While traditional agencies use old SEO methods, we optimize for how AI search engines actually understand and rank content.</p>
+                    </div>
+                </div>
+                
+                <div class="ai-advantage-box">
+                    <h3>The AI Advantage</h3>
+                    <p>Traditional SEO focuses on gaming search algorithms. AI search optimization focuses on genuinely helpful, well-structured content that AI can understand and recommend. This approach works better now and will only get stronger as AI becomes more prevalent.</p>
                 </div>
             </div>
         </section>
@@ -1130,11 +1225,11 @@
                             <div class="package-section">
                                 <h4>What's Included</h4>
                                 <ul>
-                                    <li>5-page professional website</li>
+                                    <li>3-page professional website</li>
                                     <li>Mobile-responsive design</li>
                                     <li>Google Business Profile setup</li>
                                     <li>Basic local SEO optimization</li>
-                                    <li>Contact forms and call tracking</li>
+                                    <li>Contact forms and lead capture</li>
                                     <li>30-day support included</li>
                                 </ul>
                             </div>
@@ -1177,12 +1272,12 @@
                             <div class="package-section">
                                 <h4>What's Included</h4>
                                 <ul>
-                                    <li>8-page conversion-optimized website</li>
-                                    <li>Advanced lead capture system</li>
-                                    <li>Review management setup</li>
-                                    <li>Social media integration</li>
-                                    <li>Email marketing automation</li>
-                                    <li>Advanced local SEO</li>
+                                    <li>8-page professional website with lead capture forms</li>
+                                    <li>Contact form integration and basic automation</li>
+                                    <li>Google Business Profile optimization</li>
+                                    <li>Social media profile setup and linking</li>
+                                    <li>Basic email collection and follow-up setup</li>
+                                    <li>Enhanced local SEO optimization</li>
                                     <li>90-day support included</li>
                                 </ul>
                             </div>
@@ -1225,12 +1320,12 @@
                             <div class="package-section">
                                 <h4>What's Included</h4>
                                 <ul>
-                                    <li>Up to 15 pages + custom features</li>
-                                    <li>Advanced automation tools</li>
-                                    <li>Competitive analysis report</li>
-                                    <li>Multi-location optimization</li>
-                                    <li>Advanced analytics dashboard</li>
-                                    <li>Custom integrations</li>
+                                    <li>Up to 15 pages with custom design features</li>
+                                    <li>Enhanced contact forms and automation setup</li>
+                                    <li>Market research and competitive analysis report</li>
+                                    <li>Multi-location SEO optimization (if applicable)</li>
+                                    <li>Google Analytics and tracking setup</li>
+                                    <li>Integration with existing business tools</li>
                                     <li>Priority support for 6 months</li>
                                 </ul>
                             </div>
@@ -1306,25 +1401,37 @@
                     <article class="industry-card">
                         <div class="industry-icon">🔧</div>
                         <h3 class="industry-title">HVAC & Plumbing</h3>
-                        <p class="industry-description">Emergency call optimization, seasonal campaign management, and targeted advertising for high-intent searches. Perfect for Houston's extreme weather patterns and year-round HVAC demands.</p>
+                        <p class="industry-description">Websites designed to help with emergency call generation, seasonal marketing, and local search visibility. Created with Houston's weather patterns and service needs in mind.</p>
                     </article>
                     
                     <article class="industry-card">
                         <div class="industry-icon">🍽️</div>
                         <h3 class="industry-title">Restaurants & Food Service</h3>
-                        <p class="industry-description">Online ordering integration, review management, social media marketing, and local discovery optimization. Essential for Houston's diverse food scene from food trucks to fine dining in areas like Montrose and River Oaks.</p>
+                        <p class="industry-description">Digital solutions designed to help with online ordering, review management, and local discovery. Built for Houston's diverse food scene from food trucks to established restaurants.</p>
                     </article>
                     
                     <article class="industry-card">
                         <div class="industry-icon">🏥</div>
                         <h3 class="industry-title">Medical & Healthcare</h3>
-                        <p class="industry-description">HIPAA-compliant patient portals, appointment scheduling, reputation management, and specialized medical SEO. Critical for Houston's massive medical center and growing healthcare market.</p>
+                        <p class="industry-description">Professional websites designed to help with patient communication, appointment scheduling, and online presence. Built with HIPAA compliance and medical best practices in mind.</p>
                     </article>
                     
                     <article class="industry-card">
                         <div class="industry-icon">🏠</div>
                         <h3 class="industry-title">Real Estate & Construction</h3>
-                        <p class="industry-description">Property showcase websites, lead capture systems, market analysis tools, and local SEO. Essential for Houston's booming real estate market spanning from downtown high-rises to suburban developments.</p>
+                        <p class="industry-description">Professional websites designed to help showcase properties, capture leads, and improve local search presence. Created for Houston's diverse real estate market.</p>
+                    </article>
+                    
+                    <article class="industry-card">
+                        <div class="industry-icon">⚖️</div>
+                        <h3 class="industry-title">Legal Services</h3>
+                        <p class="industry-description">Professional websites designed to help law firms establish credibility, capture consultations, and improve local search presence. Built with attorney ethics and compliance in mind.</p>
+                    </article>
+                    
+                    <article class="industry-card">
+                        <div class="industry-icon">🏡</div>
+                        <h3 class="industry-title">Home Services</h3>
+                        <p class="industry-description">Websites designed to help contractors, cleaners, landscapers, and other home service professionals get found online and capture leads in their local market.</p>
                     </article>
                 </div>
             </div>
@@ -1374,6 +1481,46 @@
                         </button>
                         <div class="faq-answer">
                             Absolutely! We designed our packages to grow with your business. You can upgrade at any time and we'll credit your previous investment toward the larger package. Many clients start with "Get Found Online" and upgrade to "Get More Customers" as their business grows.
+                        </div>
+                    </article>
+                    
+                    <article class="faq-item">
+                        <button class="faq-question">
+                            How do you optimize for AI search engines?
+                            <span class="faq-toggle">+</span>
+                        </button>
+                        <div class="faq-answer">
+                            We structure content using semantic HTML, implement structured data markup (JSON-LD), and create content that directly answers common questions in your industry. This helps AI systems like ChatGPT understand and recommend your business when users search for relevant services.
+                        </div>
+                    </article>
+                    
+                    <article class="faq-item">
+                        <button class="faq-question">
+                            What's included in your AI optimization?
+                            <span class="faq-toggle">+</span>
+                        </button>
+                        <div class="faq-answer">
+                            Every website includes structured data markup, natural language content optimization, FAQ sections designed for AI understanding, and technical SEO that works with both traditional and AI-powered search engines. We also optimize for voice search and conversational queries.
+                        </div>
+                    </article>
+                    
+                    <article class="faq-item">
+                        <button class="faq-question">
+                            How is this different from traditional web design?
+                            <span class="faq-toggle">+</span>
+                        </button>
+                        <div class="faq-answer">
+                            Traditional web design focuses on visual appeal and basic SEO. Our approach combines modern design with content structure that AI systems can understand. We write content that answers real questions, use proper markup for machine reading, and optimize for how people actually search using AI tools.
+                        </div>
+                    </article>
+                    
+                    <article class="faq-item">
+                        <button class="faq-question">
+                            What AI search engines do you optimize for?
+                            <span class="faq-toggle">+</span>
+                        </button>
+                        <div class="faq-answer">
+                            We optimize for ChatGPT, Google's AI Overview feature, Bing Chat, and emerging AI search tools. Our approach focuses on creating content that any AI system can understand and recommend, ensuring your business stays visible as search technology evolves.
                         </div>
                     </article>
                     
