@@ -137,21 +137,46 @@
 
         .cta-button {
             display: inline-block;
-            background: white;
-            color: #1e3a8a;
-            padding: 1rem 2rem;
+            background: linear-gradient(45deg, #1e3a8a, #0891b2);
+            color: white;
+            padding: 1.2rem 2.5rem;
             border-radius: 50px;
             text-decoration: none;
-            font-weight: 600;
+            font-weight: 700;
             font-size: 1.1rem;
-            transition: all 0.3s ease;
+            transition: all 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275);
             animation: slideInUp 1s ease-out 0.4s both;
-            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+            box-shadow: 0 12px 35px rgba(30, 58, 138, 0.25);
+            border: 2px solid transparent;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .cta-button::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: -100%;
+            width: 100%;
+            height: 100%;
+            background: linear-gradient(90deg, transparent, rgba(255,255,255,0.2), transparent);
+            transition: left 0.5s;
+        }
+
+        .cta-button:hover::before {
+            left: 100%;
         }
 
         .cta-button:hover {
-            transform: translateY(-3px);
-            box-shadow: 0 15px 40px rgba(0, 0, 0, 0.3);
+            transform: translateY(-4px) scale(1.05);
+            box-shadow: 0 20px 50px rgba(30, 58, 138, 0.4);
+            border-color: rgba(255, 255, 255, 0.3);
+        }
+
+        .cta-button:active {
+            transform: translateY(-2px) scale(1.02);
         }
 
         @keyframes slideInUp {
@@ -165,36 +190,82 @@
             }
         }
 
+        /* Scroll animations */
+        .fade-in {
+            opacity: 0;
+            transform: translateY(30px);
+            transition: all 0.8s ease;
+        }
+
+        .fade-in.visible {
+            opacity: 1;
+            transform: translateY(0);
+        }
+
+        /* Performance optimizations */
+        * {
+            -webkit-font-smoothing: antialiased;
+            -moz-osx-font-smoothing: grayscale;
+        }
+
+        .package,
+        .cta-button,
+        .submit-btn {
+            will-change: transform;
+        }
+
+        /* Enhanced focus states for accessibility */
+        .cta-button:focus,
+        .submit-btn:focus,
+        input:focus,
+        textarea:focus,
+        select:focus {
+            outline: 3px solid rgba(8, 145, 178, 0.5);
+            outline-offset: 2px;
+        }
+
         /* Services Section */
         .services {
-            padding: 5rem 0;
+            padding: 6rem 0;
             background: #f8fafc;
         }
 
         .section-title {
             text-align: center;
-            font-size: 2.5rem;
-            font-weight: 700;
-            margin-bottom: 3rem;
+            font-size: 3rem;
+            font-weight: 800;
+            margin-bottom: 1rem;
             color: #1e3a8a;
+            line-height: 1.2;
+            text-shadow: 0 2px 4px rgba(30, 58, 138, 0.1);
+        }
+
+        .section-subtitle {
+            text-align: center;
+            font-size: 1.2rem;
+            color: #64748b;
+            margin-bottom: 4rem;
+            font-weight: 500;
         }
 
         .packages-grid {
             display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
-            gap: 2rem;
-            margin: 3rem 0;
+            grid-template-columns: repeat(auto-fit, minmax(380px, 1fr));
+            gap: 2.5rem;
+            margin: 4rem 0;
+            padding: 0 1rem;
         }
 
         .package {
             background: white;
-            border-radius: 20px;
-            padding: 2.5rem;
+            border-radius: 24px;
+            padding: 3rem 2.5rem;
             text-align: center;
-            box-shadow: 0 10px 50px rgba(0, 0, 0, 0.1);
-            transition: all 0.3s ease;
+            box-shadow: 0 20px 60px rgba(0, 0, 0, 0.08);
+            transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
             position: relative;
-            overflow: hidden;
+            overflow: visible;
+            border: 2px solid rgba(30, 58, 138, 0.1);
         }
 
         .package::before {
@@ -203,48 +274,107 @@
             top: 0;
             left: 0;
             right: 0;
-            height: 5px;
+            height: 6px;
             background: linear-gradient(90deg, #1e3a8a, #0891b2);
+            border-radius: 24px 24px 0 0;
         }
 
         .package:hover {
-            transform: translateY(-10px);
-            box-shadow: 0 20px 60px rgba(0, 0, 0, 0.15);
+            transform: translateY(-12px) scale(1.02);
+            box-shadow: 0 30px 80px rgba(0, 0, 0, 0.15);
+            border-color: #0891b2;
         }
 
         .package.featured {
             transform: scale(1.05);
             border: 3px solid #0891b2;
+            box-shadow: 0 25px 70px rgba(8, 145, 178, 0.15);
+        }
+
+        .package.featured:hover {
+            transform: translateY(-12px) scale(1.07);
         }
 
         .package h3 {
-            font-size: 1.5rem;
-            margin-bottom: 1rem;
+            font-size: 1.6rem;
+            margin-bottom: 1.5rem;
             color: #1e3a8a;
+            font-weight: 700;
+            margin-top: 1rem;
         }
 
         .price {
-            font-size: 3rem;
-            font-weight: 700;
+            font-size: 3.5rem;
+            font-weight: 800;
             color: #0891b2;
-            margin-bottom: 1rem;
+            margin-bottom: 1.5rem;
+            text-shadow: 0 2px 4px rgba(8, 145, 178, 0.1);
         }
 
         .package ul {
             list-style: none;
-            margin-bottom: 2rem;
+            margin-bottom: 2.5rem;
+            text-align: left;
         }
 
         .package li {
-            padding: 0.5rem 0;
-            color: #666;
+            padding: 0.75rem 0;
+            color: #475569;
+            font-size: 1.05rem;
+            font-weight: 500;
+            display: flex;
+            align-items: flex-start;
+            gap: 0.75rem;
         }
 
         .package li::before {
             content: '✓';
             color: #0891b2;
-            font-weight: bold;
-            margin-right: 0.5rem;
+            font-weight: 800;
+            font-size: 1.2rem;
+            flex-shrink: 0;
+            margin-top: 0.1rem;
+        }
+
+        .package-badge {
+            position: absolute;
+            top: -18px;
+            left: 50%;
+            transform: translateX(-50%);
+            padding: 0.75rem 2rem;
+            border-radius: 30px;
+            font-weight: 800;
+            font-size: 0.85rem;
+            letter-spacing: 0.5px;
+            text-transform: uppercase;
+            box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15);
+            z-index: 10;
+            white-space: nowrap;
+        }
+
+        .package-badge.popular {
+            background: linear-gradient(45deg, #0891b2, #1e3a8a);
+            color: white;
+        }
+
+        .package-badge.value {
+            background: linear-gradient(45deg, #f59e0b, #d97706);
+            color: white;
+        }
+
+        .save-badge {
+            position: absolute;
+            top: 25px;
+            right: -5px;
+            background: linear-gradient(45deg, #22c55e, #16a34a);
+            color: white;
+            padding: 0.4rem 1rem;
+            border-radius: 20px;
+            font-weight: 700;
+            font-size: 0.8rem;
+            transform: rotate(12deg);
+            box-shadow: 0 4px 15px rgba(34, 197, 94, 0.3);
+            z-index: 5;
         }
 
         /* Trust Section */
@@ -298,67 +428,148 @@
 
         /* Contact Section */
         .contact {
-            padding: 5rem 0;
+            padding: 6rem 0;
             background: linear-gradient(135deg, #1e3a8a 0%, #0891b2 100%);
             color: white;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .contact::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100"><defs><pattern id="dots" width="20" height="20" patternUnits="userSpaceOnUse"><circle cx="10" cy="10" r="1" fill="rgba(255,255,255,0.1)"/></pattern></defs><rect width="100" height="100" fill="url(%23dots)"/></svg>');
+        }
+
+        .contact .container {
+            position: relative;
+            z-index: 2;
         }
 
         .contact-grid {
             display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-            gap: 3rem;
-            margin: 3rem 0;
+            grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+            gap: 4rem;
+            margin: 4rem 0;
         }
 
         .contact-form {
-            background: rgba(255, 255, 255, 0.1);
-            padding: 2rem;
-            border-radius: 15px;
-            backdrop-filter: blur(10px);
+            background: rgba(255, 255, 255, 0.15);
+            padding: 3rem;
+            border-radius: 24px;
+            backdrop-filter: blur(20px);
+            border: 1px solid rgba(255, 255, 255, 0.2);
+            box-shadow: 0 25px 60px rgba(0, 0, 0, 0.2);
+        }
+
+        .contact-form h3 {
+            font-size: 1.8rem;
+            font-weight: 800;
+            margin-bottom: 2rem;
+            text-align: center;
         }
 
         .form-group {
-            margin-bottom: 1.5rem;
+            margin-bottom: 2rem;
         }
 
         .form-group label {
             display: block;
-            margin-bottom: 0.5rem;
-            font-weight: 500;
+            margin-bottom: 0.75rem;
+            font-weight: 600;
+            font-size: 1.05rem;
         }
 
         .form-group input,
-        .form-group textarea {
+        .form-group textarea,
+        .form-group select {
             width: 100%;
-            padding: 1rem;
-            border: none;
-            border-radius: 10px;
-            background: rgba(255, 255, 255, 0.9);
+            padding: 1.25rem;
+            border: 2px solid transparent;
+            border-radius: 12px;
+            background: rgba(255, 255, 255, 0.95);
             color: #333;
-            font-size: 1rem;
+            font-size: 1.05rem;
+            font-weight: 500;
+            transition: all 0.3s ease;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+        }
+
+        .form-group input:focus,
+        .form-group textarea:focus,
+        .form-group select:focus {
+            outline: none;
+            border-color: #0891b2;
+            background: white;
+            box-shadow: 0 8px 25px rgba(8, 145, 178, 0.2);
+            transform: translateY(-2px);
         }
 
         .form-group textarea {
             resize: vertical;
-            min-height: 120px;
+            min-height: 140px;
         }
 
         .submit-btn {
-            background: white;
+            background: linear-gradient(45deg, #fff, #f8fafc);
             color: #1e3a8a;
             border: none;
-            padding: 1rem 2rem;
+            padding: 1.5rem 3rem;
             border-radius: 50px;
-            font-weight: 600;
-            font-size: 1rem;
+            font-weight: 800;
+            font-size: 1.1rem;
             cursor: pointer;
-            transition: all 0.3s ease;
+            transition: all 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275);
             width: 100%;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+            box-shadow: 0 15px 40px rgba(0, 0, 0, 0.2);
+            position: relative;
+            overflow: hidden;
+        }
+
+        .submit-btn::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: -100%;
+            width: 100%;
+            height: 100%;
+            background: linear-gradient(90deg, transparent, rgba(30, 58, 138, 0.1), transparent);
+            transition: left 0.5s;
+        }
+
+        .submit-btn:hover::before {
+            left: 100%;
         }
 
         .submit-btn:hover {
-            transform: translateY(-2px);
-            box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
+            transform: translateY(-4px) scale(1.02);
+            box-shadow: 0 25px 60px rgba(0, 0, 0, 0.3);
+        }
+
+        .urgency-banner {
+            background: linear-gradient(45deg, #ef4444, #dc2626);
+            color: white;
+            padding: 1rem;
+            border-radius: 12px;
+            text-align: center;
+            margin-bottom: 2rem;
+            box-shadow: 0 8px 25px rgba(239, 68, 68, 0.3);
+            animation: pulse-glow 2s ease-in-out infinite alternate;
+        }
+
+        @keyframes pulse-glow {
+            from {
+                box-shadow: 0 8px 25px rgba(239, 68, 68, 0.3);
+            }
+            to {
+                box-shadow: 0 8px 25px rgba(239, 68, 68, 0.5);
+            }
         }
 
         .contact-info h3 {
@@ -390,6 +601,8 @@
                 flex-direction: column;
                 padding: 2rem;
                 gap: 1rem;
+                backdrop-filter: blur(20px);
+                border-radius: 0 0 20px 20px;
             }
 
             .nav-links.active {
@@ -400,39 +613,114 @@
                 display: flex;
             }
 
+            .hero {
+                padding: 6rem 0 3rem;
+            }
+
             .hero h1 {
+                font-size: 2.8rem;
+                line-height: 1.1;
+            }
+
+            .section-title {
                 font-size: 2.5rem;
+                margin-bottom: 2rem;
             }
 
             .packages-grid {
                 grid-template-columns: 1fr;
+                gap: 3rem;
+                padding: 0 0.5rem;
+            }
+
+            .package {
+                margin-top: 1rem;
             }
 
             .package.featured {
                 transform: none;
             }
 
+            .package.featured:hover {
+                transform: translateY(-12px);
+            }
+
             .contact-grid {
                 grid-template-columns: 1fr;
+                gap: 3rem;
+            }
+
+            .contact-form {
+                padding: 2rem;
+            }
+
+            .package-badge {
+                font-size: 0.75rem;
+                padding: 0.6rem 1.5rem;
+            }
+
+            .save-badge {
+                font-size: 0.7rem;
+                padding: 0.3rem 0.8rem;
             }
         }
 
         @media (max-width: 480px) {
+            .container {
+                padding: 0 15px;
+            }
+
             .hero h1 {
+                font-size: 2.2rem;
+            }
+
+            .section-title {
                 font-size: 2rem;
             }
 
             .packages-grid {
                 grid-template-columns: 1fr;
-                gap: 1rem;
+                gap: 2rem;
+                padding: 0;
             }
 
             .package {
-                padding: 1.5rem;
+                padding: 2rem 1.5rem;
+                margin-top: 1.5rem;
             }
 
             .price {
-                font-size: 2rem;
+                font-size: 2.5rem;
+            }
+
+            .cta-button {
+                padding: 1rem 2rem;
+                font-size: 1rem;
+            }
+
+            .contact-form {
+                padding: 1.5rem;
+            }
+
+            .form-group input,
+            .form-group textarea,
+            .form-group select {
+                padding: 1rem;
+                font-size: 1rem;
+            }
+
+            .submit-btn {
+                padding: 1.2rem 2rem;
+                font-size: 1rem;
+            }
+
+            .package-badge {
+                font-size: 0.7rem;
+                padding: 0.5rem 1.2rem;
+            }
+
+            .hero .subtitle {
+                font-size: 1.1rem;
             }
         }
     </style>
@@ -522,7 +810,7 @@
     <section class="services" id="services">
         <div class="container">
             <h2 class="section-title">Choose Your Growth Package</h2>
-            <p style="text-align: center; font-size: 1.1rem; color: #666; margin-bottom: 2rem;">One-time project investment, lasting results for your business</p>
+            <p class="section-subtitle">One-time project investment, lasting results for your business</p>
             <div class="packages-grid">
                 <div class="package">
                     <h3>Get Found Online Package</h3>
@@ -536,11 +824,9 @@
                     <a href="#contact" class="cta-button">Get Started</a>
                 </div>
 
-                <div class="package featured" style="position: relative;">
-                    <!-- Most Popular Badge -->
-                    <div style="position: absolute; top: -15px; left: 50%; transform: translateX(-50%); background: linear-gradient(45deg, #0891b2, #1e3a8a); color: white; padding: 0.5rem 1.5rem; border-radius: 25px; font-weight: 700; font-size: 0.9rem; box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);">✨ MOST POPULAR</div>
-                    <!-- Save Badge -->
-                    <div style="position: absolute; top: 20px; right: -10px; background: #22c55e; color: white; padding: 0.3rem 0.8rem; border-radius: 15px; font-weight: 700; font-size: 0.8rem; transform: rotate(15deg);">Save $300</div>
+                <div class="package featured">
+                    <div class="package-badge popular">✨ Most Popular</div>
+                    <div class="save-badge">Save $300</div>
                     <h3>Get More Customers Package</h3>
                     <div class="price">$1,199</div>
                     <ul>
@@ -553,11 +839,9 @@
                     <a href="#contact" class="cta-button">Most Popular</a>
                 </div>
 
-                <div class="package" style="position: relative;">
-                    <!-- Best Value Badge -->
-                    <div style="position: absolute; top: -15px; left: 50%; transform: translateX(-50%); background: linear-gradient(45deg, #f59e0b, #d97706); color: white; padding: 0.5rem 1.5rem; border-radius: 25px; font-weight: 700; font-size: 0.9rem; box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);">💰 BEST VALUE</div>
-                    <!-- Save Badge -->
-                    <div style="position: absolute; top: 20px; right: -10px; background: #22c55e; color: white; padding: 0.3rem 0.8rem; border-radius: 15px; font-weight: 700; font-size: 0.8rem; transform: rotate(15deg);">Save $800</div>
+                <div class="package">
+                    <div class="package-badge value">💰 Best Value</div>
+                    <div class="save-badge">Save $800</div>
                     <h3>Dominate Your Market Package</h3>
                     <div class="price">$2,199</div>
                     <ul>
@@ -703,9 +987,9 @@
                     <h3>Get Your Free $500 Marketing Plan</h3>
                     
                     <!-- Urgency Banner -->
-                    <div style="background: linear-gradient(45deg, #ef4444, #dc2626); color: white; padding: 0.8rem; border-radius: 10px; text-align: center; margin-bottom: 2rem; box-shadow: 0 5px 15px rgba(239, 68, 68, 0.3);">
-                        <div style="font-weight: 700; font-size: 1rem;">⚡ Only 3 audit spots left this month</div>
-                        <div style="font-size: 0.85rem; opacity: 0.9;">Claim yours before they're gone</div>
+                    <div class="urgency-banner">
+                        <div style="font-weight: 800; font-size: 1.1rem; margin-bottom: 0.5rem;">⚡ Only 3 audit spots left this month</div>
+                        <div style="font-size: 0.9rem; opacity: 0.95;">Claim yours before they're gone</div>
                     </div>
                     
                     <form id="contactForm">
