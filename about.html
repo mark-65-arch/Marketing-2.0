@@ -1,0 +1,715 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Marketing AI Houston | Meet Our Team | Houston Digital Marketing</title>
+    <meta name="description" content="Meet the team behind Marketing AI Houston. Learn about our founders' story, mission to help Houston businesses grow with AI-powered marketing, and our local commitment.">
+    <meta name="keywords" content="about Marketing AI Houston, Houston digital marketing team, AI marketing founders, local Houston business, digital marketing agency team">
+    <meta property="og:title" content="About Marketing AI Houston | Meet Our Team">
+    <meta property="og:description" content="Founded by Houston entrepreneurs combining tech expertise with business experience to help local businesses grow online.">
+    <meta property="og:url" content="https://marketingaihouston.com/about">
+    <meta property="og:type" content="website">
+    <meta name="robots" content="index, follow">
+    <meta name="author" content="Marketing AI Houston">
+    <meta name="geo.region" content="US-TX">
+    <meta name="geo.placename" content="Houston">
+    <meta name="geo.position" content="29.7604;-95.3698">
+    <link rel="canonical" href="https://marketingaihouston.com/about">
+    
+    <!-- About Page Schema -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "AboutPage",
+      "mainEntity": {
+        "@type": "LocalBusiness",
+        "name": "Marketing AI Houston",
+        "description": "AI-powered digital marketing agency founded by Houston entrepreneurs, combining tech expertise with local business knowledge.",
+        "url": "https://marketingaihouston.com",
+        "logo": "https://marketingaihouston.com/logo.png",
+        "address": {
+          "@type": "PostalAddress",
+          "addressLocality": "Houston",
+          "@property": "addressRegion",
+          "addressCountry": "US"
+        },
+        "founder": [
+          {
+            "@type": "Person",
+            "name": "Marketing AI Houston Team",
+            "description": "Young entrepreneur with technical expertise and experienced business mentor"
+          }
+        ]
+      }
+    }
+    </script>
+    
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            min-height: 100vh;
+            -webkit-font-smoothing: antialiased;
+            -moz-osx-font-smoothing: grayscale;
+        }
+
+        /* Container */
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 2rem;
+        }
+
+        /* Header */
+        header {
+            background: rgba(255, 255, 255, 0.95);
+            backdrop-filter: blur(20px);
+            position: fixed;
+            top: 0;
+            left: 0;
+            right: 0;
+            z-index: 1000;
+            box-shadow: 0 8px 32px rgba(0, 0, 0, 0.1);
+            border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+        }
+
+        nav {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 1.2rem 0;
+        }
+
+        .logo {
+            font-size: 1.8rem;
+            font-weight: 900;
+            color: #1e3a8a;
+            text-decoration: none;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
+
+        .nav-logo-img {
+            height: 45px;
+            width: auto;
+            transition: all 0.3s ease;
+            filter: drop-shadow(0 2px 8px rgba(0, 0, 0, 0.2));
+        }
+
+        .logo:hover .nav-logo-img {
+            transform: scale(1.05);
+            filter: drop-shadow(0 4px 12px rgba(255, 255, 255, 0.3));
+        }
+
+        .nav-links {
+            display: flex;
+            list-style: none;
+            gap: 2.5rem;
+        }
+
+        .nav-links a {
+            color: #1e3a8a;
+            text-decoration: none;
+            font-weight: 600;
+            font-size: 1.05rem;
+            transition: all 0.3s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+            padding: 0.8rem 1.5rem;
+            border-radius: 12px;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .nav-links a::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: -100%;
+            width: 100%;
+            height: 100%;
+            background: linear-gradient(90deg, transparent, rgba(8, 145, 178, 0.2), transparent);
+            transition: left 0.5s;
+        }
+
+        .nav-links a:hover::before {
+            left: 100%;
+        }
+
+        .nav-links a:hover {
+            color: #0891b2;
+            background: rgba(8, 145, 178, 0.15);
+            transform: translateY(-2px);
+            box-shadow: 0 4px 15px rgba(8, 145, 178, 0.2);
+        }
+
+        .mobile-menu {
+            display: none;
+            flex-direction: column;
+            cursor: pointer;
+            padding: 0.5rem;
+            border-radius: 8px;
+            transition: all 0.3s ease;
+        }
+
+        .mobile-menu:hover {
+            background: rgba(255, 255, 255, 0.1);
+            transform: scale(1.1);
+        }
+
+        .mobile-menu span {
+            width: 28px;
+            height: 3px;
+            background: #1e3a8a;
+            margin: 4px 0;
+            transition: all 0.3s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+            border-radius: 2px;
+        }
+
+        .mobile-menu.active span:nth-child(1) {
+            transform: rotate(-45deg) translate(-6px, 6px);
+        }
+
+        .mobile-menu.active span:nth-child(2) {
+            opacity: 0;
+        }
+
+        .mobile-menu.active span:nth-child(3) {
+            transform: rotate(45deg) translate(-6px, -6px);
+        }
+
+        /* Main Content */
+        main {
+            margin-top: 80px;
+            padding: 4rem 0 2rem 0;
+        }
+
+        /* Breadcrumbs */
+        .breadcrumb {
+            background: rgba(255, 255, 255, 0.1);
+            backdrop-filter: blur(10px);
+            padding: 1rem 0;
+            border-radius: 12px;
+            margin-bottom: 2rem;
+        }
+
+        .breadcrumb-nav {
+            color: rgba(255, 255, 255, 0.9);
+            font-size: 0.95rem;
+        }
+
+        .breadcrumb-nav a {
+            color: rgba(255, 255, 255, 0.8);
+            text-decoration: none;
+            transition: color 0.3s ease;
+        }
+
+        .breadcrumb-nav a:hover {
+            color: #fbbf24;
+        }
+
+        /* Page Header */
+        .page-header {
+            text-align: center;
+            margin-bottom: 4rem;
+            color: white;
+        }
+
+        .page-title {
+            font-size: 3.5rem;
+            font-weight: 900;
+            margin-bottom: 1rem;
+            text-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
+            background: linear-gradient(135deg, #fbbf24, #f59e0b);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+
+        .page-subtitle {
+            font-size: 1.3rem;
+            opacity: 0.9;
+            max-width: 600px;
+            margin: 0 auto;
+            line-height: 1.5;
+        }
+
+        /* Content Sections */
+        .wp-content-section {
+            background: rgba(255, 255, 255, 0.95);
+            backdrop-filter: blur(20px);
+            border-radius: 20px;
+            padding: 3rem;
+            margin-bottom: 3rem;
+            box-shadow: 0 20px 60px rgba(0, 0, 0, 0.1);
+            border: 1px solid rgba(255, 255, 255, 0.2);
+        }
+
+        .wp-section-title {
+            font-size: 2.5rem;
+            font-weight: 800;
+            color: #1e3a8a;
+            margin-bottom: 1.5rem;
+            text-align: center;
+        }
+
+        .wp-section-subtitle {
+            font-size: 1.1rem;
+            color: #0891b2;
+            text-align: center;
+            margin-bottom: 2rem;
+            font-weight: 600;
+        }
+
+        .wp-content-grid {
+            display: grid;
+            grid-template-columns: 1fr;
+            gap: 2rem;
+            margin-top: 2rem;
+        }
+
+        .wp-content-card {
+            background: #f8fafc;
+            padding: 2rem;
+            border-radius: 15px;
+            border-left: 4px solid #0891b2;
+        }
+
+        .wp-card-title {
+            font-size: 1.3rem;
+            font-weight: 700;
+            color: #1e3a8a;
+            margin-bottom: 1rem;
+        }
+
+        .wp-card-content {
+            color: #475569;
+            line-height: 1.6;
+            font-size: 1.05rem;
+        }
+
+        /* Team Grid */
+        .wp-team-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2rem;
+            margin-top: 2rem;
+        }
+
+        .wp-team-member {
+            background: #f8fafc;
+            padding: 2.5rem;
+            border-radius: 15px;
+            text-align: center;
+            border: 1px solid rgba(8, 145, 178, 0.1);
+        }
+
+        .wp-member-icon {
+            font-size: 3rem;
+            margin-bottom: 1rem;
+        }
+
+        .wp-member-title {
+            font-size: 1.4rem;
+            font-weight: 700;
+            color: #1e3a8a;
+            margin-bottom: 0.5rem;
+        }
+
+        .wp-member-role {
+            color: #0891b2;
+            font-weight: 600;
+            margin-bottom: 1rem;
+        }
+
+        .wp-member-description {
+            color: #475569;
+            line-height: 1.6;
+        }
+
+        /* CTA Section */
+        .wp-cta-section {
+            background: linear-gradient(45deg, #0891b2, #1e3a8a);
+            color: white;
+            text-align: center;
+            padding: 4rem 3rem;
+            border-radius: 20px;
+            margin: 3rem 0;
+        }
+
+        .wp-cta-title {
+            font-size: 2.5rem;
+            font-weight: 800;
+            margin-bottom: 1rem;
+        }
+
+        .wp-cta-subtitle {
+            font-size: 1.2rem;
+            opacity: 0.9;
+            margin-bottom: 2rem;
+        }
+
+        .wp-cta-button {
+            display: inline-block;
+            background: linear-gradient(45deg, #fbbf24, #f59e0b);
+            color: #1e3a8a;
+            padding: 1.2rem 2.5rem;
+            border-radius: 12px;
+            text-decoration: none;
+            font-weight: 700;
+            font-size: 1.1rem;
+            transition: all 0.3s ease;
+            box-shadow: 0 8px 25px rgba(251, 191, 36, 0.3);
+        }
+
+        .wp-cta-button:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 12px 35px rgba(251, 191, 36, 0.4);
+            background: linear-gradient(45deg, #f59e0b, #d97706);
+        }
+
+        /* Responsive Design */
+        @media (min-width: 768px) {
+            .wp-content-grid {
+                grid-template-columns: repeat(2, 1fr);
+            }
+        }
+
+        @media (max-width: 768px) {
+            .nav-links {
+                display: none;
+                position: absolute;
+                top: 100%;
+                left: 0;
+                right: 0;
+                background: rgba(255, 255, 255, 0.98);
+                backdrop-filter: blur(20px);
+                flex-direction: column;
+                padding: 2rem;
+                box-shadow: 0 8px 32px rgba(0, 0, 0, 0.1);
+                border-radius: 0 0 20px 20px;
+            }
+
+            .nav-links.active {
+                display: flex;
+            }
+
+            .mobile-menu {
+                display: flex;
+            }
+
+            .page-title {
+                font-size: 2.5rem;
+            }
+
+            .wp-content-section {
+                padding: 2rem;
+            }
+
+            .container {
+                padding: 0 1rem;
+            }
+        }
+
+        @media (max-width: 480px) {
+            .nav-logo-img {
+                height: 35px;
+            }
+
+            .page-title {
+                font-size: 2rem;
+            }
+
+            .wp-section-title {
+                font-size: 2rem;
+            }
+
+            .wp-content-section {
+                padding: 1.5rem;
+            }
+
+            .wp-cta-section {
+                padding: 2.5rem 1.5rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <nav class="container" role="navigation" aria-label="Main navigation">
+            <a href="index.html" class="logo">
+                <img src="logo.png" alt="Marketing AI Houston - Digital Marketing Agency serving Houston, Texas" class="nav-logo-img">
+            </a>
+            <ul class="nav-links" id="navLinks">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="services.html">Services</a></li>
+                <li><a href="about.html" class="active">About</a></li>
+                <li><a href="index.html#testimonials">Reviews</a></li>
+                <li><a href="index.html#contact">Contact</a></li>
+            </ul>
+            <div class="mobile-menu" id="mobileMenu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </nav>
+    </header>
+
+    <main role="main">
+        <div class="container">
+            <!-- Breadcrumb -->
+            <div class="breadcrumb">
+                <nav class="breadcrumb-nav" aria-label="Breadcrumb">
+                    <a href="index.html">Home</a> > <span>About</span>
+                </nav>
+            </div>
+
+            <!-- Page Header -->
+            <div class="page-header">
+                <h1 class="page-title">About Marketing AI Houston</h1>
+                <p class="page-subtitle">Meet the team behind Houston's AI-powered marketing agency</p>
+            </div>
+
+            <!-- Founder Story Section -->
+            <section class="wp-content-section">
+                <h2 class="wp-section-title">Founded by Houston Entrepreneurs</h2>
+                <p class="wp-section-subtitle">Combining fresh digital perspective with experienced engineering management</p>
+                
+                <div class="wp-content-grid">
+                    <div class="wp-content-card">
+                        <h3 class="wp-card-title">🚀 Fresh Digital Perspective</h3>
+                        <div class="wp-card-content">
+                            <p>At 18, I'm comfortable with digital technologies and committed to applying them effectively for business results. Through online courses, industry resources, and hands-on practice, I'm developing skills in AI tools, social media marketing, and SEO.</p>
+                            <p>This fresh perspective helps identify modern solutions designed for today's digital landscape that connect with current customer behaviors.</p>
+                        </div>
+                    </div>
+                    <div class="wp-content-card">
+                        <h3 class="wp-card-title">🎯 Engineering Management Guidance</h3>
+                        <div class="wp-card-content">
+                            <p>Guided by my father, who brings 15+ years of management experience in custom solutions engineering, we understand that technology is only valuable when it drives real business results.</p>
+                            <p>His background in engineering solutions and project management brings valuable strategic thinking to our marketing approach, ensuring we focus on what matters: generating leads, increasing revenue, and helping Houston businesses thrive.</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div style="margin-top: 2rem; text-align: center; padding: 2rem; background: #f0f9ff; border-radius: 12px;">
+                    <p style="font-size: 1.1rem; color: #1e3a8a; line-height: 1.6;"><strong>Why Houston?</strong> We chose to focus on Houston because we believe in supporting our local community. Houston's diverse business landscape - from energy to healthcare to restaurants - deserves marketing expertise that understands the local market and genuinely cares about helping businesses succeed.</p>
+                </div>
+            </section>
+
+            <!-- Mission Section -->
+            <section class="wp-content-section">
+                <h2 class="wp-section-title">Our Mission</h2>
+                <p class="wp-section-subtitle">Bringing AI-Powered Marketing to Houston Small Businesses</p>
+                
+                <div class="wp-content-grid">
+                    <div class="wp-content-card">
+                        <h3 class="wp-card-title">📈 Accessible Technology</h3>
+                        <div class="wp-card-content">
+                            <p>Advanced AI marketing tools shouldn't be exclusive to Fortune 500 companies. We make cutting-edge technology accessible and affordable for Houston small businesses, leveling the playing field.</p>
+                        </div>
+                    </div>
+                    <div class="wp-content-card">
+                        <h3 class="wp-card-title">🤝 Honest Service</h3>
+                        <div class="wp-card-content">
+                            <p>No long-term contracts. No hidden fees. No artificial scarcity tactics. Just transparent pricing and honest communication about what we can achieve for your business.</p>
+                        </div>
+                    </div>
+                    <div class="wp-content-card">
+                        <h3 class="wp-card-title">🎯 Results Focus</h3>
+                        <div class="wp-card-content">
+                            <p>We're not interested in vanity metrics. Our success is measured by your success: more leads, more customers, more revenue for your Houston business.</p>
+                        </div>
+                    </div>
+                    <div class="wp-content-card">
+                        <h3 class="wp-card-title">🏠 Local Commitment</h3>
+                        <div class="wp-card-content">
+                            <p>Houston isn't just our market - it's our community. We're committed to helping local businesses thrive and contributing to Houston's economic growth.</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Why Houston Section -->
+            <section class="wp-content-section">
+                <h2 class="wp-section-title">Why Houston?</h2>
+                <p class="wp-section-subtitle">Deep roots in the local business community</p>
+                
+                <div style="text-align: center; margin-bottom: 2rem;">
+                    <div style="font-size: 4rem; margin-bottom: 1rem;">🏙️</div>
+                </div>
+                
+                <div class="wp-content-grid">
+                    <div class="wp-content-card">
+                        <h3 class="wp-card-title">Local Market Knowledge</h3>
+                        <div class="wp-card-content">
+                            <p>We understand Houston's unique business landscape - from the Energy Corridor to the Medical Center, from The Heights to Sugar Land. Each area has different customers, competition, and opportunities.</p>
+                        </div>
+                    </div>
+                    <div class="wp-content-card">
+                        <h3 class="wp-card-title">Community Growth</h3>
+                        <div class="wp-card-content">
+                            <p>When Houston businesses succeed, the entire community benefits. We're committed to contributing to Houston's economic growth by helping local businesses compete and thrive online.</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div style="margin-top: 2rem; padding: 2rem; background: linear-gradient(135deg, #f0f9ff, #e0f2fe); border-radius: 12px; text-align: center;">
+                    <h3 style="color: #1e3a8a; margin-bottom: 1rem;">Areas We Serve</h3>
+                    <p style="color: #475569; line-height: 1.6;">Houston • The Heights • Sugar Land • Katy • The Woodlands • Pearland • Cypress • Spring • Humble • Kingwood • Friendswood • League City</p>
+                </div>
+            </section>
+
+            <!-- Our Approach Section -->
+            <section class="wp-content-section">
+                <h2 class="wp-section-title">Our Approach</h2>
+                <p class="wp-section-subtitle">How we combine innovation with proven business principles</p>
+                
+                <div class="wp-content-grid">
+                    <div class="wp-content-card">
+                        <h3 class="wp-card-title">🤖 Modern Tool Implementation</h3>
+                        <div class="wp-card-content">
+                            <p>We're learning to effectively implement AI tools for content creation, ad targeting, and SEO optimization. This focus on modern technology helps us work efficiently while maintaining quality service.</p>
+                        </div>
+                    </div>
+                    <div class="wp-content-card">
+                        <h3 class="wp-card-title">👥 Direct Communication</h3>
+                        <div class="wp-card-content">
+                            <p>You'll work directly with our small team, not account managers. We believe in building personal relationships and taking time to understand your specific business goals and challenges.</p>
+                        </div>
+                    </div>
+                    <div class="wp-content-card">
+                        <h3 class="wp-card-title">📊 Results-Focused Approach</h3>
+                        <div class="wp-card-content">
+                            <p>We track campaign performance carefully and provide transparent reporting. While we're still learning the nuances of data analysis, we're committed to focusing on metrics that matter to your business.</p>
+                        </div>
+                    </div>
+                    <div class="wp-content-card">
+                        <h3 class="wp-card-title">🔄 Commitment to Learning</h3>
+                        <div class="wp-card-content">
+                            <p>Digital marketing evolves rapidly, and we're committed to continuous education through courses, certifications, and industry resources to stay current with best practices.</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Team Credentials Section -->
+            <section class="wp-content-section">
+                <h2 class="wp-section-title">Our Team</h2>
+                <p class="wp-section-subtitle">Complementary skills focused on your success</p>
+                
+                <div class="wp-team-grid">
+                    <div class="wp-team-member">
+                        <div class="wp-member-icon">💻</div>
+                        <h3 class="wp-member-title">Digital Marketing Focus</h3>
+                        <p class="wp-member-role">Training and developing skills in:</p>
+                        <div class="wp-member-description">
+                            <p>Through online courses, industry resources, and hands-on practice:</p>
+                            <ul style="text-align: left; margin-top: 0.5rem; padding-left: 1rem;">
+                                <li>AI content tools and implementation</li>
+                                <li>Google Ads and Meta advertising platforms</li>
+                                <li>Local SEO and search optimization</li>
+                                <li>Website development and user experience</li>
+                                <li>Social media marketing strategies</li>
+                            </ul>
+                            <p style="margin-top: 0.5rem; font-style: italic; font-size: 0.9rem;">Committed to ongoing certification goals and professional development.</p>
+                        </div>
+                    </div>
+                    <div class="wp-team-member">
+                        <div class="wp-member-icon">🎯</div>
+                        <h3 class="wp-member-title">Project Management</h3>
+                        <p class="wp-member-role">15+ Years Engineering Management Experience</p>
+                        <div class="wp-member-description">
+                            <p>Engineering solutions background brings:</p>
+                            <ul style="text-align: left; margin-top: 0.5rem; padding-left: 1rem;">
+                                <li>Strategic problem-solving approach</li>
+                                <li>Project management and delivery focus</li>
+                                <li>Quality control and process improvement</li>
+                                <li>Client communication and expectations management</li>
+                                <li>Business fundamentals and growth planning</li>
+                            </ul>
+                            <p style="margin-top: 0.5rem; font-style: italic; font-size: 0.9rem;">Connects engineering problem-solving methods to marketing challenges.</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div style="margin-top: 2rem; padding: 2rem; background: #f0f9ff; border-radius: 12px;">
+                    <h3 style="color: #1e3a8a; margin-bottom: 1rem; text-align: center;">The Partnership Advantage</h3>
+                    <p style="color: #475569; line-height: 1.6; text-align: center;">This unique combination of fresh digital perspective and seasoned engineering management creates a balanced approach to business challenges. While I focus on the technical implementation, his project management experience ensures we deliver on time and within scope.</p>
+                </div>
+            </section>
+
+            <!-- Community Connection Section -->
+            <section class="wp-content-section">
+                <h2 class="wp-section-title">Community Connection</h2>
+                <p class="wp-section-subtitle">Invested in Houston's business community</p>
+                
+                <div style="text-align: center; margin-bottom: 2rem;">
+                    <div style="font-size: 4rem; margin-bottom: 1rem;">🤝</div>
+                </div>
+                
+                <div class="wp-content-card">
+                    <h3 class="wp-card-title">Local Business Focus</h3>
+                    <div class="wp-card-content">
+                        <p>We believe Houston's small and medium businesses are the backbone of our community. From family-owned restaurants to growing HVAC companies, from medical practices to professional services - every Houston business deserves access to modern marketing tools and expertise.</p>
+                        
+                        <p style="margin-top: 1rem;">Our goal is to contribute to Houston's business community by helping local companies compete more effectively, reach more customers, and achieve sustainable growth.</p>
+                        
+                        <div style="margin-top: 1.5rem; padding: 1.5rem; background: #f0f9ff; border-radius: 8px;">
+                            <h4 style="color: #1e3a8a; margin-bottom: 0.5rem;">Our Commitment</h4>
+                            <p style="color: #475569;">Our commitment is to continue learning and growing alongside Houston's business community, providing honest service and focusing on results that matter to local business owners.</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- CTA Section -->
+            <section class="wp-cta-section">
+                <h2 class="wp-cta-title">Ready to work with Houston's AI marketing specialists?</h2>
+                <p class="wp-cta-subtitle">Let's discuss how we can help your business grow online</p>
+                <a href="index.html#contact" class="wp-cta-button">Get Your Free Strategy Session</a>
+                
+                <div style="margin-top: 2rem; padding-top: 2rem; border-top: 1px solid rgba(255, 255, 255, 0.2);">
+                    <p style="font-size: 0.95rem; opacity: 0.9;">Limited spots available - contact us to check current availability</p>
+                </div>
+            </section>
+        </div>
+    </main>
+
+    <!-- JavaScript for Mobile Menu -->
+    <script>
+        // Mobile menu toggle
+        const mobileMenu = document.getElementById('mobileMenu');
+        const navLinks = document.getElementById('navLinks');
+
+        mobileMenu.addEventListener('click', () => {
+            navLinks.classList.toggle('active');
+            mobileMenu.classList.toggle('active');
+        });
+
+        // Close mobile menu when clicking on a link
+        document.querySelectorAll('.nav-links a').forEach(link => {
+            link.addEventListener('click', () => {
+                navLinks.classList.remove('active');
+                mobileMenu.classList.remove('active');
+            });
+        });
+
+        // Close mobile menu when clicking outside
+        document.addEventListener('click', (e) => {
+            if (!navLinks.contains(e.target) && !mobileMenu.contains(e.target)) {
+                navLinks.classList.remove('active');
+                mobileMenu.classList.remove('active');
+            }
+        });
+    </script>
+</body>
+</html>

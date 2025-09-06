@@ -739,7 +739,8 @@
             -moz-osx-font-smoothing: grayscale;
         }
 
-        .package,
+        .wp-package-card,
+        .wp-package-cta,
         .cta-button,
         .submit-btn {
             will-change: transform;
@@ -800,151 +801,264 @@
             margin-right: auto;
         }
 
+        /* WordPress-Ready Package Cards - Mobile First */
+        .wp-packages-section {
+            padding: 4rem 0;
+            background: #f8fafc;
+        }
+
+        .wp-packages-container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 1rem;
+        }
+
         .packages-grid {
             display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+            grid-template-columns: 1fr;
             gap: 2rem;
-            margin: 4rem 0;
-            padding: 0 0.5rem;
-            max-width: 1100px;
-            margin-left: auto;
-            margin-right: auto;
+            margin: 3rem 0;
+            /* Performance optimization for WordPress */
+            contain: layout style;
         }
 
-        .package {
-            background: white;
-            border-radius: 20px;
-            padding: 2.5rem 2rem;
+        /* WordPress Theme Integration Utilities */
+        .wp-packages-section .section-title {
             text-align: center;
-            box-shadow: 0 20px 60px rgba(0, 0, 0, 0.08);
-            transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
-            position: relative;
-            overflow: visible;
-            border: 2px solid rgba(30, 58, 138, 0.08);
-            backdrop-filter: blur(10px);
-            height: fit-content;
+            margin-bottom: 1rem;
         }
 
-        .package::before {
+        .wp-packages-section .section-subtitle {
+            text-align: center;
+            margin-bottom: 2rem;
+            opacity: 0.8;
+        }
+
+        .wp-package-card {
+            background: #ffffff;
+            border-radius: 12px;
+            padding: 2rem 1.5rem;
+            text-align: center;
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            position: relative;
+            border: 1px solid #e2e8f0;
+            display: flex;
+            flex-direction: column;
+            min-height: auto;
+            word-wrap: break-word;
+            overflow-wrap: break-word;
+        }
+
+        .wp-package-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 8px 30px rgba(0, 0, 0, 0.15);
+        }
+
+        .wp-package-card::before {
             content: '';
             position: absolute;
             top: 0;
             left: 0;
             right: 0;
-            height: 6px;
+            height: 4px;
             background: linear-gradient(90deg, #1e3a8a, #0891b2);
-            border-radius: 24px 24px 0 0;
+            border-radius: 12px 12px 0 0;
         }
 
-        .package:hover {
-            transform: translateY(-15px) scale(1.03);
-            box-shadow: 0 40px 100px rgba(0, 0, 0, 0.18);
+        .wp-package-card.wp-featured {
             border-color: #0891b2;
+            box-shadow: 0 6px 25px rgba(8, 145, 178, 0.15);
         }
 
-        .package.featured {
-            transform: scale(1.05);
-            border: 3px solid #0891b2;
-            box-shadow: 0 25px 70px rgba(8, 145, 178, 0.15);
+        .wp-package-card.wp-featured:hover {
+            transform: translateY(-8px);
+            box-shadow: 0 12px 35px rgba(8, 145, 178, 0.2);
         }
 
-        .package.featured:hover {
-            transform: translateY(-12px) scale(1.07);
-        }
-
-        .package h3 {
-            font-size: 1.6rem;
-            margin-bottom: 1.5rem;
+        .wp-package-title {
+            font-size: 1.5rem;
+            margin: 1rem 0 1.5rem 0;
             color: #1e3a8a;
             font-weight: 700;
-            margin-top: 1rem;
+            line-height: 1.3;
         }
 
-        .price {
-            font-size: 3.5rem;
+        .wp-package-price {
+            font-size: 2.8rem;
             font-weight: 800;
             color: #0891b2;
             margin-bottom: 1.5rem;
-            text-shadow: 0 2px 4px rgba(8, 145, 178, 0.1);
+            line-height: 1;
         }
 
-        .package ul {
-            list-style: none;
-            margin-bottom: 2.5rem;
+        .wp-package-content {
+            flex-grow: 1;
             text-align: left;
+            margin-bottom: 2rem;
         }
 
-        .package li {
-            padding: 0.75rem 0;
+        .wp-package-features {
+            list-style: none;
+            margin: 0;
+            padding: 0;
+        }
+
+        .wp-package-feature {
+            padding: 0.6rem 0;
             color: #475569;
-            font-size: 1.05rem;
+            font-size: 1rem;
             font-weight: 500;
             display: flex;
             align-items: flex-start;
             gap: 0.75rem;
+            line-height: 1.5;
         }
 
-        .package li::before {
+        .wp-package-feature::before {
             content: '✓';
             color: #0891b2;
             font-weight: 800;
-            font-size: 1.2rem;
+            font-size: 1.1rem;
             flex-shrink: 0;
             margin-top: 0.1rem;
         }
 
-        .package-badge {
+        .wp-package-badge {
             position: absolute;
-            top: -22px;
+            top: -15px;
             left: 50%;
             transform: translateX(-50%);
-            padding: 1rem 2.5rem;
-            border-radius: 35px;
-            font-weight: 900;
-            font-size: 0.9rem;
-            letter-spacing: 0.8px;
+            padding: 0.5rem 1.5rem;
+            border-radius: 20px;
+            font-weight: 700;
+            font-size: 0.8rem;
             text-transform: uppercase;
-            box-shadow: 0 12px 35px rgba(0, 0, 0, 0.2);
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.15);
             z-index: 10;
             white-space: nowrap;
-            border: 2px solid rgba(255, 255, 255, 0.3);
-            animation: pulse-badge 2s ease-in-out infinite alternate;
         }
 
-        @keyframes pulse-badge {
-            from {
-                transform: translateX(-50%) scale(1);
-                box-shadow: 0 12px 35px rgba(0, 0, 0, 0.2);
-            }
-            to {
-                transform: translateX(-50%) scale(1.05);
-                box-shadow: 0 15px 45px rgba(0, 0, 0, 0.25);
-            }
-        }
-
-        .package-badge.popular {
+        .wp-package-badge.wp-popular {
             background: linear-gradient(45deg, #0891b2, #1e3a8a);
             color: white;
         }
 
-        .package-badge.value {
+        .wp-package-badge.wp-value {
             background: linear-gradient(45deg, #f59e0b, #d97706);
             color: white;
         }
 
-        .save-badge {
+        .wp-save-badge {
             position: absolute;
-            top: 25px;
+            top: 20px;
             right: -5px;
             background: linear-gradient(45deg, #22c55e, #16a34a);
             color: white;
-            padding: 0.4rem 1rem;
-            border-radius: 20px;
+            padding: 0.3rem 0.8rem;
+            border-radius: 15px;
             font-weight: 700;
-            font-size: 0.8rem;
-            transform: rotate(12deg);
-            box-shadow: 0 4px 15px rgba(34, 197, 94, 0.3);
+            font-size: 0.7rem;
+            transform: rotate(10deg);
+            box-shadow: 0 3px 10px rgba(34, 197, 94, 0.3);
             z-index: 5;
+        }
+
+        .wp-package-cta {
+            margin-top: auto;
+            width: 100%;
+            padding: 1rem 1.5rem;
+            font-size: 1rem;
+            font-weight: 600;
+            line-height: 1.4;
+            background: linear-gradient(45deg, #0891b2, #1e3a8a);
+            color: white;
+            text-decoration: none;
+            border-radius: 8px;
+            border: none;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            display: inline-block;
+            text-align: center;
+        }
+
+        .wp-package-cta:hover {
+            background: linear-gradient(45deg, #0a7b9e, #1a3380);
+            transform: translateY(-2px);
+            box-shadow: 0 6px 20px rgba(8, 145, 178, 0.3);
+            color: white;
+            text-decoration: none;
+        }
+
+        .wp-package-subtitle {
+            color: #1e3a8a;
+            margin-bottom: 1rem;
+            font-size: 1.1rem;
+            font-weight: 700;
+            text-align: left;
+        }
+
+        .wp-package-note {
+            font-size: 0.9rem;
+            color: #666;
+            font-style: italic;
+            margin-top: 1rem;
+            text-align: center;
+        }
+
+        /* WordPress Responsive Design - Tablet and Desktop */
+        @media (min-width: 768px) {
+            .packages-grid {
+                grid-template-columns: repeat(2, 1fr);
+                gap: 2rem;
+            }
+            
+            .wp-packages-container {
+                padding: 0 2rem;
+            }
+            
+            .wp-package-card {
+                padding: 2.5rem 2rem;
+            }
+        }
+
+        @media (min-width: 1024px) {
+            .packages-grid {
+                grid-template-columns: repeat(3, 1fr);
+                gap: 2.5rem;
+            }
+            
+            .wp-packages-container {
+                max-width: 1200px;
+                padding: 0 2rem;
+            }
+            
+            .wp-package-card {
+                min-height: 500px;
+            }
+        }
+
+        @media (min-width: 1200px) {
+            .wp-packages-container {
+                max-width: 1400px;
+            }
+            
+            .packages-grid {
+                gap: 3rem;
+            }
+            
+            .wp-package-card {
+                min-height: 550px;
+                padding: 3rem 2.5rem;
+            }
+            
+            .wp-package-title {
+                font-size: 1.8rem;
+            }
+            
+            .wp-package-price {
+                font-size: 3.2rem;
+            }
         }
 
         /* Trust Section */
@@ -1289,23 +1403,14 @@
                 margin-bottom: 2rem;
             }
 
-            .packages-grid {
-                grid-template-columns: 1fr;
-                gap: 2rem;
-                padding: 0 0.5rem;
+            .wp-package-cta {
+                padding: 0.9rem 1.2rem;
+                font-size: 0.95rem;
             }
 
-            .package {
-                margin-top: 1rem;
-                padding: 2rem 1.5rem;
-            }
-
-            .package.featured {
-                transform: none;
-            }
-
-            .package.featured:hover {
-                transform: translateY(-12px);
+            .wp-package-badge {
+                font-size: 0.75rem;
+                padding: 0.4rem 1rem;
             }
 
             .contact-grid {
@@ -1317,15 +1422,6 @@
                 padding: 2rem;
             }
 
-            .package-badge {
-                font-size: 0.75rem;
-                padding: 0.6rem 1.5rem;
-            }
-
-            .save-badge {
-                font-size: 0.7rem;
-                padding: 0.3rem 0.8rem;
-            }
         }
 
         @media (max-width: 480px) {
@@ -1377,18 +1473,38 @@
             }
 
             .packages-grid {
-                grid-template-columns: 1fr;
-                gap: 2rem;
-                padding: 0;
+                gap: 1.5rem;
+            }
+            
+            .wp-packages-container {
+                padding: 0 0.5rem;
             }
 
-            .package {
-                padding: 2rem 1.5rem;
-                margin-top: 1.5rem;
+            .wp-package-card {
+                padding: 1.5rem 1rem;
             }
-
-            .price {
+            
+            .wp-package-title {
+                font-size: 1.3rem;
+            }
+            
+            .wp-package-price {
                 font-size: 2.5rem;
+            }
+            
+            .wp-package-badge {
+                font-size: 0.7rem;
+                padding: 0.3rem 0.8rem;
+            }
+
+            .wp-save-badge {
+                font-size: 0.6rem;
+                padding: 0.25rem 0.6rem;
+            }
+            
+            .wp-package-cta {
+                padding: 0.8rem 1rem;
+                font-size: 0.9rem;
             }
 
             .cta-button {
@@ -1412,10 +1528,6 @@
                 font-size: 1rem;
             }
 
-            .package-badge {
-                font-size: 0.7rem;
-                padding: 0.5rem 1.2rem;
-            }
 
             .hero-trust {
                 font-size: 0.9rem;
@@ -1458,7 +1570,7 @@
             <ul class="nav-links" id="navLinks">
                 <li><a href="#home">Home</a></li>
                 <li><a href="services.html">Services</a></li>
-                <li><a href="#about">About</a></li>
+                <li><a href="about.html">About</a></li>
                 <li><a href="#testimonials">Reviews</a></li>
                 <li><a href="#contact">Contact</a></li>
             </ul>
@@ -1502,7 +1614,7 @@
                     
                     <!-- Urgency & Value -->
                     <div style="text-align: center; margin-top: 1.5rem;">
-                        <p style="font-size: 1.1rem; font-weight: 700; color: #fbbf24; margin: 0 0 0.5rem 0; text-shadow: 0 2px 10px rgba(0, 0, 0, 0.3);">⚡ Only 5 spots left this month</p>
+                        <p style="font-size: 1.1rem; font-weight: 700; color: #fbbf24; margin: 0 0 0.5rem 0; text-shadow: 0 2px 10px rgba(0, 0, 0, 0.3);">⚡ Limited spots available - contact us to check current availability</p>
                         <p style="font-size: 0.95rem; color: rgba(255, 255, 255, 0.95); margin: 0; font-weight: 500;">Discover exactly how to get more customers online</p>
                     </div>
                     
@@ -1553,68 +1665,68 @@
         </div>
     </section>
 
-        <!-- Services Section -->
-        <section class="services" id="services" aria-labelledby="services-heading">
-        <div class="container">
+        <!-- WordPress-Ready Services Section -->
+        <section class="wp-packages-section" id="services" aria-labelledby="services-heading">
+        <div class="wp-packages-container">
             <h2 id="services-heading" class="section-title">Choose Your Growth Package</h2>
             <p class="section-subtitle">One-time project investment, lasting results for your business</p>
             <div class="packages-grid">
-                <div class="package">
-                    <h3 id="package-1">Get Found Online Package</h3>
-                    <div class="price">$599</div>
-                    <div style="text-align: left; margin-bottom: 2rem;">
-                        <h4 style="color: #1e3a8a; margin-bottom: 1rem; font-size: 1.1rem; font-weight: 700;">What You Get:</h4>
-                        <ul>
-                            <li>5-page professional website that works on all devices</li>
-                            <li>Google Business Profile setup for Houston visibility</li>
-                            <li>Local Houston SEO optimization</li>
-                            <li>30-day support included</li>
+                <div class="wp-package-card">
+                    <h3 class="wp-package-title" id="package-1">Get Found Online Package</h3>
+                    <div class="wp-package-price">$599</div>
+                    <div class="wp-package-content">
+                        <h4 class="wp-package-subtitle">What You Get:</h4>
+                        <ul class="wp-package-features">
+                            <li class="wp-package-feature">5-page professional website that works on all devices</li>
+                            <li class="wp-package-feature">Google Business Profile setup for Houston visibility</li>
+                            <li class="wp-package-feature">Local Houston SEO optimization</li>
+                            <li class="wp-package-feature">30-day support included</li>
                         </ul>
                     </div>
-                    <a href="#contact" class="cta-button" aria-describedby="package-1">Start Building Online Presence</a>
+                    <a href="#contact" class="wp-package-cta" aria-describedby="package-1">Start Building Online Presence</a>
                 </div>
 
-                <div class="package featured">
-                    <div class="package-badge popular">✨ Most Popular</div>
-                    <div class="save-badge">Save $300</div>
-                    <h3 id="package-2">Get More Customers Package</h3>
-                    <div class="price">$1,199</div>
-                    <div style="text-align: left; margin-bottom: 2rem;">
-                        <h4 style="color: #1e3a8a; margin-bottom: 1rem; font-size: 1.1rem; font-weight: 700;">What You Get:</h4>
-                        <ul>
-                            <li>8-page conversion website with lead capture forms</li>
-                            <li>Lead capture system setup for Houston customers</li>
-                            <li>Review management setup for local reputation</li>
-                            <li>Social media integration for Houston market</li>
-                            <li>90-day support included</li>
+                <div class="wp-package-card wp-featured">
+                    <div class="wp-package-badge wp-popular">✨ Most Popular</div>
+                    <div class="wp-save-badge">Save $300</div>
+                    <h3 class="wp-package-title" id="package-2">Get More Customers Package</h3>
+                    <div class="wp-package-price">$1,199</div>
+                    <div class="wp-package-content">
+                        <h4 class="wp-package-subtitle">What You Get:</h4>
+                        <ul class="wp-package-features">
+                            <li class="wp-package-feature">8-page conversion website with lead capture forms</li>
+                            <li class="wp-package-feature">Lead capture system setup for Houston customers</li>
+                            <li class="wp-package-feature">Review management setup for local reputation</li>
+                            <li class="wp-package-feature">Social media integration for Houston market</li>
+                            <li class="wp-package-feature">90-day support included</li>
                         </ul>
                     </div>
-                    <a href="#contact" class="cta-button" aria-describedby="package-2">Generate More Leads</a>
+                    <a href="#contact" class="wp-package-cta" aria-describedby="package-2">Generate More Leads</a>
                 </div>
 
-                <div class="package">
-                    <div class="package-badge value">💰 Best Value</div>
-                    <div class="save-badge">Save $800</div>
-                    <h3 id="package-3">Lead Your Market Package</h3>
-                    <div class="price">Starting at $2,199</div>
-                    <div style="text-align: left; margin-bottom: 2rem;">
-                        <h4 style="color: #1e3a8a; margin-bottom: 1rem; font-size: 1.1rem; font-weight: 700;">What You Get:</h4>
-                        <ul>
-                            <li>Up to 15 pages + custom features for Houston businesses</li>
-                            <li>Advanced marketing automation tools</li>
-                            <li>Competitive analysis report for Houston market</li>
-                            <li>Multi-location optimization for Greater Houston area</li>
-                            <li>Priority support for 6 months</li>
+                <div class="wp-package-card">
+                    <div class="wp-package-badge wp-value">💰 Best Value</div>
+                    <div class="wp-save-badge">Save $800</div>
+                    <h3 class="wp-package-title" id="package-3">Lead Your Market Package</h3>
+                    <div class="wp-package-price">Starting at $2,199</div>
+                    <div class="wp-package-content">
+                        <h4 class="wp-package-subtitle">What You Get:</h4>
+                        <ul class="wp-package-features">
+                            <li class="wp-package-feature">Up to 15 pages + custom features for Houston businesses</li>
+                            <li class="wp-package-feature">Advanced marketing automation tools</li>
+                            <li class="wp-package-feature">Competitive analysis report for Houston market</li>
+                            <li class="wp-package-feature">Multi-location optimization for Greater Houston area</li>
+                            <li class="wp-package-feature">Priority support for 6 months</li>
                         </ul>
-                        <p style="font-size: 0.9rem; color: #666; font-style: italic; margin-top: 1rem;">Additional pages available at $150 each</p>
+                        <p class="wp-package-note">Additional pages available at $150 each</p>
                     </div>
-                    <a href="#contact" class="cta-button" aria-describedby="package-3">Lead Your Market</a>
+                    <a href="#contact" class="wp-package-cta" aria-describedby="package-3">Lead Your Market</a>
                 </div>
             </div>
             
             <!-- Launch Special Banner -->
             <div style="background: linear-gradient(45deg, #0891b2, #1e3a8a); color: white; padding: 2rem; border-radius: 15px; text-align: center; margin: 3rem auto; max-width: 800px; box-shadow: 0 15px 40px rgba(0, 0, 0, 0.2);">
-                <h3 style="font-size: 1.8rem; margin-bottom: 1rem; font-weight: 700;">🚀 Launch Special: First 10 clients get 20% off any package + extended support</h3>
+                <h3 style="font-size: 1.8rem; margin-bottom: 1rem; font-weight: 700;">🚀 Launch Special: Limited spots available - contact us to check current availability for 20% off any package + extended support</h3>
                 <p style="font-size: 1.1rem; opacity: 0.9;">Limited time offer for Houston businesses ready to grow online</p>
             </div>
         </div>
@@ -1669,7 +1781,7 @@
                     
                     <!-- Urgency Banner -->
                     <div class="urgency-banner">
-                        <div style="font-weight: 800; font-size: 1.1rem; margin-bottom: 0.5rem;">⚡ Only 5 spots left this month</div>
+                        <div style="font-weight: 800; font-size: 1.1rem; margin-bottom: 0.5rem;">⚡ Limited spots available - contact us to check current availability</div>
                         <div style="font-size: 0.9rem; opacity: 0.95;">Claim yours before they're gone</div>
                     </div>
                     
