@@ -233,19 +233,9 @@
             overflow: hidden;
         }
 
-        .nav-links a::before {
-            content: '';
-            position: absolute;
-            top: 0;
-            left: -100%;
-            width: 100%;
-            height: 100%;
-            background: linear-gradient(90deg, transparent, rgba(30, 58, 138, 0.1), transparent);
-            transition: left 0.5s;
-        }
-
-        .nav-links a:hover::before {
-            left: 100%;
+        .nav-links a.active {
+            color: #0891b2;
+            background: rgba(8, 145, 178, 0.15);
         }
 
         .nav-links a:hover {
@@ -1572,7 +1562,7 @@
                 <li><a href="services.html">Services</a></li>
                 <li><a href="about.html">About</a></li>
                 <li><a href="#testimonials">Reviews</a></li>
-                <li><a href="#contact">Contact</a></li>
+                <li><a href="contact.html">Contact</a></li>
             </ul>
             <div class="mobile-menu" id="mobileMenu">
                 <span></span>
@@ -1608,7 +1598,7 @@
                     </div>
                     
                     <!-- Main CTA Button -->
-                    <a href="#contact" style="display: block; background: linear-gradient(45deg, #f97316, #0891b2); color: white; padding: 1.3rem 2rem; border-radius: 50px; text-decoration: none; font-weight: 800; font-size: 1.2rem; text-align: center; box-shadow: 0 15px 40px rgba(249, 115, 22, 0.3); border: 3px solid rgba(255, 255, 255, 0.2); text-transform: uppercase; letter-spacing: 0.5px; transition: all 0.3s ease; position: relative; overflow: hidden;" onmouseover="this.style.transform='translateY(-3px) scale(1.02)'; this.style.boxShadow='0 25px 60px rgba(249, 115, 22, 0.5)'" onmouseout="this.style.transform='translateY(0) scale(1)'; this.style.boxShadow='0 15px 40px rgba(249, 115, 22, 0.3)'">
+                    <a href="contact.html" style="display: block; background: linear-gradient(45deg, #f97316, #0891b2); color: white; padding: 1.3rem 2rem; border-radius: 50px; text-decoration: none; font-weight: 800; font-size: 1.2rem; text-align: center; box-shadow: 0 15px 40px rgba(249, 115, 22, 0.3); border: 3px solid rgba(255, 255, 255, 0.2); text-transform: uppercase; letter-spacing: 0.5px; transition: all 0.3s ease; position: relative; overflow: hidden;" onmouseover="this.style.transform='translateY(-3px) scale(1.02)'; this.style.boxShadow='0 25px 60px rgba(249, 115, 22, 0.5)'" onmouseout="this.style.transform='translateY(0) scale(1)'; this.style.boxShadow='0 15px 40px rgba(249, 115, 22, 0.3)'">
                         Get Your Free Strategy
                     </a>
                     
@@ -1683,7 +1673,7 @@
                             <li class="wp-package-feature">30-day support included</li>
                         </ul>
                     </div>
-                    <a href="#contact" class="wp-package-cta" aria-describedby="package-1">Start Building Online Presence</a>
+                    <a href="contact.html" class="wp-package-cta" aria-describedby="package-1">Start Building Online Presence</a>
                 </div>
 
                 <div class="wp-package-card wp-featured">
@@ -1701,7 +1691,7 @@
                             <li class="wp-package-feature">90-day support included</li>
                         </ul>
                     </div>
-                    <a href="#contact" class="wp-package-cta" aria-describedby="package-2">Generate More Leads</a>
+                    <a href="contact.html" class="wp-package-cta" aria-describedby="package-2">Generate More Leads</a>
                 </div>
 
                 <div class="wp-package-card">
@@ -1720,7 +1710,7 @@
                         </ul>
                         <p class="wp-package-note">Additional pages available at $150 each</p>
                     </div>
-                    <a href="#contact" class="wp-package-cta" aria-describedby="package-3">Lead Your Market</a>
+                    <a href="contact.html" class="wp-package-cta" aria-describedby="package-3">Lead Your Market</a>
                 </div>
             </div>
             

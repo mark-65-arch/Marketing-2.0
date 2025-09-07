@@ -559,6 +559,32 @@
             border-bottom: 2px solid rgba(30, 58, 138, 0.1);
         }
 
+        .package-header-link {
+            text-decoration: none;
+            color: inherit;
+            transition: all 0.3s ease;
+            cursor: pointer;
+            border-radius: 12px;
+            padding: 1rem;
+            margin: -1rem;
+        }
+
+        .package-header-link:hover {
+            transform: translateY(-4px);
+            background: rgba(8, 145, 178, 0.12);
+            box-shadow: 0 8px 30px rgba(30, 58, 138, 0.25);
+            border: 2px solid rgba(8, 145, 178, 0.3);
+        }
+
+        .package-header-link:hover .package-title {
+            color: #0891b2;
+        }
+
+        .package-header-link:hover .package-price {
+            transform: scale(1.02);
+            color: #0891b2;
+        }
+
         .package-title {
             font-size: 2.2rem;
             font-weight: 800;
@@ -1534,13 +1560,13 @@
                 <div class="packages-detailed">
                     <!-- Package 1: Get Found Online -->
                     <article class="package-detail">
-                        <div class="package-header">
+                        <a href="index.html#contact" class="package-header package-header-link">
                             <div>
                                 <h3 class="package-title">Get Found Online Package</h3>
                                 <p style="color: #64748b; font-size: 1.1rem;">Perfect for new businesses or those without an online presence</p>
                             </div>
                             <div class="package-price">$599</div>
-                        </div>
+                        </a>
                         
                         <div class="package-content">
                             <div class="package-section">
@@ -1564,10 +1590,6 @@
                                 </ul>
                             </div>
                             
-                            <div class="package-cta">
-                                <a href="index.html#contact" class="package-cta-button">Start Building Your Online Presence</a>
-                            </div>
-                            
                             <div class="package-section">
                                 <h4>Timeline & Outcomes</h4>
                                 <ul>
@@ -1584,14 +1606,14 @@
 
                     <!-- Package 2: Get More Customers -->
                     <article class="package-detail featured">
-                        <div class="package-header">
+                        <a href="index.html#contact" class="package-header package-header-link">
                             <div>
                                 <h3 class="package-title">Get More Customers Package</h3>
                                 <p style="color: #64748b; font-size: 1.1rem;">Most popular - ideal for businesses ready to grow their customer base</p>
                                 <div style="background: #0891b2; color: white; padding: 0.5rem 1rem; border-radius: 20px; font-size: 0.9rem; font-weight: 600; display: inline-block; margin-top: 0.5rem;">✨ Most Popular</div>
                             </div>
                             <div class="package-price">$1,199</div>
-                        </div>
+                        </a>
                         
                         <div class="package-content">
                             <div class="package-section">
@@ -1616,10 +1638,6 @@
                                 </ul>
                             </div>
                             
-                            <div class="package-cta">
-                                <a href="index.html#contact" class="package-cta-button">Generate More Leads Today</a>
-                            </div>
-                            
                             <div class="package-section">
                                 <h4>Timeline & Outcomes</h4>
                                 <ul>
@@ -1636,14 +1654,14 @@
 
                     <!-- Package 3: Lead Your Market -->
                     <article class="package-detail">
-                        <div class="package-header">
+                        <a href="index.html#contact" class="package-header package-header-link">
                             <div>
                                 <h3 class="package-title">Lead Your Market Package</h3>
                                 <p style="color: #64748b; font-size: 1.1rem;">Enterprise-level solution for businesses ready to strengthen their market position</p>
                                 <div style="background: #f97316; color: white; padding: 0.5rem 1rem; border-radius: 20px; font-size: 0.9rem; font-weight: 600; display: inline-block; margin-top: 0.5rem;">💰 Best Value</div>
                             </div>
                             <div class="package-price">Starting at $2,199</div>
-                        </div>
+                        </a>
                         
                         <div class="package-content">
                             <div class="package-section">
@@ -1666,10 +1684,6 @@
                                     <li>Multiple locations</li>
                                     <li>Competitive markets</li>
                                 </ul>
-                            </div>
-                            
-                            <div class="package-cta">
-                                <a href="index.html#contact" class="package-cta-button">Dominate Your Competition</a>
                             </div>
                             
                             <div class="package-section">
@@ -1945,7 +1959,7 @@
             <div class="container">
                 <div class="cta-content">
                     <h2 class="cta-title">Ready to Get Started? Schedule Your Free Strategy Session</h2>
-                    <p class="cta-subtitle">Limited availability - we only take 3 new clients per month</p>
+                    <p class="cta-subtitle">Limited Spots available</p>
                     
                     <div class="cta-buttons">
                         <a href="index.html#contact" class="cta-button">Get Your Free Strategy Session</a>
