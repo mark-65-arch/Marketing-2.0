@@ -1,0 +1,546 @@
+/* Enhanced CTA Button Styling */
+
+/* Main CTA Button Special Styling */
+.cta-main {
+    font-size: 1.5rem !important;
+    padding: 2rem 5rem !important;
+    font-weight: 800 !important;
+    min-height: 75px !important;
+    box-shadow: 0 10px 40px rgba(255, 107, 53, 0.7) !important;
+    border: 3px solid rgba(255, 255, 255, 0.3) !important;
+    backdrop-filter: blur(10px);
+    position: relative;
+    overflow: hidden;
+    text-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+}
+
+.cta-main::before {
+    content: '';
+    position: absolute;
+    top: -50%;
+    left: -50%;
+    width: 200%;
+    height: 200%;
+    background: linear-gradient(45deg, transparent, rgba(255, 255, 255, 0.15), transparent);
+    transform: rotate(-45deg);
+    animation: shimmer 3s infinite;
+    z-index: 1;
+}
+
+.cta-main span {
+    position: relative;
+    z-index: 2;
+}
+
+@keyframes shimmer {
+    0% { transform: translateX(-100%) translateY(-100%) rotate(-45deg); }
+    100% { transform: translateX(100%) translateY(100%) rotate(-45deg); }
+}
+
+/* Enhanced Phone CTA */
+.phone-cta {
+    background: rgba(255, 255, 255, 0.2) !important;
+    backdrop-filter: blur(15px) !important;
+    color: white !important;
+    border: 2px solid rgba(255, 255, 255, 0.5) !important;
+    font-size: 1.2rem !important;
+    padding: 1.5rem 3.5rem !important;
+    font-weight: 600 !important;
+    min-height: 64px !important;
+    text-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+    box-shadow: 0 6px 20px rgba(255, 255, 255, 0.15);
+}
+
+.phone-cta:hover {
+    background: rgba(255, 255, 255, 0.25) !important;
+    color: white !important;
+    border-color: rgba(255, 255, 255, 0.6) !important;
+    transform: translateY(-3px);
+    box-shadow: 0 8px 25px rgba(255, 255, 255, 0.2);
+}
+
+/* Section Headings Enhancement */
+.problem-solution h2,
+.service-details h2,
+.design-process h2,
+.industries-served h2,
+.service-areas h2,
+.pricing-packages h2,
+.faq-section h2 {
+    text-align: center !important;
+    font-size: 2.8rem !important;
+    font-weight: 800 !important;
+    background: linear-gradient(135deg, #1e3a8a 0%, #0891b2 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    margin-bottom: 2.5rem !important;
+    position: relative;
+}
+
+.problem-solution h2::after,
+.service-details h2::after,
+.design-process h2::after,
+.industries-served h2::after,
+.service-areas h2::after,
+.pricing-packages h2::after,
+.faq-section h2::after {
+    content: '';
+    position: absolute;
+    bottom: -15px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 80px;
+    height: 4px;
+    background: linear-gradient(135deg, #ff6b35 0%, #f7931e 100%);
+    border-radius: 2px;
+}
+
+/* Process Step Icons Enhancement */
+.step-number {
+    background: linear-gradient(135deg, #ff6b35 0%, #f7931e 100%) !important;
+    color: white !important;
+    width: 70px !important;
+    height: 70px !important;
+    border-radius: 50% !important;
+    display: flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+    font-size: 1.8rem !important;
+    font-weight: 800 !important;
+    margin: 0 auto 2rem !important;
+    box-shadow: 0 8px 25px rgba(255, 107, 53, 0.4) !important;
+    position: relative;
+    border: 3px solid rgba(255, 255, 255, 0.2);
+}
+
+.step-number::before {
+    content: '';
+    position: absolute;
+    top: -3px;
+    left: -3px;
+    right: -3px;
+    bottom: -3px;
+    background: linear-gradient(135deg, #ff6b35, #f7931e, #ff6b35);
+    border-radius: 50%;
+    z-index: -1;
+    animation: rotate 3s linear infinite;
+}
+
+@keyframes rotate {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}
+
+/* FAQ Section Enhancement */
+.faq-section {
+    background: linear-gradient(135deg, #f8fafc 0%, #e2e8f0 100%) !important;
+    position: relative;
+}
+
+.faq-section::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100"><defs><pattern id="grid" width="10" height="10" patternUnits="userSpaceOnUse"><path d="M 10 0 L 0 0 0 10" fill="none" stroke="%23e2e8f0" stroke-width="0.5"/></pattern></defs><rect width="100" height="100" fill="url(%23grid)"/></svg>');
+    opacity: 0.3;
+    z-index: 1;
+}
+
+.faq-section .container {
+    position: relative;
+    z-index: 2;
+}
+
+.faq-item {
+    background: rgba(255, 255, 255, 0.9) !important;
+    backdrop-filter: blur(10px) !important;
+    border: 2px solid rgba(255, 255, 255, 0.5) !important;
+    border-radius: 15px !important;
+    transition: all 0.4s cubic-bezier(0.25, 0.46, 0.45, 0.94) !important;
+    position: relative;
+    overflow: hidden;
+}
+
+.faq-item::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(90deg, transparent, rgba(255, 107, 53, 0.1), transparent);
+    transition: left 0.5s;
+}
+
+.faq-item:hover::before {
+    left: 100%;
+}
+
+.faq-item:hover {
+    transform: translateY(-5px) !important;
+    box-shadow: 0 15px 40px rgba(30, 58, 138, 0.2) !important;
+    border-color: rgba(255, 107, 53, 0.3) !important;
+}
+
+/* Pricing Package Enhancements */
+.popular-badge {
+    position: absolute;
+    top: -15px;
+    left: 50%;
+    transform: translateX(-50%);
+    background: linear-gradient(135deg, #ff6b35 0%, #f7931e 100%);
+    color: white;
+    padding: 0.5rem 1.5rem;
+    border-radius: 20px;
+    font-size: 0.9rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    box-shadow: 0 4px 15px rgba(255, 107, 53, 0.4);
+    z-index: 10;
+}
+
+.package-card.featured {
+    border-color: #ff6b35 !important;
+    box-shadow: 0 8px 40px rgba(255, 107, 53, 0.2) !important;
+    transform: scale(1.05) !important;
+    position: relative;
+}
+
+.package-card.featured .package-price {
+    color: #ff6b35 !important;
+    font-size: 2.2rem !important;
+}
+
+.package-card {
+    position: relative;
+}
+
+/* Final CTA Section Button Fixes */
+.btn-tertiary {
+    background: linear-gradient(135deg, #10b981 0%, #059669 100%) !important;
+    color: white !important;
+    border: 2px solid rgba(16, 185, 129, 0.3) !important;
+    font-weight: 600 !important;
+    text-shadow: 0 2px 4px rgba(0, 0, 0, 0.3) !important;
+    box-shadow: 0 6px 20px rgba(16, 185, 129, 0.4) !important;
+}
+
+.btn-tertiary:hover {
+    background: linear-gradient(135deg, #059669 0%, #047857 100%) !important;
+    color: white !important;
+    border-color: rgba(16, 185, 129, 0.6) !important;
+    transform: translateY(-3px) !important;
+    box-shadow: 0 8px 25px rgba(16, 185, 129, 0.5) !important;
+}
+
+/* Final CTA Options Styling - Equal Prominence */
+.cta-option {
+    background: rgba(255, 255, 255, 0.12) !important;
+    backdrop-filter: blur(15px) !important;
+    border: 2px solid rgba(255, 255, 255, 0.2) !important;
+    border-radius: 20px !important;
+    padding: 2.5rem 2rem !important;
+    transition: all 0.4s cubic-bezier(0.25, 0.46, 0.45, 0.94) !important;
+    text-align: center !important;
+}
+
+.cta-option:hover {
+    background: rgba(255, 255, 255, 0.18) !important;
+    border-color: rgba(255, 255, 255, 0.4) !important;
+    transform: translateY(-5px) !important;
+    box-shadow: 0 15px 40px rgba(255, 255, 255, 0.1) !important;
+}
+
+.cta-option h4 {
+    font-size: 1.4rem !important;
+    margin-bottom: 1rem !important;
+    font-weight: 700 !important;
+    color: #ffffff !important;
+}
+
+.cta-option p {
+    font-size: 1rem !important;
+    margin-bottom: 1.5rem !important;
+    opacity: 0.95 !important;
+    color: #ffffff !important;
+}
+
+/* Make all final CTA buttons equally prominent and same size */
+.phone-cta-large,
+.cta-main-large,
+.btn-tertiary {
+    font-size: 1.1rem !important;
+    padding: 1.3rem 2.5rem !important;
+    font-weight: 700 !important;
+    min-height: 60px !important;
+    border-radius: 50px !important;
+    text-decoration: none !important;
+    display: inline-flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+    text-align: center !important;
+    text-shadow: 0 2px 4px rgba(0, 0, 0, 0.3) !important;
+    transition: all 0.3s cubic-bezier(0.25, 0.46, 0.45, 0.94) !important;
+    white-space: nowrap !important;
+    line-height: 1.2 !important;
+}
+
+.phone-cta-large {
+    background: linear-gradient(135deg, #1e3a8a 0%, #0891b2 100%) !important;
+    color: white !important;
+    box-shadow: 0 6px 20px rgba(30, 58, 138, 0.4) !important;
+    border: 2px solid rgba(255, 255, 255, 0.2) !important;
+}
+
+.phone-cta-large:hover {
+    background: linear-gradient(135deg, #0f172a 0%, #0891b2 100%) !important;
+    color: white !important;
+    transform: translateY(-3px) !important;
+    box-shadow: 0 8px 25px rgba(30, 58, 138, 0.5) !important;
+    border-color: rgba(255, 255, 255, 0.4) !important;
+}
+
+.cta-main-large {
+    background: linear-gradient(135deg, #ff6b35 0%, #f7931e 100%) !important;
+    color: white !important;
+    box-shadow: 0 6px 20px rgba(255, 107, 53, 0.4) !important;
+    border: 2px solid rgba(255, 255, 255, 0.2) !important;
+}
+
+.cta-main-large:hover {
+    background: linear-gradient(135deg, #ff6b35 0%, #ff4500 100%) !important;
+    color: white !important;
+    transform: translateY(-3px) !important;
+    box-shadow: 0 8px 25px rgba(255, 107, 53, 0.5) !important;
+    border-color: rgba(255, 255, 255, 0.4) !important;
+}
+
+.btn-tertiary:hover {
+    background: linear-gradient(135deg, #059669 0%, #047857 100%) !important;
+    color: white !important;
+    border-color: rgba(16, 185, 129, 0.6) !important;
+    transform: translateY(-3px) !important;
+    box-shadow: 0 8px 25px rgba(16, 185, 129, 0.5) !important;
+}
+
+/* Hero Section Spacing Improvements */
+.service-hero {
+    padding: 10rem 0 8rem !important;
+}
+
+.hero-content {
+    max-width: 1000px !important;
+    margin: 0 auto !important;
+}
+
+.service-hero h1 {
+    margin-bottom: 2.5rem !important;
+    line-height: 1.2 !important;
+}
+
+.hero-subtitle {
+    margin-bottom: 3rem !important;
+    font-size: 1.25rem !important;
+    line-height: 1.7 !important;
+    max-width: 900px !important;
+    margin-left: auto !important;
+    margin-right: auto !important;
+}
+
+.hero-stats {
+    margin: 4rem 0 4rem 0 !important;
+    padding: 2.5rem 0 !important;
+    gap: 2.5rem !important;
+}
+
+.hero-cta {
+    margin: 4rem 0 3rem 0 !important;
+    gap: 2.5rem !important;
+}
+
+.hero-offer {
+    margin-top: 4rem !important;
+    margin-bottom: 2rem !important;
+    padding: 2.5rem !important;
+}
+
+/* Mobile Responsive Enhancements */
+@media (max-width: 768px) {
+    .service-hero {
+        padding: 8rem 0 6rem !important;
+    }
+    
+    .hero-content {
+        max-width: 100% !important;
+        padding: 0 1rem !important;
+    }
+    
+    .service-hero h1 {
+        font-size: 2.5rem !important;
+        margin-bottom: 2rem !important;
+    }
+    
+    .hero-subtitle {
+        font-size: 1.1rem !important;
+        margin-bottom: 2.5rem !important;
+    }
+    
+    .hero-stats {
+        margin: 3rem 0 3rem 0 !important;
+        padding: 2rem 0 !important;
+        gap: 2rem !important;
+        grid-template-columns: repeat(2, 1fr) !important;
+    }
+    
+    .hero-cta {
+        margin: 3rem 0 2.5rem 0 !important;
+        gap: 1.5rem !important;
+        flex-direction: column !important;
+    }
+    
+    .hero-offer {
+        margin-top: 3rem !important;
+        padding: 2rem !important;
+    }
+    
+    .cta-main {
+        font-size: 1.2rem !important;
+        padding: 1.5rem 3rem !important;
+        min-height: 60px !important;
+        width: 100% !important;
+        max-width: 400px !important;
+    }
+    
+    .phone-cta {
+        font-size: 1.1rem !important;
+        padding: 1.3rem 2.5rem !important;
+        min-height: 58px !important;
+        width: 100% !important;
+        max-width: 350px !important;
+    }
+    
+    .step-number {
+        width: 60px !important;
+        height: 60px !important;
+        font-size: 1.5rem !important;
+    }
+    
+    .problem-solution h2,
+    .service-details h2,
+    .design-process h2,
+    .industries-served h2,
+    .service-areas h2,
+    .pricing-packages h2,
+    .faq-section h2 {
+        font-size: 2.2rem !important;
+    }
+    
+    .cta-options {
+        grid-template-columns: 1fr !important;
+        gap: 2rem !important;
+    }
+    
+    .cta-option {
+        padding: 2rem 1.5rem !important;
+    }
+    
+    .phone-cta-large,
+    .cta-main-large,
+    .btn-tertiary {
+        font-size: 1rem !important;
+        padding: 1.2rem 2rem !important;
+        min-height: 55px !important;
+        width: 100% !important;
+        max-width: 300px !important;
+        margin: 0 auto !important;
+    }
+}
+
+@media (max-width: 480px) {
+    .service-hero {
+        padding: 6rem 0 4rem !important;
+    }
+    
+    .service-hero h1 {
+        font-size: 2rem !important;
+        margin-bottom: 1.5rem !important;
+        line-height: 1.1 !important;
+    }
+    
+    .hero-subtitle {
+        font-size: 1rem !important;
+        margin-bottom: 2rem !important;
+    }
+    
+    .hero-stats {
+        margin: 2.5rem 0 2.5rem 0 !important;
+        padding: 1.5rem 0 !important;
+        gap: 1.5rem !important;
+        grid-template-columns: 1fr !important;
+    }
+    
+    .hero-cta {
+        margin: 2.5rem 0 2rem 0 !important;
+        gap: 1.25rem !important;
+    }
+    
+    .hero-offer {
+        margin-top: 2.5rem !important;
+        padding: 1.8rem !important;
+    }
+    
+    .hero-offer p {
+        font-size: 1rem !important;
+        margin: 0.5rem 0 !important;
+    }
+    
+    .cta-main {
+        font-size: 1.1rem !important;
+        padding: 1.3rem 2.5rem !important;
+        min-height: 55px !important;
+        width: 100% !important;
+        max-width: 350px !important;
+    }
+    
+    .phone-cta {
+        font-size: 1rem !important;
+        padding: 1.2rem 2rem !important;
+        min-height: 52px !important;
+        width: 100% !important;
+        max-width: 320px !important;
+    }
+    
+    .step-number {
+        width: 50px !important;
+        height: 50px !important;
+        font-size: 1.3rem !important;
+        margin-bottom: 1.5rem !important;
+    }
+    
+    .problem-solution h2,
+    .service-details h2,
+    .design-process h2,
+    .industries-served h2,
+    .service-areas h2,
+    .pricing-packages h2,
+    .faq-section h2 {
+        font-size: 1.9rem !important;
+        margin-bottom: 2rem !important;
+    }
+    
+    .phone-cta-large,
+    .cta-main-large,
+    .btn-tertiary {
+        font-size: 0.95rem !important;
+        padding: 1.1rem 1.8rem !important;
+        min-height: 50px !important;
+        width: 100% !important;
+        max-width: 280px !important;
+        margin: 0 auto !important;
+    }
+}

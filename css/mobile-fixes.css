@@ -1,0 +1,307 @@
+/* Mobile Phone and Extra Small Mobile Fixes */
+@media (max-width: 480px) {
+    /* Container padding */
+    .container {
+        padding: 0 1rem;
+    }
+    
+    /* Navigation */
+    .nav-container {
+        padding: 0.75rem 1rem;
+    }
+    
+    .breadcrumbs-container {
+        margin-top: 55px;
+    }
+    
+    /* Hero */
+    .service-hero {
+        padding: 4rem 0 2.5rem;
+    }
+    
+    .service-hero .container {
+        padding: 0 1rem;
+    }
+    
+    .service-hero h1 {
+        font-size: 1.8rem;
+        margin-bottom: 1rem;
+        text-align: center;
+    }
+    
+    .hero-subtitle {
+        font-size: 1rem;
+        margin-bottom: 1.5rem;
+        text-align: center;
+    }
+    
+    .hero-stats {
+        grid-template-columns: 1fr;
+        gap: 1rem;
+        margin: 1.5rem 0;
+        padding: 1rem 0;
+    }
+    
+    .hero-stats .stat {
+        padding: 1.25rem 1rem;
+        text-align: center;
+    }
+    
+    .hero-stats .stat-icon {
+        font-size: 1.5rem;
+    }
+    
+    .hero-stats .stat-number {
+        font-size: 0.95rem;
+    }
+    
+    .hero-stats .stat-label {
+        font-size: 0.75rem;
+    }
+    
+    /* Mobile CTA Buttons */
+    .hero-cta .btn-primary,
+    .hero-cta .btn-secondary {
+        padding: 1rem 2rem;
+        font-size: 1rem;
+        width: 100%;
+        min-height: 50px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    
+    .phone-cta,
+    .phone-cta-large {
+        font-size: 1.1rem !important;
+        font-weight: 600;
+        min-height: 50px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+    }
+    
+    /* All CTA Buttons Mobile */
+    .btn-primary,
+    .btn-secondary,
+    .btn-tertiary {
+        width: 100%;
+        min-height: 48px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin: 0.5rem auto;
+        padding: 1rem 2rem;
+        font-size: 1rem;
+    }
+    
+    /* Content sections */
+    .problem-solution,
+    .service-details,
+    .design-process,
+    .industries-served,
+    .service-areas,
+    .pricing-packages,
+    .faq-section {
+        padding: 4rem 0;
+    }
+    
+    .service-section h2 {
+        font-size: 1.75rem;
+        margin-bottom: 1.5rem;
+        text-align: center;
+    }
+    
+    .section-intro {
+        font-size: 1rem;
+        margin-bottom: 2.5rem;
+        padding: 0 1rem;
+        line-height: 1.6;
+        text-align: center;
+    }
+    
+    /* Cards */
+    .problem-card,
+    .service-item,
+    .process-step,
+    .industry-card,
+    .package-card,
+    .faq-item {
+        padding: 1.5rem;
+    }
+    
+    .problem-card h3,
+    .service-item h4,
+    .process-step h4,
+    .industry-card h3,
+    .package-card h4,
+    .faq-item h4 {
+        font-size: 1.2rem;
+        margin-bottom: 0.75rem;
+    }
+    
+    .problem-card p,
+    .service-item p,
+    .process-step p,
+    .industry-card p,
+    .faq-item p {
+        font-size: 0.9rem;
+        line-height: 1.5;
+    }
+    
+    .step-number {
+        width: 40px;
+        height: 40px;
+        font-size: 1.2rem;
+        margin-bottom: 1rem;
+    }
+    
+    .package-price {
+        font-size: 1.5rem;
+        margin-bottom: 1.5rem;
+    }
+    
+    .package-features li {
+        font-size: 0.9rem;
+        padding: 0.4rem 0;
+    }
+    
+    /* Grids */
+    .industries-grid,
+    .areas-grid {
+        grid-template-columns: 1fr;
+    }
+    
+    .area-item {
+        padding: 1rem;
+    }
+    
+    .area-item h5 {
+        font-size: 1rem;
+        margin-bottom: 0.4rem;
+    }
+    
+    .area-item p {
+        font-size: 0.8rem;
+    }
+    
+    /* Solution content */
+    .solution-content {
+        padding: 3rem 1.5rem;
+        margin-top: 3rem;
+    }
+    
+    .solution-content h3 {
+        font-size: 1.6rem;
+        margin-bottom: 1rem;
+    }
+    
+    .solution-content p {
+        font-size: 1rem;
+    }
+    
+    /* Final CTA */
+    .final-cta {
+        padding: 3rem 0;
+    }
+    
+    .final-cta h2 {
+        font-size: 1.6rem;
+        margin-bottom: 1rem;
+    }
+    
+    .cta-intro {
+        font-size: 1rem;
+        margin-bottom: 2rem;
+    }
+    
+    .cta-option {
+        padding: 1.5rem;
+    }
+    
+    .cta-option h4 {
+        font-size: 1.1rem;
+        margin-bottom: 0.75rem;
+    }
+    
+    .phone-cta-large,
+    .cta-main-large {
+        padding: 0.75rem 1.5rem;
+        font-size: 0.9rem;
+    }
+    
+    .offer-box {
+        padding: 1.5rem;
+    }
+    
+    .offer-box h3 {
+        font-size: 1.2rem;
+        margin-bottom: 0.75rem;
+    }
+    
+    .offer-box li {
+        font-size: 0.9rem;
+        padding: 0.4rem 0;
+    }
+    
+    /* Footer */
+    .site-footer {
+        padding: 3rem 0 1.5rem;
+    }
+    
+    .footer-contact h4,
+    .footer-services h4,
+    .footer-areas h4 {
+        font-size: 1.1rem;
+        margin-bottom: 1rem;
+    }
+    
+    .footer-content {
+        gap: 2rem;
+        margin-bottom: 2rem;
+    }
+    
+    .footer-bottom {
+        padding-top: 1.5rem;
+    }
+    
+    .footer-disclaimers small {
+        font-size: 0.75rem;
+    }
+}
+
+/* Extra Small Mobile */
+@media (max-width: 360px) {
+    .service-hero h1 {
+        font-size: 1.6rem;
+    }
+    
+    .service-hero .container {
+        padding: 0 0.75rem;
+    }
+    
+    .hero-subtitle {
+        font-size: 0.95rem;
+    }
+    
+    .service-section h2 {
+        font-size: 1.5rem;
+    }
+    
+    .final-cta h2 {
+        font-size: 1.4rem;
+    }
+    
+    .solution-content h3 {
+        font-size: 1.4rem;
+    }
+    
+    .problem-card,
+    .service-item,
+    .process-step,
+    .package-card,
+    .faq-item {
+        padding: 1.25rem;
+    }
+}

@@ -1,0 +1,64 @@
+# Marketing AI Houston - Robots.txt
+# Development Version - All crawling currently disabled
+# 
+# This is the development/staging version of Marketing AI Houston
+# hosted on GitHub Pages. All search engine crawling is currently
+# disabled until the site is ready for production on Hostinger.
+#
+# When ready for production:
+# 1. Change "Disallow: /" to specific restrictions
+# 2. Update sitemap URL to production domain
+# 3. Add specific bot instructions if needed
+
+User-agent: *
+Disallow: /
+
+# Block specific development/testing files and directories
+Disallow: /css/
+Disallow: /js/
+Disallow: /.git/
+Disallow: /attached_assets/
+Disallow: /.replit
+Disallow: /replit.md
+Disallow: /.htaccess
+
+# Development sitemap reference
+# Note: This will be updated to production URL when live
+Sitemap: https://mark-65-arch.github.io/Marketing-2.0/sitemap.xml
+
+# Future production sitemap URL (commented out for now)
+# Sitemap: https://marketingaihouston.com/sitemap.xml
+
+# Crawl-delay for when we go live (commented out for development)
+# Crawl-delay: 1
+
+# Future Google-specific instructions (commented out for development)
+# User-agent: Googlebot
+# Allow: /
+# Crawl-delay: 1
+
+# Future Bing-specific instructions (commented out for development)
+# User-agent: bingbot
+# Allow: /
+# Crawl-delay: 1
+
+# Block AI training crawlers when live (commented out for development)
+# User-agent: GPTBot
+# Disallow: /
+# 
+# User-agent: ChatGPT-User
+# Disallow: /
+# 
+# User-agent: CCBot
+# Disallow: /
+# 
+# User-agent: anthropic-ai
+# Disallow: /
+
+# Instructions for production deployment:
+# 1. Remove or comment out "Disallow: /"
+# 2. Update sitemap URL to production domain
+# 3. Enable specific bot allowances
+# 4. Add crawl delays if needed
+# 5. Consider blocking AI training bots
+# 6. Test with Google Search Console
